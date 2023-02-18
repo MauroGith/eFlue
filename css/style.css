@@ -6,3 +6,145 @@
     box-sizing: border-box;
     font-family: 'Public Sans', sans-serif;
 }
+
+section.login .login-wrapper {
+    display: flex;
+}
+
+section.login .login-bg {
+    width: 65%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.login-or-register {
+    margin: 0 auto;
+}
+
+.wrapper-padding {
+    padding: max(15px, 10vw) max(15px, 1vw);
+}
+
+.login-or-register .logo-login {
+    display: flex;
+    justify-content: center;
+}
+
+.login-or-register .logo-login img{
+    width: max(20px, 45%);
+}
+
+.login-or-register .continue-login p {
+    font-weight: bold;
+    font-size: max(14px, .8vw);
+    margin: max(15px, 2vw) 0;
+    text-align: center;
+}
+
+.login-or-register form p {
+    font-size: max(14px, .9vw);
+    padding: max(5px, .2vw) 0;
+}
+
+.login-or-register input[type=text] {
+    width: 100%;
+    border: 0;
+    border-bottom: max(1px, .1vw) solid black;
+    outline: none;
+    padding-bottom: max(2px, .3vw);
+}
+
+.placeholder-text::placeholder {
+    font-size: max(10px, .5vw);
+}
+
+.keep-or-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-or-register .keep-or-forgot {
+    padding: max(14px, .5vw) 0;
+    font-size: max(12px, .4vw);
+}
+
+.login-or-register .keep-or-forgot a {
+    color: black;
+    text-decoration: none;
+}
+
+.login-or-register input[type=submit] {
+    width: 100%;
+    padding: max(7px, .3vw);
+    font-size: max(14px, 1vw);
+    color: white;
+    background-color:deeppink;
+    border-radius: max(8px, .1vw);
+    border: 0;
+    cursor: pointer;
+}
+
+.google-or-face button {
+    width: 100%;
+    padding: max(7px, .3vw);
+    border-radius: max(14px, 1.5vw);
+    font-size: max(13px, .8vw);
+    border: max(1px, .1vw) solid gray;
+    cursor: pointer;
+}
+
+.google-or-face .google-login button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.google-or-face .google-login{
+    margin: max(10px, 1vw) 0;
+}
+
+.google-or-face .google-login img {
+    margin-right: max(7px, .1vw);
+    width: max(14px, 1.3vw);
+}
+
+.google-or-face .face-login {
+    border-bottom: max(1px, .1vw) solid gray;
+}
+
+.google-or-face .face-login button{
+    padding: max(10px, .5vw) 0;
+    margin-bottom: max(14px, 2vw);
+    background-color: blue;
+    color: white;
+    border: 0;
+}
+
+.google-or-face .face-login i {
+    margin-right: max(7px, .1vw);
+    font-size: max(14px, 1vw);
+}
+
+.register-now {
+    width: 100%;
+    margin: max(10px, .8vw) 0;
+}
+
+.register-now span {
+    font-size: max(12px, .5vw);
+}
+
+.register-now span a{
+    padding-left: max(3px, .1vw);
+    color: deeppink;
+    text-decoration: none;
+}
+
+
+
+
+
