@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Public Sans', sans-serif;
+    list-style: none;
 }
 
 section.login .login-wrapper {
@@ -36,7 +37,7 @@ section.login .login-bg {
     width: max(20px, 45%);
 }
 
-.login-or-register .continue-login p {
+.login-or-register .continue-login {
     font-weight: bold;
     font-size: max(14px, .8vw);
     margin: max(15px, 2vw) 0;
@@ -46,6 +47,7 @@ section.login .login-bg {
 .login-or-register form p {
     font-size: max(14px, .9vw);
     padding: max(5px, .2vw) 0;
+    margin: 0;
 }
 
 .login-or-register input[type=text] {
@@ -57,7 +59,7 @@ section.login .login-bg {
 }
 
 .placeholder-text::placeholder {
-    font-size: max(10px, .5vw);
+    font-size: max(10px, .7vw);
 }
 
 .keep-or-forgot {
@@ -85,6 +87,11 @@ section.login .login-bg {
     border-radius: max(8px, .1vw);
     border: 0;
     cursor: pointer;
+}
+
+.google-or-face {
+    margin-top: max(14px, 1.2vw);
+    border-top: max(1px, .1vw) solid gray;
 }
 
 .google-or-face button {
@@ -118,7 +125,7 @@ section.login .login-bg {
 
 .google-or-face .face-login button{
     padding: max(10px, .5vw) 0;
-    margin-bottom: max(14px, 2vw);
+    margin-bottom: max(14px, 1.5vw);
     background-color: blue;
     color: white;
     border: 0;
@@ -144,7 +151,53 @@ section.login .login-bg {
     text-decoration: none;
 }
 
+section.welcome {
+    background: #ccc;
+}
 
 
+section.welcome .sidebar {
+    width: 20%;
+    background: white;
+}
 
+.sidebar .logo-menu {
+    padding: max(15px, 3vw) max(15px, 2vw);
+}
 
+.sidebar .logo-menu img {
+    width: max(20px, 70%);
+}
+
+.sidebar ul {
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: max(10px, .8vw) max(14px, 4vw);
+}
+
+.sidebar .selected {
+    background: linear-gradient(45deg, white, rgba(255, 20, 145, 0.308));
+    border-right: max(2px, .2vw) solid deeppink ;
+    font-weight: bolder;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+}
+
+.sidebar ul li a i {
+    font-size: max(12px, .9vw);
+    color: black;
+}
+
+.sidebar ul li a span{
+    font-size: max(12px, .9vw);
+    color: black;
+}
+
+.sidebar .footer-side {
+    position: absolute;
+    bottom: 0;
+}
