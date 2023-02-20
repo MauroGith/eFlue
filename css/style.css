@@ -8,24 +8,40 @@
     list-style: none;
 }
 
+:root {
+    --lighter-gray: #f0f0f0;
+    --lighter-pink: #f4abd0;
+    --primary-pink: #f50066;
+    --deep-purple: #4e243d;
+    --normal-purple: #a3009d;
+    --normal-green: #00d72f;
+}
+
+body {
+    background: var(--lighter-gray);
+}
+
 section.login .login-wrapper {
     display: flex;
 }
 
 section.login .login-bg {
     width: 65%;
-    height: 100vh;
+    min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .login-or-register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
 }
 
 .wrapper-padding {
-    padding: max(15px, 10vw) max(15px, 1vw);
+    padding: max(15px, 1vw);
 }
 
 .login-or-register .logo-login {
@@ -83,7 +99,7 @@ section.login .login-bg {
     padding: max(7px, .3vw);
     font-size: max(14px, 1vw);
     color: white;
-    background-color:deeppink;
+    background-color:var(--primary-pink);
     border-radius: max(8px, .1vw);
     border: 0;
     cursor: pointer;
@@ -126,7 +142,7 @@ section.login .login-bg {
 .google-or-face .face-login button{
     padding: max(10px, .5vw) 0;
     margin-bottom: max(14px, 1.5vw);
-    background-color: blue;
+    background-color: #1976d2;
     color: white;
     border: 0;
 }
@@ -147,26 +163,33 @@ section.login .login-bg {
 
 .register-now span a{
     padding-left: max(3px, .1vw);
-    color: deeppink;
+    color: var(--primary-pink);
     text-decoration: none;
 }
 
-section.welcome {
-    background: #ccc;
+section.menu-content {
+    display: flex;
 }
 
-
-section.welcome .sidebar {
+.sidebar {
     width: 20%;
     background: white;
 }
 
 .sidebar .logo-menu {
-    padding: max(15px, 3vw) max(15px, 2vw);
+    padding: max(15px, 3vw) 0;
+    text-align: center;
 }
 
 .sidebar .logo-menu img {
-    width: max(20px, 70%);
+    width: max(20px, 50%);
+}
+
+.sidebar nav {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .sidebar ul {
@@ -174,30 +197,83 @@ section.welcome .sidebar {
 }
 
 .sidebar ul li {
-    padding: max(10px, .8vw) max(14px, 4vw);
+    padding: max(10px, .8vw) max(14px, 3vw);
 }
 
 .sidebar .selected {
-    background: linear-gradient(45deg, white, rgba(255, 20, 145, 0.308));
+    background: linear-gradient(45deg, white, rgba(255, 20, 145, 0.151));
     border-right: max(2px, .2vw) solid deeppink ;
     font-weight: bolder;
 }
 
 .sidebar ul li a {
     text-decoration: none;
+    color: #4e243d;
 }
 
 .sidebar ul li a i {
     font-size: max(12px, .9vw);
-    color: black;
 }
 
 .sidebar ul li a span{
     font-size: max(12px, .9vw);
-    color: black;
 }
 
-.sidebar .footer-side {
-    position: absolute;
-    bottom: 0;
+.content {
+    width: 80%;
+    padding: max(14px, 2vw);
+}
+
+.dashboard .welcome-user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard .welcome-user p {
+    font-size: max(14px, 1.2vw);
+    font-weight: bold;
+}
+
+.dashboard .user-card{
+    display: flex;
+    flex-direction: column;
+    padding: max(10px, .5vw) max(14px, 1vw);
+    background: white;
+    border-radius: max(7px, .5vw);
+}
+
+.user-card .card-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dashboard .user-card img {
+    max-width: max(50px, 2vw);
+}
+
+.dashboard .user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-info .user-id {
+    padding-right: max(14px, 2vw);
+    padding-left: max(10px, .5vw);
+
+}
+
+.dashboard .user-info p {
+    font-size: max(10px, .9vw);
+}
+
+.dashboard .user-info span {
+    font-size: max(10px, .5vw);
+    font-weight: lighter;
+}
+
+.user-card i {
+    font-size: max(14px, 1vw);
+    cursor: pointer;
 }
