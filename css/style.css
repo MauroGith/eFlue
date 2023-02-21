@@ -17,10 +17,6 @@
     --normal-green: #00d72f;
 }
 
-body {
-    background: var(--lighter-gray);
-}
-
 section.login .login-wrapper {
     display: flex;
 }
@@ -169,6 +165,7 @@ section.login .login-bg {
 
 section.menu-content {
     display: flex;
+    background: var(--lighter-gray);
 }
 
 .sidebar {
