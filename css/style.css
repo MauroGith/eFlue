@@ -165,7 +165,7 @@ section.login .login-bg {
 
 section.menu-content {
     display: flex;
-    background: var(--lighter-gray);
+    background-color:#f8f8f8 ;
 }
 
 .sidebar {
@@ -225,6 +225,9 @@ section.menu-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: max(1px, .1vw) solid var(--lighter-gray);
+    padding-bottom: max(14px, 1.5vw);
+    margin-bottom: max(14px, 1.5vw);
 }
 
 .dashboard .welcome-user p {
@@ -258,7 +261,6 @@ section.menu-content {
 .user-info .user-id {
     padding-right: max(14px, 2vw);
     padding-left: max(10px, .5vw);
-
 }
 
 .dashboard .user-info p {
@@ -273,4 +275,64 @@ section.menu-content {
 .user-card i {
     font-size: max(14px, 1vw);
     cursor: pointer;
+}
+
+.dashboard-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: max(14px, 1.5vw);
+}
+
+.dashboard-buttons p {
+    font-size: max(14px, 1.2vw);
+    font-weight: bold;
+}
+
+.dashboard-buttons .btns button{
+    font-size: max(10px, .7vw);
+    padding:max(2px, .2vw) max(14px, 2.5vw);
+    border: 0;
+    border-radius: max(3px, .2vw);
+    background: white;
+    margin-left: max(5px, .2vw);
+    color: var(--deep-purple);
+    cursor: pointer;
+}
+
+.dashboard-buttons .btns .active {
+    background: var(--primary-pink);
+    color: white;
+}
+
+.dashboard-left {
+    width: 50%;
+}
+
+.chart-content {
+    padding: max(14px, 2vw);
+    background-image: linear-gradient(-32deg, var(--lighter-pink), var(--lighter-gray), var(--lighter-pink));
+    border-radius: max(5px, .5vw);
+}
+
+.chart-content .revenue {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: max(14px, 2vw);
+}
+
+.chart-content p {
+    font-size: max(14px, 1.2vw);
+    font-weight: bold;
+}
+
+.chart-content span {
+    font-size: max(14px, 1.2vw);
+    color: var(--deep-purple);
+}
+
+.dashboard-right {
+    width: 50%;
 }
