@@ -579,3 +579,7 @@ section.menu-content {
     border-radius: 50%;
     margin-left: max(2px, .2vw);
 }
+
+.menu-content .small-menu {
+    
+}
