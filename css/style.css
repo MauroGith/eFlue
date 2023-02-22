@@ -250,7 +250,8 @@ section.menu-content {
 }
 
 .dashboard .user-card img {
-    max-width: max(50px, 2vw);
+    width: max(50px, 2vw);
+    border-radius: max(7px, .8vw);
 }
 
 .dashboard .user-info {
@@ -531,6 +532,50 @@ section.menu-content {
     width: max(4px, .4vw);
     height: max(4px, .4vw);
     background-color: red;
+    border-radius: 50%;
+    margin-left: max(2px, .2vw);
+}
+
+.sales-panel {
+    overflow: auto;
+}
+
+.sales-panel table {
+    width: 100%;
+    background-color: white;
+    font-size: max(10px, .7vw);
+    text-align: center;
+    border-radius: max(7px, .7vw);
+    border-collapse: collapse;
+}
+
+.sales-panel table thead tr td{
+    padding: max(14px, 1vw);
+    border-bottom: max(1px, .1vw) solid #f8f8f8;
+}
+
+.sales-panel table tbody tr td {
+    padding: max(14px, 1vw);
+    border-bottom: max(1px, .1vw) solid #f8f8f8;
+}
+
+.sales-panel .panel-img {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.sales-panel .panel-img img {
+    width: max(12px, 1vw);
+    margin-right: max(2px, .2vw);
+}
+
+.sales-panel .approved {
+    display: inline-block;
+    width: max(4px, .4vw);
+    height: max(4px, .4vw);
+    background-color: #00d72f;
     border-radius: 50%;
     margin-left: max(2px, .2vw);
 }
