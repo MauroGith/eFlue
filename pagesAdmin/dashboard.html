@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>eFLue</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -113,22 +113,95 @@
                             </div>
                             <canvas id="myChart"></canvas>
                         </div>
-                        <div class="campaigns">
+
+                        <div class="campaigns dashboard-card">
                             <h5>Campanhas</h5>
-                            <div class="status">
-                                
+                            <div class="table-chart">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <td class="status">Status</td>
+                                            <td class="text-right">Quantidade</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td> 
+                                                <div class="dflex">
+                                                    <span class="status-color approved"></span> Aprovada
+                                                </div> 
+                                            </td>
+                                            <td class="text-right">15</td>
+                                        </tr>
+                                        <tr>
+                                            <td> 
+                                                <div class="dflex">
+                                                    <span class="status-color rejected "></span> Rejeitadas
+                                                </div> 
+                                            </td>
+                                            <td class="text-right">12</td>
+                                        </tr>
+                                        <tr>
+                                            <td> 
+                                                <div class="dflex">
+                                                    <span class="status-color pending"></span> Pendente
+                                                </div> 
+                                            </td>
+                                            <td class="text-right">21</td>
+                                        </tr>
+                                        <tr>
+                                            <td> 
+                                                <div class="dflex">
+                                                    <span class="status-color in-progress"></span> Em andamento
+                                                </div> 
+                                            </td>
+                                            <td class="text-right">17</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="doughnutChartArea">
+                                    <canvas id="doughnutChart"></canvas>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="dashboard-right">
 
+                    </div>
+
+                    <div class="dashboard-right">
+                        <div class="right-cards">
+                            <div class="right-card">
+                                <div class="dashboard-card total-revenue">
+                                    <div class="card-top">
+                                        <img src="../images/Money.svg" alt="ícone de nota">
+                                        <p><i class="fa-solid fa-caret-up metric-up"></i>9%</p>
+                                    </div>
+                                    <p>R$ 1.000,00</p>
+                                    <span>Receita</span>
+                                </div>
+                            </div>
+                            <div class="right-card">
+                                <div class="dashboard-card views">
+                                    <div class="card-top">
+                                        <img src="../images/eye.svg" alt="ícone de olho">
+                                        <p><i class="fa-solid fa-caret-down metric-down"></i>18%</p>
+                                    </div>
+                                    <div class="visits">
+                                        <div class="visits-data">
+                                            <p>10</p>
+                                            <span>Visitas</span>
+                                        </div>
+                                        <p class="live">ao vivo <span></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="../js/script.js"></script>
+    <script src="../js/chart.js"></script>
 </body>
 
 </html>

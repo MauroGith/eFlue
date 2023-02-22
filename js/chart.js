@@ -1,5 +1,5 @@
 const ctx = document.getElementById('myChart');
-    Chart.defaults.font.size = '7px'
+  Chart.defaults.font.size = '7px'
   new Chart(ctx, {
     type: 'line',
     data: {
@@ -22,6 +22,32 @@ const ctx = document.getElementById('myChart');
           }
         }
       },
+      plugins: {
+        legend: {
+            display: false
+        }
+      }, 
+    }
+  });
+
+const doughnutChart= document.getElementById('doughnutChart');
+
+  new Chart(doughnutChart, {
+    type: 'doughnut',
+    data: {
+      datasets: [{
+        data: [15, 12, 21, 17],
+        cutout: '80%',
+        borderWidth: 0,
+        backgroundColor: [
+          '#f50066',
+          '#4e243d',
+          '#a3009d',
+          '#f4abd0',
+        ],
+      }]
+    },
+    options: {
       plugins: {
         legend: {
             display: false

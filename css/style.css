@@ -286,13 +286,13 @@ section.menu-content {
 }
 
 .dashboard-buttons p {
-    font-size: max(14px, 1.2vw);
+    font-size: max(15px, 1.4vw);
     font-weight: bold;
 }
 
 .dashboard-buttons .btns button{
-    font-size: max(10px, .7vw);
-    padding:max(2px, .2vw) max(14px, 2.5vw);
+    font-size: max(12px, 1vw);
+    padding:max(4px, .4vw) max(14px, 2.5vw);
     border: 0;
     border-radius: max(3px, .2vw);
     background: white;
@@ -333,6 +333,204 @@ section.menu-content {
     color: var(--deep-purple);
 }
 
+.dashboard-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dashboard-content .dashboard-card {
+    border-radius: max(5px, 0.5vw);
+    padding: max(14px, 2vw);
+}
+
+.dashboard-left .dashboard-card {
+    background-color: white;
+    margin: max(15px, 2vw) 0;
+}
+
+.dashboard-left .campaigns h5 {
+    font-size: max(16px, 1.2vw);
+    padding-bottom: max(20px, 1vw);
+    margin-bottom: max(20px, 1vw);
+    border-bottom: max(1px, .1vw) solid var(--lighter-gray);
+}
+
+.campaigns .table-chart {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.campaigns table {
+    border-collapse: collapse;
+    width: 60%;
+}
+
+.campaigns table thead {
+    background-color: var(--lighter-gray);
+}
+
+.campaigns table .text-right {
+    text-align: right;
+    padding-right: max(20px, 3vw);
+}
+
+.campaigns table .text-center {
+    text-align: center;
+}
+
+.campaigns table td {
+    font-size: max(12px, .8vw);
+}
+
+.campaigns table thead td {
+    padding: max(3px, .8vw);
+}
+
+.campaigns .status {
+    padding-left: max(20px, 3vw);
+}
+
+.campaigns table tbody td {
+    padding: max(3px, .3vw) max(5px, 1vw);
+}
+
+.campaigns .dflex {
+    display: flex;
+    align-items: center;
+}
+
+.campaigns table .status-color {
+    display: inline-block;
+    margin-right: max(5px, .5vw);
+    width: max(15px, 1.8vw);
+    height: max(10px, 1vw);
+    border-radius: max(4px, .4vw);
+}
+
+.campaigns .approved {
+    background-color: var(--primary-pink);
+}
+
+.campaigns .rejected {
+    background-color: var(--deep-purple);
+}
+
+.campaigns .pending {
+    background-color: var(--normal-purple);
+}
+
+.campaigns .in-progress {
+    background-color: var(--lighter-pink);
+}
+
+.campaigns .doughnutChartArea {
+    width: 30%;
+}
+
 .dashboard-right {
     width: 50%;
+    padding-left: 1.5vw;
+}
+
+.dashboard-right .right-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.right-cards .right-card {
+    width: 50%;
+    margin-bottom: max(10px, 1vw);
+}
+
+.right-cards .right-card:nth-of-type(1){
+    padding-right: max(10px, 1vw);
+}
+
+.right-cards .right-card .dashboard-card {
+    min-height: 13vw;
+}
+
+.right-cards .right-card .card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: max(20px, 2vw);
+}
+
+.right-card .card-top .metric-up {
+    color: var(--normal-green);
+}
+
+.right-card .card-top .metric-down {
+    color: red;
+}
+
+.right-card .card-top img {
+    width: max(50px, 3vw);
+}
+
+.right-card .card-top p {
+    font-size: max(15px, 1vw);
+    font-weight: bold;
+}
+
+.right-card .card-top i{
+    margin-right: max(3px, .3vw);
+}
+
+.right-cards .right-card .total-revenue {
+    background-image: linear-gradient(to bottom right, #FA00A9, var(--primary-pink), #FA00A9);
+    color: white;
+}
+
+.total-revenue p {
+    font-size: max(16px, 1.3vw);
+    letter-spacing: max(1px, .1vw);
+    margin-bottom: max(5px, .5vw);
+}
+
+.total-revenue span {
+    font-weight: lighter;
+    font-size: max(15px, 1vw);
+}
+
+.right-cards .right-card .views{
+    background-image: linear-gradient(to bottom right, var(--lighter-pink), var(--lighter-gray), var(--lighter-pink));
+    color: var(--deep-purple);
+}
+
+.right-card .views .visits {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.right-card .views .visits-data p {
+    font-size: max(20px, 2vw);
+    margin-bottom: max(5px, 0.5vw);
+    font-weight: bold;
+}
+
+.right-card .views .visits-data span {
+    font-size: max(16px, 1vw);
+}
+
+.right-card .views .visits .live {
+    font-size: max(14px, .9vw);
+    display: flex;
+    align-items: center;
+    background-color: rgba(245, 0, 102, 0.4);
+    color: white;
+    padding: max(1px, .1vw) max(5px, 1vw);
+    border-radius: max(10px, 1vw);
+}
+
+.right-card .views .visits .live span {
+    display: inline-block;
+    width: max(4px, .4vw);
+    height: max(4px, .4vw);
+    background-color: red;
+    border-radius: 50%;
+    margin-left: max(2px, .2vw);
 }
