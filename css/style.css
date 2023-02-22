@@ -313,7 +313,9 @@ section.menu-content {
 
 .chart-content {
     padding: max(14px, 2vw);
-    background-image: linear-gradient(-32deg, var(--lighter-pink), var(--lighter-gray), var(--lighter-pink));
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     border-radius: max(5px, .5vw);
 }
 
@@ -450,6 +452,9 @@ section.menu-content {
 
 .right-cards .right-card .dashboard-card {
     min-height: 13vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .right-cards .right-card .card-top {
@@ -481,7 +486,6 @@ section.menu-content {
 }
 
 .right-cards .right-card .total-revenue {
-    background-image: linear-gradient(to bottom right, #FA00A9, var(--primary-pink), #FA00A9);
     color: white;
 }
 
@@ -497,7 +501,6 @@ section.menu-content {
 }
 
 .right-cards .right-card .views{
-    background-image: linear-gradient(to bottom right, var(--lighter-pink), var(--lighter-gray), var(--lighter-pink));
     color: var(--deep-purple);
 }
 
