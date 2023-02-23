@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eFLue</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section class="menu-content">
+        <div class="sidebar">
+            <nav>
+                <ul>
+                    <li class="logo-menu">
+                        <a href="">
+                            <img src="../images/Logo.png" alt= "">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-solid fa-house-chimney"></i>
+                            <span>Dashbord</span>
+                        </a>
+                    </li>
+                    <li class="selected">
+                        <a href="">
+                            <i class="fa-solid fa-user"></i>
+                            <span>Usuarios</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-solid fa-briefcase"></i>
+                            <span>Campanhas</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <span>Explorar influenciadores</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-solid fa-bullhorn"></i>
+                            <span>Explorar campanhas</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-solid fa-wallet"></i>
+                            <span>Pagamentos</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="footer-side">
+                    <li>
+                        <a href="">
+                            <i class="fa-solid fa-message"></i>
+                            <span>Mensagens</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            <span>Reportes</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <div class="dashboard">
+                <div class="welcome-user">
+                    <div class="user-register">
+                        <p>Usuarios</p>
+                        <a href="#">Cadastrar</a>
+                    </div>
+                    <div class="user-card">
+                        <div class="card-content">
+                            <div class="user-info">
+                                <img src="../images/logo-profile.png" alt="">
+                                <div class="user-id">
+                                    <p>eFlue</p>
+                                    <span>Admin</span>
+                                </div>
+                            </div>
+                            <i class="fa-solid fa-caret-down"></i>       
+                        </div>
+                        <!-- <div class="toggle-itens">
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div> -->
+                    </div>
+                </div>
+            </div>  
+            <div class="status-wrapper">
+                <div class="status-card" style="background-image: url('../images/smallCardbg.svg');">
+                    <p>Aprovados</p>
+                    <div class="status-info">
+                        <span>8020</span>
+                        <img src="../images/approved.svg" alt="">
+                    </div>
+                    <p>Usuarios</p>
+                </div>
+                <div class="status-card" style="background-image: url('../images/smallCardbg.svg');">
+                    <p>Reprovados</p>
+                    <div class="status-info">
+                        <span>102</span>
+                        <img src="../images/rejected.svg" alt="">
+                    </div>
+                    <p>Usuarios</p>
+                </div>
+                <div class="status-card" style="background-image: url('../images/smallCardbg.svg');">
+                    <p>Pendente</p>
+                    <div class="status-info" >
+                        <span>83</span>
+                        <img src="../images/synchronize.svg" alt="">
+                    </div>
+                    <p>Usuarios</p>
+                </div>
+            </div>
+            <div class="table-select">
+                <ul>
+                    <li class="selected-table">Todos</li>
+                    <li>Aprovados</li>
+                    <li>Reprovados</li>                    
+                </ul>	
+                <form class="form-busca">
+                    <div class="d-flex">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <button class="btn-buscar-top" type="submit"></button>
+                        <input class="btn-text-top" type="text" name="txtsearch" placeholder="Pesquisar">
+                    </div>
+                </form>
+			</div>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Foto</td>
+                            <td>Name</td>
+                            <td>E-mail</td>
+                            <td>Tipo</td>
+                            <td>Status</td>
+                            <td></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img src="../images/logo-profile.png" alt="">
+                            </td>
+                            <td>
+                                <p>João Pedro Cardoso</p>
+                            </td>
+                            <td>
+                                <p>teste@eflue.com.br</p>
+                            </td>
+                            <td>
+                                <span class="type-color table-button">Admin</span>
+                            </td>
+                            <td>
+                                <span class="table-button approved">Aprovado</span>
+                            </td>
+                            <td>
+                                
+                                <span class="table-button edit-button">
+                                    <i class="fa-solid fa-pen"></i>
+                                    Editar Usuario
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="../images/logo-profile.png" alt="">
+                            </td>
+                            <td>
+                                <p>João Pedro Cardoso</p>
+                            </td>
+                            <td>
+                                <p>teste@eflue.com.br</p>
+                            </td>
+                            <td>
+                                <span class="type-color table-button">Admin</span>
+                            </td>
+                            <td>
+                                <span class="table-button pending">Pendente</span>
+                            </td>
+                            <td>
+                                
+                                <span class="table-button edit-button">
+                                    <i class="fa-solid fa-pen"></i>
+                                    Editar Usuario
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="../images/logo-profile.png" alt="">
+                            </td>
+                            <td>
+                                <p>João Pedro Cardoso</p>
+                            </td>
+                            <td>
+                                <p>teste@eflue.com.br</p>
+                            </td>
+                            <td>
+                                <span class="type-color table-button">Admin</span>
+                            </td>
+                            <td>
+                                <span class="table-button rejected">Rejeitado</span>
+                            </td>
+                            <td>
+                                
+                                <span class="table-button edit-button">
+                                    <i class="fa-solid fa-pen"></i>
+                                    Editar Usuario
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="../images/logo-profile.png" alt="">
+                            </td>
+                            <td>
+                                <p>João Pedro Cardoso</p>
+                            </td>
+                            <td>
+                                <p>teste@eflue.com.br</p>
+                            </td>
+                            <td>
+                                <span class="type-color table-button">Admin</span>
+                            </td>
+                            <td>
+                                <span class="table-button approved">Aprovado</span>
+                            </td>
+                            <td>
+                                
+                                <span class="table-button edit-button">
+                                    <i class="fa-solid fa-pen"></i>
+                                    Editar Usuario
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="../images/logo-profile.png" alt="">
+                            </td>
+                            <td>
+                                <p>João Pedro Cardoso</p>
+                            </td>
+                            <td>
+                                <p>teste@eflue.com.br</p>
+                            </td>
+                            <td>
+                                <span class="type-color table-button">Admin</span>
+                            </td>
+                            <td>
+                                <span class="table-button pending">Pendente</span>
+                            </td>
+                            <td>
+                                
+                                <span class="table-button edit-button">
+                                    <i class="fa-solid fa-pen"></i>
+                                    Editar Usuario
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="../images/logo-profile.png" alt="">
+                            </td>
+                            <td>
+                                <p>João Pedro Cardoso</p>
+                            </td>
+                            <td>
+                                <p>teste@eflue.com.br</p>
+                            </td>
+                            <td>
+                                <span class="type-color table-button">Admin</span>
+                            </td>
+                            <td>
+                                <span class="table-button rejected">Rejeitado</span>
+                            </td>
+                            <td>
+                                
+                                <span class="table-button edit-button">
+                                    <i class="fa-solid fa-pen"></i>
+                                    Editar Usuario
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="../images/logo-profile.png" alt="">
+                            </td>
+                            <td>
+                                <p>João Pedro Cardoso</p>
+                            </td>
+                            <td>
+                                <p>teste@eflue.com.br</p>
+                            </td>
+                            <td>
+                                <span class="type-color table-button">Admin</span>
+                            </td>
+                            <td>
+                                <span class="table-button approved">Aprovado</span>
+                            </td>
+                            <td>
+                                
+                                <span class="table-button edit-button">
+                                    <i class="fa-solid fa-pen"></i>
+                                    Editar Usuario
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="../images/logo-profile.png" alt="">
+                            </td>
+                            <td>
+                                <p>João Pedro Cardoso</p>
+                            </td>
+                            <td>
+                                <p>teste@eflue.com.br</p>
+                            </td>
+                            <td>
+                                <span class="type-color table-button">Admin</span>
+                            </td>
+                            <td>
+                                <span class="table-button pending">Pendente</span>
+                            </td>
+                            <td>
+                                
+                                <span class="table-button edit-button">
+                                    <i class="fa-solid fa-pen"></i>
+                                    Editar Usuario
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="../images/logo-profile.png" alt="">
+                            </td>
+                            <td>
+                                <p>João Pedro Cardoso</p>
+                            </td>
+                            <td>
+                                <p>teste@eflue.com.br</p>
+                            </td>
+                            <td>
+                                <span class="type-color table-button">Admin</span>
+                            </td>
+                            <td>
+                                <span class="table-button rejected">Rejeitado</span>
+                            </td>
+                            <td>
+                                
+                                <span class="table-button edit-button">
+                                    <i class="fa-solid fa-pen"></i>
+                                    Editar Usuario
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="../images/logo-profile.png" alt="">
+                            </td>
+                            <td>
+                                <p>João Pedro Cardoso</p>
+                            </td>
+                            <td>
+                                <p>teste@eflue.com.br</p>
+                            </td>
+                            <td>
+                                <span class="type-color table-button">Admin</span>
+                            </td>
+                            <td>
+                                <span class="table-button approved">Aprovado</span>
+                            </td>
+                            <td>
+                                
+                                <span class="table-button edit-button">
+                                    <i class="fa-solid fa-pen"></i>
+                                    Editar Usuario
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="../images/logo-profile.png" alt="">
+                            </td>
+                            <td>
+                                <p>João Pedro Cardoso</p>
+                            </td>
+                            <td>
+                                <p>teste@eflue.com.br</p>
+                            </td>
+                            <td>
+                                <span class="type-color table-button">Admin</span>
+                            </td>
+                            <td>
+                                <span class="table-button pending">Pendente</span>
+                            </td>
+                            <td>
+                                
+                                <span class="table-button edit-button">
+                                    <i class="fa-solid fa-pen"></i>
+                                    Editar Usuario
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="../images/logo-profile.png" alt="">
+                            </td>
+                            <td>
+                                <p>João Pedro Cardoso</p>
+                            </td>
+                            <td>
+                                <p>teste@eflue.com.br</p>
+                            </td>
+                            <td>
+                                <span class="type-color table-button">Admin</span>
+                            </td>
+                            <td>
+                                <span class="table-button rejected">Rejeitado</span>
+                            </td>
+                            <td>
+                                
+                                <span class="table-button edit-button">
+                                    <i class="fa-solid fa-pen"></i>
+                                    Editar Usuario
+                                </span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

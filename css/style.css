@@ -534,3 +534,152 @@ section.menu-content {
     border-radius: 50%;
     margin-left: max(2px, .2vw);
 }
+
+/* TELA USUARIO */
+.user-register{
+    display: flex;
+    align-items: center;
+}
+
+.user-register a{
+    text-decoration: none;
+    color: white;
+    background-color: var(--primary-pink);
+    margin-left: max(10px, 1vw);
+    padding: max(4px, 0.4vw) max(14px, 1.2vw);
+    border-radius: max(3px, 0.2vw);
+}
+
+.status-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.status-wrapper .status-card{
+    width: 32%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: max(3px, 0.2vw);
+    padding: max(7px, 1.1vw) max(10px, 1.9vw);
+}
+
+.status-wrapper .status-card .status-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.status-wrapper .status-card p {
+    color: var(--deep-purple);   
+    font-size: max(10px, .9vw);
+}
+
+.status-wrapper .status-card .status-info span{
+    color: var(--deep-purple);
+    font-weight: bold;
+    font-size: max(14px, 2.3vw);
+}
+
+.status-wrapper .status-card .status-info img{
+    width: max(14px, 2.7vw);
+}
+
+.table-select {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-bottom: max(1px, 0.1vw) solid var(--lighter-gray);
+    margin-top: max(15px, 2vw);
+    border-radius: max(3px, 0.2vw)
+}
+.table-select ul {
+    display: flex;
+    align-items: center;
+}
+.table-select ul li {
+    font-size: max(12px, .9vw);
+    padding: max(7px, 1.2vw) max(14px, 1.2vw);
+    cursor: pointer; 
+}
+.selected-table {
+    border-bottom: max(2px, 0.2vw) solid deeppink;;
+}
+
+.table-select form input[type=text]{
+    margin-right: max(10px, 1vw);
+    outline: none;
+    background-color: var(--lighter-gray);
+    border: 0;
+}
+::-webkit-input-placeholder  {
+    color: #80808069; 
+    font-style: italic;
+    font-size: max(10px, .8vw);
+}
+.table-select .d-flex {
+    display: flex;
+    background-color: var(--lighter-gray);
+    padding: max(7px, .5vw) max(10px, .9vw);
+    margin-right: max(5px, .5vw);
+    border-radius: max(3px, .4vw);
+}
+.table-select form i {
+    color: #808080c5;
+    transform: rotate(90deg);
+    font-size: max(14px, 1.2vw);
+    background-color: var(--lighter-gray);
+}
+
+.table-wrapper {
+    background-color: white;
+    border-radius: max(3px, 0.2vw);
+    padding: max(7px, 1vw);
+    overflow-x: auto;
+}
+.table-wrapper table{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.table-wrapper table td {
+    font-size: max(12px, .9vw);
+    padding: max(2px, .3vw) 0;
+    border-bottom: max(1px, 0.1vw) solid var(--lighter-gray);
+}
+
+.table-wrapper table tbody tr td img{
+    width: max(40px, 1vw);
+    height: max(40px, 1vw);
+    border-radius: 50%;
+}
+.table-wrapper table tbody tr .table-button{
+    color: white;
+    padding: max(3px, .2vw) max(6px, 1vw);
+    border-radius: max(2px, .4vw);
+}
+.table-wrapper .type-color {
+    background-color: var(--deep-purple);
+}
+.table-wrapper .approved {
+    background-color: var(--normal-green);
+}
+.table-wrapper .rejected{
+    background-color: #df0000;
+}
+.table-wrapper .pending{
+    background-color: #42a7ff;
+}
+
+.table-wrapper .edit-button{
+    background-color: var(--primary-pink);
+    cursor: pointer;
+}
+.table-wrapper .edit-button i{
+    font-size: max(12px, .9vw);
+    padding-right: max(2px, .2vw);
+}
+/* TELA USUARIO */
