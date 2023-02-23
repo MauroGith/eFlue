@@ -217,11 +217,11 @@ section.menu-content {
 }
 
 .content {
-    width: 80%;
+    width: 100%;
     padding: max(14px, 2vw);
 }
 
-.dashboard .welcome-user {
+.content .page-init {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -230,12 +230,12 @@ section.menu-content {
     margin-bottom: max(14px, 1.5vw);
 }
 
-.dashboard .welcome-user p {
+.content .page-init p {
     font-size: max(14px, 1.2vw);
     font-weight: bold;
 }
 
-.dashboard .user-card{
+.content .user-card{
     display: flex;
     flex-direction: column;
     padding: max(10px, .5vw) max(14px, 1vw);
@@ -249,12 +249,12 @@ section.menu-content {
     justify-content: space-between;
 }
 
-.dashboard .user-card img {
+.content .user-card img {
     width: max(50px, 2vw);
     border-radius: max(7px, .8vw);
 }
 
-.dashboard .user-info {
+.content .user-info {
     display: flex;
     align-items: center;
 }
@@ -264,11 +264,11 @@ section.menu-content {
     padding-left: max(10px, .5vw);
 }
 
-.dashboard .user-info p {
+.content .user-info p {
     font-size: max(10px, .9vw);
 }
 
-.dashboard .user-info span {
+.content .user-info span {
     font-size: max(10px, .5vw);
     font-weight: lighter;
 }
@@ -584,5 +584,76 @@ section.menu-content {
 }
 
 .menu-content .small-menu {
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+}
+
+.small-menu nav ul li {
+    margin: max(14px, 1vw) 0;
+    padding: max(14px, 1vw);
+    text-align: center;
+}
+
+.small-menu ul li a img {
+    width: max(40px, 2vw);
+    margin-bottom: max(14px, 1vw);
+}
+
+.small-menu ul li a i {
+    font-size: max(14px, 1.2vw);
+}
+
+.form-content {
+    background-color: white;
+}
+
+.find-form form {
+    max-width: max(20%, 200px);
+    padding: max(10px, .5vw) max(14px, 1.5vw);
+}
+
+.find-form form h5 {
+    font-size: max(14px, .9vw);
+    margin: max(14px, 1vw) 0;
+}
+
+.find-form form p {
+    font-size: max(10px, .7vw);
+    margin: max(4px, .4vw) 0;
+}
+
+.find-form form select {
+    width: 100%;
+    padding: max(7px, .5vw);
+    font-size: max(10px, .7vw);
+    color: #ccc;
+    border: max(1px, 0.1vw) solid var(--lighter-gray);
+    border-radius: max(5px, .4vw);
+    outline: none;
+}
+
+.find-form .form-border {
+    border-top: max(1px, .1vw) solid var(--lighter-gray);
+    padding-top: max(5px, .5vw);
+}
+
+.find-form form .d50{
+    display: flex;
+    align-items: center;
+}
+
+.find-form form input[type=text] {
+    width: 100%;
+    padding: max(7px, .5vw);
+    border: max(1px, 0.1vw) solid var(--lighter-gray);
+    border-radius: max(5px, .4vw);
+    color: #ccc;
+    outline: none;
+}
+
+.find-form .placeholder::placeholder {
+    font-size: max(10px, .7vw);
+    color: #ccc;
 }
