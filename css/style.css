@@ -165,12 +165,14 @@ section.login .login-bg {
 
 section.menu-content {
     display: flex;
+    justify-content: space-between;
     background-color:#f8f8f8 ;
 }
 
 .sidebar {
     width: 20%;
     position: relative;
+    background-color: white;
 }
 
 .sidebar .logo-menu {
@@ -183,22 +185,17 @@ section.menu-content {
 }
 
 .sidebar nav {
-    width: 100%;
-    background-color: white;
     min-height: 100vh;
-    position: absolute;
+    width: inherit;
+    position: fixed;
     z-index: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.sidebar ul {
-    width: 100%;
-}
-
 .sidebar ul li {
-    padding: max(10px, .8vw) 0;
+    padding: max(10px, .8vw);
     padding-left: max(10px, 3vw);
 }
 
@@ -221,9 +218,32 @@ section.menu-content {
     font-size: max(12px, .9vw);
 }
 
+.small-menu {
+    width: max(50px, 4%);
+}
+
+.small-menu nav ul li {
+    margin: max(14px, 1vw) 0;
+    padding: max(14px, 1vw);
+    text-align: center;
+}
+
+.small-menu ul li a img {
+    width: max(25px, 2vw);
+    margin-bottom: max(14px, 1vw);
+}
+
+.small-menu ul li a i {
+    font-size: max(14px, 1.2vw);
+}
+
 .content {
-    width: 100%;
+    width: 80%;
     padding: max(14px, 2vw);
+}
+
+.larger-content {
+    width: 96%;
 }
 
 .content .page-init {
@@ -743,28 +763,6 @@ section.menu-content {
     margin-left: max(2px, .2vw);
 }
 
-.small-menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: max(50px, 4%);
-}
-
-.small-menu nav ul li {
-    margin: max(14px, 1vw) 0;
-    padding: max(14px, 1vw);
-    text-align: center;
-}
-
-.small-menu ul li a img {
-    width: max(40px, 2vw);
-    margin-bottom: max(14px, 1vw);
-}
-
-.small-menu ul li a i {
-    font-size: max(14px, 1.2vw);
-}
-
 .form-content {
     background-color: white;
 }
@@ -832,8 +830,6 @@ section.menu-content {
 .chat-history {
     width: 25%;
 }
-
-
 
 .chat-history .form-busca .d-flex{
     background-color: transparent;
