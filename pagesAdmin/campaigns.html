@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eFLue</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section class="menu-content">
+        <div class="sidebar">
+            <nav >
+                <ul>
+                    <li class="logo-menu">
+                        <a href="">
+                            <img src="../images/Logo.png" alt= "">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./dashboard.html">
+                            <i class="fa-solid fa-house-chimney"></i>
+                            <span>Dashbord</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./usuario.html">
+                            <i class="fa-solid fa-user"></i>
+                            <span>Usuarios</span>
+                        </a>
+                    </li>
+                    <li class="selected">
+                        <a href="">
+                            <i class="fa-solid fa-briefcase"></i>
+                            <span>Campanhas</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./influencer.html">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <span>Explorar influenciadores</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-solid fa-bullhorn"></i>
+                            <span>Explorar campanhas</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-solid fa-wallet"></i>
+                            <span>Pagamentos</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="./chat.html">
+                            <i class="fa-solid fa-message"></i>
+                            <span>Mensagens</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            <span>Reportes</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <div class="page-init">
+                <div class="user-register">
+                    <p>Campanhas</p>
+                    <a href="#">Cadastrar</a>
+                </div>
+                <div class="user-card">
+                    <div class="card-content">
+                        <div class="user-info">
+                            <img src="../images/logo-profile.png" alt="">
+                            <div class="user-id">
+                                <p>eFlue</p>
+                                <span>Admin</span>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-caret-down"></i>       
+                    </div>
+                    <!-- <div class="toggle-itens">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div> -->
+                </div>
+            </div>
+            <div class="campaigns">
+
+                <div class="status-wrapper">
+                    <div class="campaigns-card" style="background-image: url('../images/smallCardbg.svg');">
+                        <p>Pendente</p>
+                        <div class="status-info" >
+                            <span>83</span>
+                            <img src="../images/synchronize.svg" alt="">
+                        </div>
+                        <p>Usuarios</p>
+                    </div>
+                    <div class="campaigns-card" style="background-image: url('../images/smallCardbg.svg');">
+                        <p>Aprovados</p>
+                        <div class="status-info">
+                            <span>8020</span>
+                            <img src="../images/approved.svg" alt="">
+                        </div>
+                        <p>Usuarios</p>
+                    </div>
+                    <div class="campaigns-card" style="background-image: url('../images/smallCardbg.svg');">
+                        <p>Em andamento</p>
+                        <div class="status-info">
+                            <span>83</span>
+                            <img src="../images/andamento.svg" alt="">
+                        </div>
+                        <p>Usuarios</p>
+                    </div>
+                    <div class="campaigns-card" style="background-image: url('../images/smallCardbg.svg');">
+                        <p>Reprovados</p>
+                        <div class="status-info">
+                            <span>102</span>
+                            <img src="../images/rejected.svg" alt="">
+                        </div>
+                        <p>Usuarios</p>
+                    </div>
+                   
+                </div>
+                <div class="table-select">
+                    <ul>
+                        <li class="selected-table">Todos</li>
+                        <li>Aprovados</li>
+                        <li>Reprovados</li>                    
+                        <li>Pendente</li>                    
+                        <li>Em andamento</li>                    
+                        <li>Finalizadas</li>                    
+                    </ul>	
+                    <form class="form-busca">
+                        <div class="d-flex">
+                            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            <input class="btn-text-top" type="text" name="txtsearch" placeholder="Pesquisar">
+                        </div>
+                    </form>
+                </div>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Foto</td>
+                                <td>Name</td>
+                                <td>Categoria</td>
+                                <td>Ofertas</td>
+                                <td>Status</td>
+                                <td>Periodo</td>
+                                <td></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="../images/newslin.png" alt="">
+                                </td>
+                                <td>
+                                    <p>Campanha de verão</p>
+                                </td>
+                                <td>
+                                    <p>Beleza e Maquiagem,<br>Carros e Motos...</p>
+                                </td>
+                                <td>
+                                    <span class="price-strong">R$ 896,26</span>
+                                </td>
+                                <td>
+                                    <span class="table-button approved">Aprovado</span>
+                                </td>
+                                <td>
+                                    <p>12/05/2023 à 30/07/20/23</p>
+                                </td>
+                                <td>                           
+                                    <span class="">
+                                        <i class="fa-solid fa-pen"></i>
+                                        <i class="fa-solid fa-eye"></i>
+                                        <i class="fa-solid fa-trash"></i>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="../images/newslin.png" alt="">
+                                </td>
+                                <td>
+                                    <p>Campanha de verão</p>
+                                </td>
+                                <td>
+                                    <p>Beleza e Maquiagem,<br>Carros e Motos...</p>
+                                </td>
+                                <td>
+                                    <span class="price-strong">R$ 896,26</span>
+                                </td>
+                                <td>
+                                    <span class="table-button approved">Aprovado</span>
+                                </td>
+                                <td>
+                                    <p>12/05/2023 à 30/07/20/23</p>
+                                </td>
+                                <td>                           
+                                    <span class="">
+                                        <i class="fa-solid fa-pen"></i>
+                                        <i class="fa-solid fa-eye"></i>
+                                        <i class="fa-solid fa-trash"></i>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="../images/newslin.png" alt="">
+                                </td>
+                                <td>
+                                    <p>Campanha de verão</p>
+                                </td>
+                                <td>
+                                    <p>Beleza e Maquiagem,<br>Carros e Motos...</p>
+                                </td>
+                                <td>
+                                    <span class="price-strong">R$ 896,26</span>
+                                </td>
+                                <td>
+                                    <span class="table-button approved">Aprovado</span>
+                                </td>
+                                <td>
+                                    <p>12/05/2023 à 30/07/20/23</p>
+                                </td>
+                                <td>                           
+                                    <span class="">
+                                        <i class="fa-solid fa-pen"></i>
+                                        <i class="fa-solid fa-eye"></i>
+                                        <i class="fa-solid fa-trash"></i>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="../images/newslin.png" alt="">
+                                </td>
+                                <td>
+                                    <p>Campanha de verão</p>
+                                </td>
+                                <td>
+                                    <p>Beleza e Maquiagem,<br>Carros e Motos...</p>
+                                </td>
+                                <td>
+                                    <span class="price-strong">R$ 896,26</span>
+                                </td>
+                                <td>
+                                    <span class="table-button approved">Aprovado</span>
+                                </td>
+                                <td>
+                                    <p>12/05/2023 à 30/07/20/23</p>
+                                </td>
+                                <td>                           
+                                    <span class="">
+                                        <i class="fa-solid fa-pen"></i>
+                                        <i class="fa-solid fa-eye"></i>
+                                        <i class="fa-solid fa-trash"></i>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="../images/newslin.png" alt="">
+                                </td>
+                                <td>
+                                    <p>Campanha de verão</p>
+                                </td>
+                                <td>
+                                    <p>Beleza e Maquiagem,<br>Carros e Motos...</p>
+                                </td>
+                                <td>
+                                    <span class="price-strong">R$ 896,26</span>
+                                </td>
+                                <td>
+                                    <span class="table-button approved">Aprovado</span>
+                                </td>
+                                <td>
+                                    <p>12/05/2023 à 30/07/20/23</p>
+                                </td>
+                                <td>                           
+                                    <span class="">
+                                        <i class="fa-solid fa-pen"></i>
+                                        <i class="fa-solid fa-eye"></i>
+                                        <i class="fa-solid fa-trash"></i>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="../images/newslin.png" alt="">
+                                </td>
+                                <td>
+                                    <p>Campanha de verão</p>
+                                </td>
+                                <td>
+                                    <p>Beleza e Maquiagem,<br>Carros e Motos...</p>
+                                </td>
+                                <td>
+                                    <span class="price-strong">R$ 896,26</span>
+                                </td>
+                                <td>
+                                    <span class="table-button rejected">Reprovado</span>
+                                </td>
+                                <td>
+                                    <p>12/05/2023 à 30/07/20/23</p>
+                                </td>
+                                <td>                           
+                                    <span class="">
+                                        <i class="fa-solid fa-pen"></i>
+                                        <i class="fa-solid fa-eye"></i>
+                                        <i class="fa-solid fa-trash"></i>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="../images/newslin.png" alt="">
+                                </td>
+                                <td>
+                                    <p>Campanha de verão</p>
+                                </td>
+                                <td>
+                                    <p>Beleza e Maquiagem,<br>Carros e Motos...</p>
+                                </td>
+                                <td>
+                                    <span class="price-strong">R$ 896,26</span>
+                                </td>
+                                <td>
+                                    <span class="table-button rejected">Reprovado</span>
+                                </td>
+                                <td>
+                                    <p>12/05/2023 à 30/07/20/23</p>
+                                </td>
+                                <td>                           
+                                    <span class="">
+                                        <i class="fa-solid fa-pen"></i>
+                                        <i class="fa-solid fa-eye"></i>
+                                        <i class="fa-solid fa-trash"></i>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="../images/newslin.png" alt="">
+                                </td>
+                                <td>
+                                    <p>Campanha de verão</p>
+                                </td>
+                                <td>
+                                    <p>Beleza e Maquiagem,<br>Carros e Motos...</p>
+                                </td>
+                                <td>
+                                    <span class="price-strong">R$ 896,26</span>
+                                </td>
+                                <td>
+                                    <span class="table-button rejected">Reprovado</span>
+                                </td>
+                                <td>
+                                    <p>12/05/2023 à 30/07/20/23</p>
+                                </td>
+                                <td>                           
+                                    <span class="">
+                                        <i class="fa-solid fa-pen"></i>
+                                        <i class="fa-solid fa-eye"></i>
+                                        <i class="fa-solid fa-trash"></i>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="../images/newslin.png" alt="">
+                                </td>
+                                <td>
+                                    <p>Campanha de verão</p>
+                                </td>
+                                <td>
+                                    <p>Beleza e Maquiagem,<br>Carros e Motos...</p>
+                                </td>
+                                <td>
+                                    <span class="price-strong">R$ 896,26</span>
+                                </td>
+                                <td>
+                                    <span class="table-button rejected">Reprovado</span>
+                                </td>
+                                <td>
+                                    <p>12/05/2023 à 30/07/20/23</p>
+                                </td>
+                                <td>                           
+                                    <span class="">
+                                        <i class="fa-solid fa-pen"></i>
+                                        <i class="fa-solid fa-eye"></i>
+                                        <i class="fa-solid fa-trash"></i>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="../images/newslin.png" alt="">
+                                </td>
+                                <td>
+                                    <p>Campanha de verão</p>
+                                </td>
+                                <td>
+                                    <p>Beleza e Maquiagem,<br>Carros e Motos...</p>
+                                </td>
+                                <td>
+                                    <span class="price-strong">R$ 896,26</span>
+                                </td>
+                                <td>
+                                    <span class="table-button rejected">Reprovado</span>
+                                </td>
+                                <td>
+                                    <p>12/05/2023 à 30/07/20/23</p>
+                                </td>
+                                <td>                           
+                                    <span class="">
+                                        <i class="fa-solid fa-pen"></i>
+                                        <i class="fa-solid fa-eye"></i>
+                                        <i class="fa-solid fa-trash"></i>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="../images/newslin.png" alt="">
+                                </td>
+                                <td>
+                                    <p>Campanha de verão</p>
+                                </td>
+                                <td>
+                                    <p>Beleza e Maquiagem,<br>Carros e Motos...</p>
+                                </td>
+                                <td>
+                                    <span class="price-strong">R$ 896,26</span>
+                                </td>
+                                <td>
+                                    <span class="table-button pending">Em andamento</span>
+                                </td>
+                                <td>
+                                    <p>12/05/2023 à 30/07/20/23</p>
+                                </td>
+                                <td>                           
+                                    <span class="">
+                                        <i class="fa-solid fa-pen"></i>
+                                        <i class="fa-solid fa-eye"></i>
+                                        <i class="fa-solid fa-trash"></i>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="../images/newslin.png" alt="">
+                                </td>
+                                <td>
+                                    <p>Campanha de verão</p>
+                                </td>
+                                <td>
+                                    <p>Beleza e Maquiagem,<br>Carros e Motos...</p>
+                                </td>
+                                <td>
+                                    <span class="price-strong">R$ 896,26</span>
+                                </td>
+                                <td>
+                                    <span class="table-button pending">Em andamento</span>
+                                </td>
+                                <td>
+                                    <p>12/05/2023 à 30/07/20/23</p>
+                                </td>
+                                <td>                           
+                                    <span class="">
+                                        <i class="fa-solid fa-pen"></i>
+                                        <i class="fa-solid fa-eye"></i>
+                                        <i class="fa-solid fa-trash"></i>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="../images/newslin.png" alt="">
+                                </td>
+                                <td>
+                                    <p>Campanha de verão</p>
+                                </td>
+                                <td>
+                                    <p>Beleza e Maquiagem,<br>Carros e Motos...</p>
+                                </td>
+                                <td>
+                                    <span class="price-strong">R$ 896,26</span>
+                                </td>
+                                <td>
+                                    <span class="table-button pending">Em andamento</span>
+                                </td>
+                                <td>
+                                    <p>12/05/2023 à 30/07/20/23</p>
+                                </td>
+                                <td>                           
+                                    <span class="">
+                                        <i class="fa-solid fa-pen"></i>
+                                        <i class="fa-solid fa-eye"></i>
+                                        <i class="fa-solid fa-trash"></i>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="../images/newslin.png" alt="">
+                                </td>
+                                <td>
+                                    <p>Campanha de verão</p>
+                                </td>
+                                <td>
+                                    <p>Beleza e Maquiagem,<br>Carros e Motos...</p>
+                                </td>
+                                <td>
+                                    <span class="price-strong">R$ 896,26</span>
+                                </td>
+                                <td>
+                                    <span class="table-button pending">Em andamento</span>
+                                </td>
+                                <td>
+                                    <p>12/05/2023 à 30/07/20/23</p>
+                                </td>
+                                <td>                           
+                                    <span class="">
+                                        <i class="fa-solid fa-pen"></i>
+                                        <i class="fa-solid fa-eye"></i>
+                                        <i class="fa-solid fa-trash"></i>
+                                    </span>
+                                </td>
+                            </tr>
+    
+                        </tbody>
+                    </table>
+                </div>
+                <div class="form-create-campaign">
+                    <div class="title">
+                        <h3>Criar campanha</h3>
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <form action="">
+                        <h4>Informacões básicas</h4>
+                        <div class="d-100">
+                            <div class="d-50">
+                                <p>Nome da campanha</p>
+                                <input type="text" placeholder="Ex. Campanha de verão">
+                            </div>
+                            <div class="d-50">
+                                <p>Escolha uma foto</p>
+                                <label class="picture" for="picture__input" tabIndex="0">
+                                    <div class="d-flex">
+                                        <i class="fa-solid fa-upload"></i>
+                                        <p class="conf">Dimensão: 1100x600px</p>
+                                        <span class="picture__image">Clique Aqui</span>
+                                    </div>
+                                </label>                                 
+                                <input type="file" name="picture__input" id="picture__input">
+                            </div>
+                        </div>
+                        <div class="local-position">
+                            <p>Nome do produto</p>
+                            <input type="text" placeholder="Ex. Fechadura">
+                        </div>
+                        <div>
+                            <div>
+                                <p>Tipo do produto</p>
+                                <div>
+                                    <input type="radio">
+                                    <label for="">Físico</label>
+                                </div>
+                                <div>
+                                    <input type="radio">
+                                    <label for="">Digital</label>
+                                </div>
+                                <div>
+                                    <input type="radio">
+                                    <label for="">Serviço</label>
+                                </div>
+                            </div>
+                            <div>
+                                <p>Tipo de entrega</p>
+                                <div>
+                                    <input type="radio">
+                                    <label for="">Empresa envia</label>
+                                </div>
+                                <div>
+                                    <input type="radio">
+                                    <label for="">Influenciador vai o local</label>
+                                </div>
+                            </div>
+                        </div>
+                        <h4>Sobre a campanha</h4>
+                        <div>
+                            <p>Orçamento</p>
+                            <input type="text" placeholder="R$ 2.000,00">
+                        </div>
+                        <div>
+                            <div class="d-50">
+                                <p>Data de inicio</p>
+                                <input type="date" placeholder="DD/MM/AAAA">
+                            </div>
+                            <div class="d-50">
+                                <p>Data de termino</p>
+                                <input type="date" placeholder="DD/MM/AAAA">
+                            </div>
+                        </div>
+                        <div>
+                            <p>Categoria</p> 
+                            <input type="text" placeholder="Beleza e Maquiagem Carros e Motos">
+                        </div>
+                        <div>
+                            <div>
+                                <p>Rede social</p>
+                                <div>
+                                    <input type="radio">
+                                    <label for="">Instagran</label>
+                                </div>
+                                <div>
+                                    <input type="radio">
+                                    <label for="">TikTok</label>
+                                </div>
+                                <div>
+                                    <input type="radio">
+                                    <label for="">Kwai</label>
+                                </div>
+                                <div>
+                                    <input type="radio">
+                                    <label for="">Youtube</label>
+                                </div>
+                            </div>
+                            <div>
+                                <p>Tipo de post</p>
+                                <div>
+                                    <input type="radio">
+                                    <label for="">Feed</label>
+                                </div>
+                                <div>
+                                    <input type="radio">
+                                    <label for="">Stories</label>
+                                </div>
+                                <div>
+                                    <input type="radio">
+                                    <label for="">Reels</label>
+                                </div>
+                                <div>
+                                    <input type="radio">
+                                    <label for="">Stories</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <p>Call to action</p>
+                                <input type="text" placeholder="Compre agora">
+                            </div>
+                            <div>
+                                <p>Link</p>
+                                <input type="email" placeholder="">
+                            </div>
+                        </div>
+                        <div>
+                            <p>Menção</p>
+                            <input type="text" placeholder="@seunegocio">
+                        </div>
+                        <p>Incluir influenceador favoritado</p>
+                    </form>
+                </div>
+
+            </div>      
+        </div>
+    </section>
+</body>
+
+</html>
