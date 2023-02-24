@@ -394,7 +394,7 @@ section.menu-content {
     width: 60%;
 }
 
-.campaigns table thead {
+.table-chart table thead {
     background-color: var(--lighter-gray);
 }
 
@@ -801,7 +801,7 @@ section.menu-content {
     overflow: hidden;
     padding: max(2px, .3vw);
 }
-.campaigns .d-flex{
+.campaigns .picture .d-flex{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -816,9 +816,26 @@ section.menu-content {
     padding: max(9px, 1vw);
     border-radius: 50%;
 }
+.campaigns .absolute-form {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(to right , rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.438));
+    display: none;
+}
 .campaigns .form-create-campaign {
-    width: 48%;
-    box-shadow: max(1px, .1vw) max(1px, .1vw) max(2px, .2vw) rgba(0, 0, 0, 0.24);
+    background-color: #f8f8f8;
+    width: 40%;
+    padding-bottom: max(10px, 1vw);
+    max-height: 100vh;
+    overflow-y: scroll;
+}
+.campaigns .form-create-campaign::-webkit-scrollbar{
+    display: none;
 }
 
 .campaigns .form-create-campaign .title {
@@ -839,9 +856,22 @@ section.menu-content {
 }
 
 .campaigns .form-create-campaign form {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
+.campaigns .form-create-campaign form .basic-information{
+    background-color: white;
+    padding: max(10px, 1vw);
+    border-radius: max(5px, 0.5vw);
+    margin-top:  max(10px, 1vw);
+}
+.campaigns .form-create-campaign form .about-campaign{
+    background-color: white;
+    padding: max(10px, 1vw);
+    border-radius: max(5px, 0.5vw);
+    margin-top:  max(10px, 1vw);
+}
+
 .campaigns .form-create-campaign form h4 {
     font-size: max(12px, 1.5vw);
     padding-top: max(15px, 1.7vw);
@@ -851,8 +881,8 @@ section.menu-content {
     justify-content: space-between;
 }
 .campaigns .form-create-campaign form p {
-    font-size: max(13px, 1.2vw);
-    padding: max(6px, .5vw) 0;
+    font-size: max(13px, 1.3vw);
+    padding: max(4px, .4vw) 0;
 }
 .campaigns .form-create-campaign form .d-50{
     width: 50%;
@@ -876,11 +906,94 @@ section.menu-content {
 }
 .campaigns .form-create-campaign form input::placeholder{
     color: #ccc;
-    font-size: max(11px, .9vw);
+    font-size: max(9px, .9vw);
+    padding: max(2px, .2vw);
+}
+.campaigns .form-create-campaign form .alternative-options{
+    display: flex;
+}
+.campaigns .form-create-campaign form .alternative-options p{
+    padding-right: max(7px, 2vw);
 }
 
+.campaigns .form-create-campaign form .radio {
+    display: flex;
+    align-items: center;
+    padding-bottom: max(2px, .2vw);
+}
 
+.campaigns .form-create-campaign form  input[type="radio"]{
+    -webkit-appearance: none;
+    border: max(1px, .1vw) solid black;
+    padding: max(5px, .5vw);
+    border-radius: 50%;
+}
+.campaigns .form-create-campaign form input[type="radio"]:checked{
+    background-color: black;
+}
+.campaigns .form-create-campaign form .radio label {
+    padding-left: max(5px, .5vw);
+    font-size: max(11px, 1vw);
+    color: black;
+}
+.campaigns .form-create-campaign form select {
+    width: 100%;
+    outline: none;
+    border: max(1px, 0.1vw) solid #ddd;
+    border-radius: max(5px, 0.5vw);
+    padding: max(5px, 0.6vw);
+    color: #ccc;
+}
+.campaigns .form-create-campaign form textarea{
+    width: 100%;
+    height: max(100px, 6vw);
+    font-size: max(14px, .9vw);
+    resize: none;
+    width: 100%;
+    outline: none;
+    border: max(1px, 0.1vw) solid #ddd;
+    border-radius: max(5px, 0.5vw);
+    padding: max(5px, 0.6vw);
+}
+.campaigns .form-create-campaign form textarea::placeholder{
+    color: #ccc;
+    font-size: max(9px, .9vw);
+    padding: max(2px, .2vw);
+}
+.campaigns .form-create-campaign form input[type="submit"]{
+    width: 100%;
+    font-size: max(10px, 1.1vw);
+    font-weight: bold;
+    color: #f4f4f4;
+    background-color: var(--primary-pink);
+    padding: max(10px, 1.2vw);
+    border: 0;
+    border-radius: max(5px, 0.5vw);
+    margin: max(8px, .8vw) 0;
+    cursor: pointer;
+}
 /* TELA CAMPANHAS */
+
+/* TELA TRANSACOES */
+i.p-icon {
+    padding-left: max(10px, 1vw);
+}
+.transactions table tbody tr td {
+    padding: max(2px, .5vw);
+}
+.transactions .pagament-status {
+    color: var(--deep-purple);
+    background-color: var(--lighter-gray);
+    padding: max(3px, .4vw) max(6px, 1vw);
+    border-radius: max(2px, .7vw);
+    width: 80%;
+    margin: 0 auto;
+}
+.transactions .transactions-icons i{
+    padding-left: max(7px, 1.5vw);
+    font-size: max(10px, 1.1vw);
+}
+/* TELA TRANSACOES */
 
 .sales-panel {
     overflow: auto;
