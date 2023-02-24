@@ -629,7 +629,7 @@ section.menu-content {
 }
 .table-select ul li {
     font-size: max(12px, .9vw);
-    padding: max(7px, 1.2vw) max(14px, 1.2vw);
+    padding: max(7px, 1.2vw) max(5px, 1.2vw);
     cursor: pointer; 
 }
 .selected-table {
@@ -719,6 +719,167 @@ section.menu-content {
     padding-right: max(2px, .2vw);
 }
 /* TELA USUARIO */
+
+/* TELA CAMPANHAS */
+.campaigns .campaigns-card{
+    width: 24%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: max(3px, 0.2vw);
+    padding: max(7px, 1.1vw) max(10px, 1.9vw);
+}
+.campaigns .campaigns-card .status-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.campaigns .campaigns-card .status-card p {
+    color: var(--deep-purple);   
+    font-size: max(10px, .9vw);
+}
+
+.campaigns .campaigns-card .status-info span{
+    color: var(--deep-purple);
+    font-weight: bold;
+    font-size: max(14px, 2.3vw);
+}
+
+.campaigns .campaigns-card .status-info img{
+    width: max(14px, 2.7vw);
+}
+.campaigns .table-wrapper table td {
+    font-size: max(12px, .9vw);
+    padding: max(2px, .3vw) 0;
+    border-bottom: max(1px, 0.1vw) solid var(--lighter-gray);
+}
+
+.campaigns .table-wrapper table tbody tr td img{
+    width: max(40px, 1vw);
+    height: max(40px, 1vw);
+    border-radius: 50%;
+}
+.campaigns .table-wrapper table tbody tr .table-button{
+    color: white;
+    padding: max(3px, .2vw) max(6px, 1vw);
+    border-radius: max(2px, .4vw);
+}
+.campaigns .table-wrapper .type-color {
+    background-color: var(--deep-purple);
+}
+
+.campaigns .table-wrapper .edit-button{
+    cursor: pointer;
+}
+
+.campaigns .price-strong {
+    font-weight: bolder;
+}
+.campaigns i {
+    font-size: max(12px, 1vw);
+    padding: 0 max(5px, .7vw);
+    cursor: pointer;
+}
+.campaigns #picture__input {
+    display: none;
+    
+}
+
+.campaigns .picture {
+    width: 100%;
+    min-height: max(10px, 1vw);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    border: max(1px, .1vw) dashed #0000006c;
+    border-radius: max(7px, .7vw);
+    cursor: pointer;
+    font-size: max(12px, .9vw);
+    outline: none;
+    overflow: hidden;
+    padding: max(2px, .3vw);
+}
+.campaigns .d-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.campaigns .picture i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: max(12px, 1vw);
+    color: black;
+    background-color: var(--lighter-gray);
+    padding: max(9px, 1vw);
+    border-radius: 50%;
+}
+.campaigns .form-create-campaign {
+    width: 48%;
+    box-shadow: max(1px, .1vw) max(1px, .1vw) max(2px, .2vw) rgba(0, 0, 0, 0.24);
+}
+
+.campaigns .form-create-campaign  .title {
+    background-color: var(--deep-purple);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: max(10px, 1vw);
+}
+.campaigns .form-create-campaign  .title h3, i{
+    color: white;
+    font-size: max(12px, 1.1vw);
+}
+.campaigns .form-create-campaign  .title i {
+    cursor: pointer;
+}
+
+.campaigns .form-create-campaign form {
+    width: 80%;
+    margin: 0 auto;
+}
+.campaigns .form-create-campaign form h4 {
+    font-size: max(12px, 1.5vw);
+    padding-top: max(15px, 1.7vw);
+}
+.campaigns .form-create-campaign form .d-100{
+    display: flex;
+    justify-content: space-between;
+}
+.campaigns .form-create-campaign form p {
+    font-size: max(13px, 1.2vw);
+    padding: max(6px, .5vw) 0;
+}
+.campaigns .form-create-campaign form .d-50{
+    width: 50%;
+    padding-right: max(5px, .5vw);
+}
+
+.form-create-campaign .picture .d-flex .conf {
+    font-size: max(7px, .8vw);
+    padding: max(1px, .1vw) 0;
+}
+.form-create-campaign .picture .d-flex span{
+    font-size: max(7px, .8vw);
+}
+
+.campaigns .form-create-campaign form input[type=text]{
+    width: 100%;
+    outline: none;
+    border: max(1px, .1vw) solid #ddd;
+    border-radius: max(5px, .5vw);
+    padding: max(5px, .6vw);
+}
+.campaigns .form-create-campaign form input::placeholder{
+    color: #ccc;
+    font-size: max(11px, .9vw);
+}
+
+
+/* TELA CAMPANHAS */
+
 .sales-panel {
     overflow: auto;
 }
