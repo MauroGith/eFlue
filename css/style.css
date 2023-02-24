@@ -764,12 +764,18 @@ section.menu-content {
 }
 
 .form-content {
-    background-color: white;
+    display: flex;
+}
+
+.find-form {
+    width: 20%;
+
 }
 
 .find-form form {
-    max-width: max(20%, 200px);
+    width: 100%;
     padding: max(10px, .5vw) max(14px, 1.5vw);
+    background-color: white;
 }
 
 .find-form form h5 {
@@ -793,8 +799,8 @@ section.menu-content {
 }
 
 .find-form .form-border {
-    border-top: max(1px, .1vw) solid var(--lighter-gray);
-    padding-top: max(5px, .5vw);
+    border-bottom: max(1px, .1vw) solid var(--lighter-gray);
+    padding-bottom: max(14px, 1.5vw);
 }
 
 .find-form form .d50{
@@ -815,6 +821,204 @@ section.menu-content {
     font-size: max(10px, .7vw);
     color: #ccc;
 }
+
+.social-network {
+    border-top: max(1px, .1vw) solid #ccc;
+    margin-top: max(14px, 1.5vw);
+}
+
+.social-network h5 {
+    font-size: max(14px, .9vw);
+}
+
+.social-network .img-media {
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-network .img-media img {
+    width: max(20px, 2vw);
+    margin-top: max(10px, .7vw);
+}
+
+.social-network button {
+    width: 100%;
+    padding: max(5px, .5vw);
+    background-color: var(--deep-purple);
+    color: white;
+    border: 0;
+    border-radius: max(3px, .3vw);
+    font-size: max(13px, .8vw);
+    margin-top: max(14px, 1.5vw);
+    cursor: pointer;
+}
+
+.find-influencer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.find-influencer .info-influencer {
+    width: 25%;
+    padding: 0 max(5px, .5vw);
+}
+
+.info-influencer .influencer-wrapper {
+    border-radius: max(5px, .5vw);
+    background-color: white;
+}
+
+.info-influencer .influencer-img {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: max(100px, 10vw);
+    border-radius: max(3px, .3vw) max(3px, .3vw) 0 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.find-influencer .info-influencer span {
+    position: relative;
+    bottom: -7%;
+    padding: max(4px, .4vw) max(10px, .8vw);
+    color: white;
+    background-color: var(--deep-purple);
+    font-size: max(12px, .7vw);
+    text-align: center;
+    border-radius: max(3px, .3vw);
+}
+
+.find-influencer .about-influencer {
+    text-align: center;
+    max-width: max(150px, 80%);
+    margin: 0 auto;
+}
+
+.info-influencer .about-influencer h5{
+    margin: max(7px, .5vw) 0;
+    padding-top: max(10px, .8vw);
+    font-size: max(14px, .9vw);
+}
+
+.info-influencer .about-influencer p {
+    text-align: center;
+    font-size: max(10px, .8vw);
+    color: var(--deep-purple);
+    margin: max(3px, .3vw) 0;
+}
+
+.find-influencer .social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: max(14px, 1vw) 0;
+}
+
+.social-media .icon-wrapper {
+    width: 25%;
+}
+
+.social-media .icon-wrapper img {
+    height: max(20px, 1.5vw);
+    width: max(20px, 1.5vw);
+}
+
+.find-influencer a{
+    width: 100%;
+    padding: max(3px, .3vw);
+    display: block;
+    color: var(--primary-pink);
+    background-color: white;
+    border: max(1px, .1vw) solid var(--primary-pink);
+    border-radius: max(3px, .3vw);
+    font-size: max(13px, .8vw);
+    text-decoration: none;
+    margin-bottom: max(14px, 1vw);
+}
+
+.influencer-content {
+    display: flex;
+}
+
+.influencer-profile {
+    width: 20%;
+}
+
+.influencer-profile .profile-wrapper {
+    background-color: white;
+    padding: max(14px, 1.5vw);
+}
+
+.influencer-profile .profile-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.influencer-profile .profile-img img {
+    height: max(50px, 8vw);
+    width: max(50px, 8vw);
+    border-radius: 50%;
+}
+
+.profile-img .influencer-online {
+    background-color: var(--normal-green);
+    height: max(14px, 1.3vw);
+    width: max(14px, 1.3vw);
+    border-radius: 50%;
+    border: max(2px, .1vw) solid white;
+    position: absolute;
+    left: 65%;
+    top: 77%;
+    bottom: 0;
+    display: block;
+}
+
+.influencer-profile .proposal {
+    text-align: center;
+}
+
+.influencer-profile .proposal h3{
+    font-size: max(14px, 1.2vw);
+    margin: max(7px, .7vw);
+}
+
+.influencer-profile .proposal i {
+    font-size: max(10px, .7vw);
+}
+
+.influencer-profile .proposal  span {
+    font-size: max(10px, .8vw);
+    font-weight: normal;
+}
+
+.influencer-profile .proposal-btn{
+    padding: max(3px, .3px) 0;
+    background-color: var(--deep-purple);
+    border-radius: max(5px, .5vw);
+    margin: max(5px, .5vw) 0;
+}
+
+.influencer-profile .add-favorite {
+    background-color: #42a7ff;
+}
+
+.influencer-profile .proposal-btn a {
+    color: white;
+    font-size: max(10px, .7vw);
+    text-decoration: none;
+    font-size: max(10px, .8vw);
+}
+
+.influencer-profile .biography-info {
+    border-top: max(1px, .1vw) solid var(--lighter-gray);
+    margin: max(10px, .7vw) 0;
+}
+
+
 
 .chat-content {
     display: flex;
