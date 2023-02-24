@@ -821,18 +821,20 @@ section.menu-content {
     box-shadow: max(1px, .1vw) max(1px, .1vw) max(2px, .2vw) rgba(0, 0, 0, 0.24);
 }
 
-.campaigns .form-create-campaign  .title {
+.campaigns .form-create-campaign .title {
     background-color: var(--deep-purple);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: max(10px, 1vw);
 }
-.campaigns .form-create-campaign  .title h3, i{
+.campaigns .form-create-campaign .title h3,
+.campaigns .form-create-campaign .title i {
     color: white;
     font-size: max(12px, 1.1vw);
 }
-.campaigns .form-create-campaign  .title i {
+
+.campaigns .form-create-campaign .title i {
     cursor: pointer;
 }
 
