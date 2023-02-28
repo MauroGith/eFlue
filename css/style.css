@@ -990,7 +990,7 @@ section.menu-content {
 }
 
 .campaigns .form-create-campaign form  input[type="radio"]{
-    -webkit-appearance: none;
+    appearance: none;
     border: max(1px, .1vw) solid black;
     padding: max(5px, .5vw);
     border-radius: 50%;
