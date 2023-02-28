@@ -1181,8 +1181,6 @@ section.menu-content {
     margin: max(10px, .7vw) 0;
 }
 
-
-
 .chat-content {
     display: flex;
     justify-content: space-between;
@@ -1190,7 +1188,9 @@ section.menu-content {
 }
 
 .chat-content .content-wrapper {
+    height: 91%;
     background-color: white;
+    overflow: hidden;
     border-radius: max(5px, .3vw);
 }
 
@@ -1209,8 +1209,7 @@ section.menu-content {
 }
 
 .chat-history .chat-list {
-    padding-right: max(5px, .2vw);
-    max-height: 70vh;
+    height: 80vh;
     overflow-y: auto;
 }
 
@@ -1219,15 +1218,13 @@ section.menu-content {
 }
 
 .chat-list .selected {
+    position: relative;
+    right: 1.5%;
     background: linear-gradient(45deg, white, rgba(255, 20, 145, 0.151));
     border-right: max(1px, .1vw) solid var(--primary-pink) ;
     border-bottom: none;
     scale: 102%;
     box-shadow: max(1px, .1vw) max(1px, .1vw) max(2px, .2vw) rgba(0, 0, 0, 0.24);
-}
-
-.chat-list ul {
-    width: 100%;
 }
 
 .chat-list ul li {
@@ -1299,6 +1296,12 @@ section.menu-content {
     width: 48%;
 }
 
+.chat-content .chat-box .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .chat-box .chat-top {
     display: flex;
     align-items: center;
@@ -1330,7 +1333,7 @@ section.menu-content {
 
 .chat-box .chat-messages {
     padding: max(10px, 1vw);
-    max-height: 60vh;
+    max-height: 70%;
     overflow-y: auto;
 }
 
@@ -1460,4 +1463,152 @@ section.menu-content {
 
 .chat-content .details {
     width: 25%;
+}
+
+.chat-content .profile-details {
+    position: relative;
+}
+
+.profile-details .profile-background {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 6.5vw;
+    border-radius: max(5px, .3vw) max(5px, .3vw) 0 0;
+    position: absolute;
+    border-bottom: max(3px, .3vw) solid #f8f8f8;
+}
+
+.profile-details .img-name {
+    position: relative;
+    text-align: center;
+    padding-top: max(30px, 3vw);
+}
+
+.profile-details .img-name img{
+    width: max(40px, 6vw);
+    border: max(2px, .2vw) solid #f8f8f8;
+    border-radius: 50%;
+}
+
+.profile-details .img-name h3 {
+    font-size: max(16px, 1.2vw);
+}
+
+.profile-details .profile-wrapper {
+    padding: max(10px, 1vw);
+}
+
+.profile-details .profile-description {
+    text-align: center;
+    font-size: max(12px, .8vw);
+    margin-bottom: max(15px, 1.5vw);
+}
+
+.profile-details .profile-description span {
+    display: block;
+    margin-bottom: max(10px, 1vw);
+}
+
+.profile-details .profile-description p {
+    margin: max(2px, .2vw) 0;
+    font-weight: lighter;
+}
+
+.profile-details .profile-description b {
+    font-weight: 400;
+    color: gray;
+}
+
+.profile-details .social-medias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: max(3px, .2vw);
+    background-color: #f8f8f8;
+    box-shadow: max(1px, .1vw) max(1px, .1vw) max(2px, .2vw) rgba(0, 0, 0, 0.2);
+}
+
+.profile-details .medias-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: max(10px, 1vw);
+}
+
+.medias-box .social-wrapper {
+    text-align: center;
+    padding: max(2px, .2vw);
+}
+
+.medias-box .social-wrapper p {
+    font-size: max(10px, 1vw);
+    font-weight: bold;
+}
+
+.medias-box .social-wrapper span {
+    font-weight: lighter;
+    font-size: max(7px, .6vw);
+}
+
+.profile-details .total-followers {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    padding: max(2px, .2vw) max(10px, 1vw);
+    border-radius: max(5px, 1vw);
+    text-align: center;
+    bottom: .5vw;
+    font-size: max(12px, .8vw);
+    background-color: var(--deep-purple);
+    color: white;
+}
+
+.profile-details .medias-box .social-wrapper img {
+    width: max(15px, 1.5vw);
+    height: max(15px, 1.5vw);
+}
+
+.partnership-values {
+    margin: max(10px, 1vw) 0;
+    padding: max(10px, 1vw);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #f8f8f8;
+    border-radius: max(3px, .2vw);
+    box-shadow: max(1px, .1vw) max(1px, .1vw) max(2px, .2vw) rgba(0, 0, 0, 0.2);
+}
+
+.partnership-values .partnership-price {
+    padding: 0 max(3px, .3vw);
+    margin: max(3px, .3vw) 0;
+}
+
+.partnership-values .partnership-price h5 {
+    font-size: max(12px, .8vw);
+}
+
+.partnership-values .partnership-price p {
+    font-size: max(9px, .7vw);
+    margin: max(3px, .3vw) 0;
+}
+
+.profile-wrapper .visit-profile {
+    text-align: center;
+    margin-top: max(10px, 1vw);
+}
+
+.profile-wrapper .visit-profile a {
+    padding: max(3px, .3vw);
+    border-radius: max(3px, .4vw);
+    font-size: max(12px, .7vw);
+    display: block;
+    background-color: #42a7ff;
+    color: white;
+    text-decoration: none;
 }
