@@ -782,7 +782,6 @@ section.menu-content {
 }
 .campaigns #picture__input {
     display: none;
-    
 }
 
 .campaigns .picture {
@@ -818,6 +817,7 @@ section.menu-content {
 }
 .campaigns .absolute-form {
     position: absolute;
+    z-index: 3;
     top: 0;
     right: 0;
     display: flex;
@@ -831,8 +831,6 @@ section.menu-content {
     background-color: #f8f8f8;
     width: 40%;
     padding-bottom: max(10px, 1vw);
-    max-height: 100vh;
-    overflow-y: scroll;
 }
 .campaigns .form-create-campaign::-webkit-scrollbar{
     display: none;
