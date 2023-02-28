@@ -696,6 +696,7 @@ section.menu-content {
     color: white;
     padding: max(3px, .2vw) max(6px, 1vw);
     border-radius: max(2px, .4vw);
+    width: 70%;
 }
 .table-wrapper .type-color {
     background-color: var(--deep-purple);
@@ -718,6 +719,58 @@ section.menu-content {
     font-size: max(12px, .9vw);
     padding-right: max(2px, .2vw);
 }
+
+.wrapper-edit
+
+.creat-edit-user{
+    background-image: url(../images/smallCardbg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+    width: 50%; 
+}
+.creat-edit-user form{
+    width: 70%;
+    margin: 0 auto;
+}
+.creat-edit-user form i{
+    display: block;
+    text-align: right;
+    padding-top: max(10px, 1.5vw);
+}
+.creat-edit-user form h3{
+    font-size: max(14px, 1.7vw);
+    padding: max(15px, 2vw) 0;
+    text-align: center;
+}
+.creat-edit-user form p{
+    font-size: max(14px, .9vw);
+    padding: max(5px, 0.2vw) 0;
+}
+.creat-edit-user input[type=text] {
+    width: 100%;
+    border: 0;
+    border-bottom: max(1px, 0.1vw) solid var(--primary-pink);
+    outline: none;
+    padding-bottom: max(2px, 0.3vw);
+    margin-bottom: max(7px, .7vw);
+    background-color: transparent;
+}
+.creat-edit-user input::placeholder{
+    font-size: max(9px, .9vw);
+}
+.creat-edit-user input[type=submit] {
+    width: 100%;
+    padding: max(7px, 0.3vw);
+    font-size: max(14px, 1vw);
+    color: white;
+    background-color: var(--primary-pink);
+    border-radius: max(8px, 0.1vw);
+    border: 0;
+    cursor: pointer;
+    margin: max(7px, 1vw) 0 max(14px, 5vw);
+}
+
 /* TELA USUARIO */
 
 /* TELA CAMPANHAS */
@@ -990,10 +1043,74 @@ i.p-icon {
     margin: 0 auto;
 }
 .transactions .transactions-icons i{
-    padding-left: max(7px, 1.5vw);
+    padding-left: max(7px, 1vw);
     font-size: max(10px, 1.1vw);
+    cursor: pointer;
 }
 /* TELA TRANSACOES */
+
+/* TELA WINTHDRAW  */
+.withdraw .withdraw-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.withdraw .withdraw-wrapper .withdraw-info{
+    width: 32.5%;
+    text-align: center;
+    background-color: white;
+    box-shadow: max(1px, .1vw) max(1px, .1vw) max(2px, .2vw) rgba(0, 0, 0, 0.123);
+    border-radius: max(7px, .7vw);
+}
+.withdraw .available {
+    background-color: #8bc096;
+}
+.withdraw .analysis {
+    background-color: #83d6e1;
+}
+.withdraw .total-withdraw{
+    background-color: var(--deep-purple);
+}
+.withdraw .available-color {
+    color: var(--normal-green);
+}
+.withdraw .analysis-color {
+    color: #83d6e1;
+}
+.withdraw .total-withdraw-color{
+    color: var(--deep-purple);
+}
+.withdraw .withdraw-info h5 {
+    color: white;
+    font-weight: normal;
+    font-size: max(12px, 1.2vw);
+    padding: max(10px, .9vw) 0;
+}
+.withdraw .withdraw-info p {
+    padding-top: max(10px, 1.5vw);
+    font-size: max(14px, 1.7vw);
+    font-weight: bold;
+}
+.withdraw .withdraw-info span {
+    display: inline-block;
+    font-size: max(11px, 1vw);
+    color: grey;
+    font-weight: lighter;
+    padding: max(5px, .5vw) 0;
+}
+.withdraw .table-wrapper {
+    width: 70%;
+}.withdraw .table-wrapper table{
+    text-align: left;
+}
+
+.withdraw .table-wrapper table tbody tr .table-button {
+    text-align: center;
+    border-radius: max(30px, 1vw);
+    margin: 0;
+}
+/* TELA WINTHDRAW  */
 
 .sales-panel {
     overflow: auto;
