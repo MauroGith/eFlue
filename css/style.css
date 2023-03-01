@@ -1504,7 +1504,8 @@ i.p-icon {
 }
 
 .influencer-media .media-wrapper table a {
-    padding: max(6px, .6px) max(14px, 3vw);
+    display: block;
+    padding: max(6px, .6px) max(14px, 2.5vw);
     background-color: var(--deep-purple);
     color: white;
     border-radius: max(3px, .3vw);
@@ -1561,6 +1562,52 @@ i.p-icon {
     border-radius: max(14px, 2vw);
     color: #ccc;
 }
+
+.wrapper-edit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.6) 20%, rgba(0, 0, 0, 0.0)) ;
+    z-index: 3;
+    display: none;
+}
+
+.wrapper-edit .influencer form h3 {
+    padding: max(14px, 1vw) 0;
+}
+
+.wrapper-edit .influencer form h5 {
+    margin-bottom: max(5px, .5vw);
+    font-size: max(14px, 1vw);
+    font-weight: normal;
+}
+
+.wrapper-edit .influencer form p{
+    margin: max(5px, .5vw) 0;
+    text-align: center;
+}
+
+.wrapper-edit .influencer form select {
+    width: 100%;
+    padding-bottom: max(5px, .5vw);
+    margin-bottom: max(7px, .7vw);
+    font-size: max(10px, .8vw);
+    border: 0;
+    border-bottom: max(1px, .1vw) solid var(--primary-pink);
+    background-color: transparent;
+}
+
+.wrapper-edit .influencer form input[type=submit] {
+    border-radius: max(14px, 1vw);
+    background-color: var(--deep-purple);
+    margin-top: max(7px, .7vw);
+}
+
 
 .type-of-post {
     margin-top: max(5px, .5vw);
