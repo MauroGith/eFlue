@@ -194,11 +194,6 @@ section.menu-content {
     justify-content: space-between;
 }
 
-.sidebar ul li {
-    padding: max(10px, .8vw);
-    padding-left: max(10px, 3vw);
-}
-
 .sidebar .selected {
     background: linear-gradient(45deg, white, rgba(255, 20, 145, 0.151));
     border-right: max(2px, .2vw) solid deeppink ;
@@ -206,16 +201,34 @@ section.menu-content {
 }
 
 .sidebar ul li a {
+    display: block;
+    padding: max(10px, .8vw);
+    padding-left: max(10px, 3vw);
     text-decoration: none;
     color: #4e243d;
 }
 
 .sidebar ul li a i {
     font-size: max(12px, .9vw);
+    margin-right: max(3px, .3vw);
 }
 
 .sidebar ul li a span{
     font-size: max(12px, .9vw);
+}
+
+.sidebar .payments-menu li .selected {
+    background: linear-gradient(45deg, white, rgba(0, 0, 0, 0.2));
+    border-right: max(2px, .2vw) solid black;
+}
+
+.sidebar .payments-menu li a {
+    padding: max(5px, .5vw);
+    padding-left: max(15px, 4.3vw);
+}
+
+.sidebar .payments-menu li a span {
+    font-size: max(10px, .8vw);
 }
 
 .small-menu {
@@ -224,13 +237,16 @@ section.menu-content {
 
 .small-menu nav ul li {
     margin: max(14px, 1vw) 0;
-    padding: max(14px, 1vw);
     text-align: center;
 }
 
 .small-menu ul li a img {
     width: max(25px, 2vw);
     margin-bottom: max(14px, 1vw);
+}
+
+.small-menu ul li a {
+    padding: max(14px, 1vw);
 }
 
 .small-menu ul li a i {
@@ -835,7 +851,6 @@ section.menu-content {
 }
 .campaigns #picture__input {
     display: none;
-    
 }
 
 .campaigns .picture {
@@ -871,6 +886,7 @@ section.menu-content {
 }
 .campaigns .absolute-form {
     position: absolute;
+    z-index: 3;
     top: 0;
     right: 0;
     display: flex;
@@ -884,8 +900,6 @@ section.menu-content {
     background-color: #f8f8f8;
     width: 40%;
     padding-bottom: max(10px, 1vw);
-    max-height: 100vh;
-    overflow-y: scroll;
 }
 .campaigns .form-create-campaign::-webkit-scrollbar{
     display: none;
@@ -976,7 +990,7 @@ section.menu-content {
 }
 
 .campaigns .form-create-campaign form  input[type="radio"]{
-    -webkit-appearance: none;
+    appearance: none;
     border: max(1px, .1vw) solid black;
     padding: max(5px, .5vw);
     border-radius: 50%;
