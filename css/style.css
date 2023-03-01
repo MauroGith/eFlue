@@ -1631,6 +1631,207 @@ i.p-icon {
     text-align: center;
 }
 
+.content-campaign {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.content-campaign .campaign-wrapper {
+    display: flex;
+    background-color: white;
+}
+
+.content-campaign .img-campaign {
+    width: 60%;
+    min-height: max(100px, 16vw);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: max(3px, .3vw) 0 0 max(3px, .3vw);
+}
+
+.content-campaign .proposal-campaign {
+    padding: max(14px, 1vw);
+    width: 100%;
+}
+
+.content-campaign .proposal-campaign h3{
+    font-size: max(12px, .9vw);
+    margin-bottom: max(4px, .4vw);
+}
+
+.content-campaign .proposal-campaign span {
+    font-size: max(7px, .6vw);
+}
+
+.content-campaign .b-bottom {
+    padding-bottom: max(5px, .5vw);
+    border-bottom: max(1px, .1vw) solid var(--lighter-gray);
+}
+
+.content-campaign .type-dflex {
+    display: flex;
+}
+
+.content-campaign .media-type {
+    padding-right: max(7px, .8vw);
+}
+
+.content-campaign .media-type p {
+    font-size: max(10px, .8vw);
+    margin: max(5px, .5vw) 0;
+}
+
+.content-campaign .media-type span {
+    color: var(--primary-pink);
+    font-size: max(7px, .7vw);
+}
+
+.content-campaign .budget h5 {
+    font-size: max(12px, .8vw);
+    font-weight: normal;
+    margin: max(5px, .5vw) 0;
+}
+
+.content-campaign .budget p {
+    font-size: max(7px, .7vw);
+    margin: max(5px, .7vw) 0;
+}
+
+.content-campaign .budget .price-post {
+    color: var(--normal-green);
+    font-size: max(14px, 1.2vw);
+    font-weight: bold;
+}
+
+.content-campaign .budget button {
+    width: 100%;
+    padding: max(5px, .5vw) 0;
+    background-color: var(--normal-green);
+    color: white;
+    border: 0;
+    font-size: max(12px, .9vw);
+    border-radius: max(7px, .5vw);
+    cursor: pointer;
+}
+
+.content-campaign .campaign-categories {
+    background-color: var(--lighter-gray);
+    border-radius: 0 0 max(5px, .5vw) max(5px, .5vw);
+}
+
+.content-campaign .campaign-categories p {
+    color: var(--deep-purple);
+    border: max(1px, .1vw) solid var(--deep-purple);
+}
+
+.product-desc-charac {
+    display: flex;
+}
+
+.product-description {
+    width: 75%;
+}
+
+.product-description .description-box h4 {
+    font-size: max(14px, 1vw);
+    margin: max(14px, 1vw) 0;
+}
+
+.product-description .description-box p {
+    margin: max(7px, .7vw) 0;
+    font-size: max(12px, .8vw);
+    font-weight: lighter;
+}
+
+.product-characteristics {
+    margin: max(14px, 1vw) 0;
+}
+
+.product-characteristics .characteristics-wrapper {
+    background-color: white;
+    padding: max(14px, 1vw);
+    margin-bottom: max(14px, 1vw);
+    border-radius: max(5px, .5vw);
+    box-shadow: 0 0 max(2px, .2vw) rgba(0, 0, 0, 0.24);
+}
+
+.product-characteristics .characteristics h5 {
+    font-size: max(14px, 1vw);
+}
+
+.product-characteristics .characteristics p {
+    font-size: max(10px, .8vw);
+    margin: max(7px, .7vw) 0;
+}
+
+.product-characteristics .characteristics span {
+    font-size: max(10px, .8vw);
+    color: var(--primary-pink);
+}
+
+.product-characteristics .characteristics h4 {
+    font-size: max(14px, 1vw);
+    margin-bottom: max(7px, .7vw);
+}
+
+.product-characteristics .characteristics a {
+    width: 100%;
+    padding: max(5px, .5vw) 0;
+    display: block;
+    background-color: var(--normal-green);
+    color: white;
+    border: 0;
+    font-size: max(12px, .9vw);
+    border-radius: max(7px, .5vw);
+    text-decoration: none;
+    text-align: center;
+}
+
+.product-characteristics  {
+    width: 25%;
+}
+
+.product-characteristics .about h5{
+    font-size: max(14px, 1vw);
+    margin-bottom: max(7px, .7vw);
+}
+
+.product-characteristics .about img {
+    border-radius: 50%;
+}
+
+.product-characteristics .img-wrapper {
+    position: relative;
+    width: 20%;
+}
+
+.product-characteristics .img-wrapper .company {
+    width: 100%;
+}
+
+.product-characteristics .img-wrapper .verified {
+    height: max(14px, 1.2vw);
+    width: max(14px, 1.2vw);
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+}
+
+.product-characteristics .about h4 {
+    font-size: max(12px, .9vw);
+    margin: max(5px, .5vw) 0;
+}
+
+.product-characteristics .about p {
+    font-size: max(10px, .8vw);
+    margin: max(7px, .7vw) 0;
+}
+
+.product-characteristics .about span {
+    font-size: max(10px, .8vw);
+}
+
 .chat-content {
     display: flex;
     justify-content: space-between;
