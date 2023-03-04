@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eFLue</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section class="menu-content">
+        <div class="sidebar small-menu">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="">
+                            <img src="../images/logo-pequeno.svg" alt= "">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./dashboard.html">
+                            <i class="fa-solid fa-house-chimney"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./find-campaign.html" class="selected">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./proposals.html">
+                            <i class="fa-solid fa-file-pen"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./transactions.html">
+                            <i class="fa-solid fa-wallet"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./chat.html">
+                            <i class="fa-solid fa-message"></i>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="">
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content larger-content">
+            <div class="page-init">
+                <p>Descubra Campanhas</p>
+                <div class="user-card">
+                    <div class="card-content">
+                        <div class="user-info">
+                            <img src="../images/logo-profile.png" alt="">
+                            <div class="user-id">
+                                <p>eFlue</p>
+                                <span>Admin</span>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-caret-down"></i>       
+                    </div>
+                    <!-- <div class="toggle-itens">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div> -->
+                </div>
+            </div>
+            <div class="form-content">
+                <div class="find-form">
+                    <form action="">
+                        <h5>Localização</h5>
+                        <div>
+                            <label for="">Estado</label>
+                            <select name="" id="">
+                                <option value="">Selecione</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="">Cidade</label>
+                            <select name="" id="">
+                                <option value="">Selecione</option>
+                            </select>
+                        </div>
+                        <div class="form-border">
+                            <h5>Qual perfil você procura?</h5>
+                            <div>
+                                <label for="">Nome</label>
+                                <input class="placeholder" type="text" placeholder="Digite um nome">
+                            </div>
+                            <div>
+                                <label for="">Categoria</label>
+                                <select name="" id="">
+                                    <option value="">Selecione</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="">Sexo</label>
+                                <select name="" id="">
+                                    <option value="">Selecione</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="">Idade</label>
+                                <div class="d50">
+                                    <input class="placeholder" type="number" placeholder="De:">
+                                    <input class="placeholder" type="number" placeholder="Até:">
+                                </div>
+                            </div>
+                            <div>
+                                <label for="">Seguidores</label>
+                                <div class="d50">
+                                    <input class="placeholder" type="number" placeholder="De:">
+                                    <input class="placeholder" type="number" placeholder="Até:">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-network">
+                            <h5>Redes sociais</h5>
+                            <div class="img-media">
+                                <div class="img-media-wrapper">
+                                    <img src="../images/c-instagram.svg" alt="">
+                                </div>
+                                <div class="img-media-wrapper">
+                                    <img src="../images/c-tiktok.svg" alt="">
+                                </div>
+                                <div class="img-media-wrapper">
+                                    <img src="../images/c-twitter.svg" alt="">
+                                </div>
+                                <div class="img-media-wrapper">
+                                    <img src="../images/c-youtube.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="type-of-post">
+                                <label for="">Tipo de post</label>
+                                <select name="" id="">
+                                    <option value="">Selecione</option>
+                                </select>
+                            </div>
+                            <button>Filtrar</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="discover-campaign">
+                    <div class="info-campaign">
+                        <div class="card-wrapper">
+                            <div class="card-img" style="background-image: url(../images/img-campanha.png);"></div>
+                            <div class="info-card">
+                                <div class="card-campaign">
+                                    <h4>Campanha de verão</h4>
+                                    <img src="../images/verified.svg" alt="">
+                                </div>
+                                <p>Tipo de produto: <span>Fisico</span></p>
+                                <p>Categoria <span>Beleza e Maquiagem, Carros e Motos</span></p>
+                                <p>Rede social: <span>Instagram</span></p>
+                                <p>Tipo de post:</p>
+                                <p class="post">Valor por post: <span class="price-post">R$ 200,00</span></p>
+                                <a href="./info-campaign.html">Mais informações</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="info-campaign">
+                        <div class="card-wrapper">
+                            <div class="card-img" style="background-image: url(../images/img-campanha.png);"></div>
+                            <div class="info-card">
+                                <div class="card-campaign">
+                                    <h4>Campanha de verão</h4>
+                                    <img src="../images/verified.svg" alt="">
+                                </div>
+                                <p>Tipo de produto: <span>Fisico</span></p>
+                                <p>Categoria <span>Beleza e Maquiagem, Carros e Motos</span></p>
+                                <p>Rede social: <span>Instagram</span></p>
+                                <p>Tipo de post:</p>
+                                <p class="post">Valor por post: <span class="price-post">R$ 200,00</span></p>
+                                <a href="">Mais informações</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="info-campaign">
+                        <div class="card-wrapper">
+                            <div class="card-img" style="background-image: url(../images/img-campanha.png);"></div>
+                            <div class="info-card">
+                                <div class="card-campaign">
+                                    <h4>Campanha de verão</h4>
+                                    <img src="../images/verified.svg" alt="">
+                                </div>
+                                <p>Tipo de produto: <span>Fisico</span></p>
+                                <p>Categoria <span>Beleza e Maquiagem, Carros e Motos</span></p>
+                                <p>Rede social: <span>Instagram</span></p>
+                                <p>Tipo de post:</p>
+                                <p class="post">Valor por post: <span class="price-post">R$ 200,00</span></p>
+                                <a href="">Mais informações</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="info-campaign">
+                        <div class="card-wrapper">
+                            <div class="card-img" style="background-image: url(../images/img-campanha.png);"></div>
+                            <div class="info-card">
+                                <div class="card-campaign">
+                                    <h4>Campanha de verão</h4>
+                                    <img src="../images/verified.svg" alt="">
+                                </div>
+                                <p>Tipo de produto: <span>Fisico</span></p>
+                                <p>Categoria <span>Beleza e Maquiagem, Carros e Motos</span></p>
+                                <p>Rede social: <span>Instagram</span></p>
+                                <p>Tipo de post:</p>
+                                <p class="post">Valor por post: <span class="price-post">R$ 200,00</span></p>
+                                <a href="">Mais informações</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="info-campaign">
+                        <div class="card-wrapper">
+                            <div class="card-img" style="background-image: url(../images/img-campanha.png);"></div>
+                            <div class="info-card">
+                                <div class="card-campaign">
+                                    <h4>Campanha de verão</h4>
+                                    <img src="../images/verified.svg" alt="">
+                                </div>
+                                <p>Tipo de produto: <span>Fisico</span></p>
+                                <p>Categoria <span>Beleza e Maquiagem, Carros e Motos</span></p>
+                                <p>Rede social: <span>Instagram</span></p>
+                                <p>Tipo de post:</p>
+                                <p class="post">Valor por post: <span class="price-post">R$ 200,00</span></p>
+                                <a href="">Mais informações</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="info-campaign">
+                        <div class="card-wrapper">
+                            <div class="card-img" style="background-image: url(../images/img-campanha.png);"></div>
+                            <div class="info-card">
+                                <div class="card-campaign">
+                                    <h4>Campanha de verão</h4>
+                                    <img src="../images/verified.svg" alt="">
+                                </div>
+                                <p>Tipo de produto: <span>Fisico</span></p>
+                                <p>Categoria <span>Beleza e Maquiagem, Carros e Motos</span></p>
+                                <p>Rede social: <span>Instagram</span></p>
+                                <p>Tipo de post:</p>
+                                <p class="post">Valor por post: <span class="price-post">R$ 200,00</span></p>
+                                <a href="">Mais informações</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="info-campaign">
+                        <div class="card-wrapper">
+                            <div class="card-img" style="background-image: url(../images/img-campanha.png);"></div>
+                            <div class="info-card">
+                                <div class="card-campaign">
+                                    <h4>Campanha de verão</h4>
+                                    <img src="../images/verified.svg" alt="">
+                                </div>
+                                <p>Tipo de produto: <span>Fisico</span></p>
+                                <p>Categoria <span>Beleza e Maquiagem, Carros e Motos</span></p>
+                                <p>Rede social: <span>Instagram</span></p>
+                                <p>Tipo de post:</p>
+                                <p class="post">Valor por post: <span class="price-post">R$ 200,00</span></p>
+                                <a href="">Mais informações</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="info-campaign">
+                        <div class="card-wrapper">
+                            <div class="card-img" style="background-image: url(../images/img-campanha.png);"></div>
+                            <div class="info-card">
+                                <div class="card-campaign">
+                                    <h4>Campanha de verão</h4>
+                                    <img src="../images/verified.svg" alt="">
+                                </div>
+                                <p>Tipo de produto: <span>Fisico</span></p>
+                                <p>Categoria <span>Beleza e Maquiagem, Carros e Motos</span></p>
+                                <p>Rede social: <span>Instagram</span></p>
+                                <p>Tipo de post:</p>
+                                <p class="post">Valor por post: <span class="price-post">R$ 200,00</span></p>
+                                <a href="">Mais informações</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>
