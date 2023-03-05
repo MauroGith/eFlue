@@ -16,9 +16,7 @@
             <nav>
                 <ul>
                     <li class="logo-menu">
-                        <a href="">
-                            <img src="../images/Logo.png" alt= "">
-                        </a>
+                        <img src="../images/Logo.png" alt= "Logo">
                     </li>
                     <li>
                         <a href="./dashboard.html">
@@ -105,12 +103,43 @@
             <div class="bank-data">
                 <div class="add-bank-account">
                     <h4>Dados de recebimento</h4>
-                    <form action=""></form>
+                    <form action="">
+                        <div class="form-row">
+                            <label for="bankList">Banco</label>
+                            <select name="" id="bankList">
+                                <option value="">246 - Banco ABC Brasil S.A</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <label for="agency">Agência</label>
+                            <input type="text" name="" id="agency" placeholder="Digite...">
+                        </div>
+                        <div class="form-row">
+                            <label for="accNumber">Numero da conta</label>
+                            <input type="text" name="" id="accNumber" placeholder="Digite...">
+                        </div>
+                        <div class="flex-row">
+                            <div class="form-row wd-30">
+                                <label for="accDigit">Digito da conta</label>
+                                <input type="text" name="" id="accDigit" placeholder="Digite...">
+                            </div>
+                            <div class="form-row wd-70">
+                                <label for="accType">Tipo de conta</label>
+                                <select name="" id="accType">
+                                    <option value="">Conta corrente</option>
+                                    <option value="">Conta poupança</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <input type="submit" value="Salvar">
+                        </div>
+                    </form>
                 </div>
                 <div class="registered-bank-account">
                     <h4>Contas cadastradas</h4>
                     <table>
-                        
+
                     </table>
                 </div>
             </div>

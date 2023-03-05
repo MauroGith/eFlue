@@ -1063,7 +1063,7 @@ i.p-icon {
 }
 /* TELA TRANSACOES */
 
-/* TELA WINTHDRAW  */
+/* TELA withdrawal  */
 .withdraw .withdraw-wrapper {
     display: flex;
     align-items: center;
@@ -1124,7 +1124,9 @@ i.p-icon {
     border-radius: max(30px, 1vw);
     margin: 0;
 }
-/* TELA WINTHDRAW  */
+/* TELA withdrawal  */
+
+/*  */
 
 .sales-panel {
     overflow: auto;
