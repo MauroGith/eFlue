@@ -240,7 +240,7 @@ section.menu-content {
     text-align: center;
 }
 
-.small-menu ul li a img {
+.small-menu ul li img {
     width: max(25px, 2vw);
     margin-bottom: max(14px, 1vw);
 }
@@ -384,7 +384,7 @@ section.menu-content {
 
 .dashboard-content .dashboard-card {
     border-radius: max(5px, 0.5vw);
-    padding: max(14px, 2vw);
+    padding: max(14px, 1.5vw);
 }
 
 .dashboard-left .dashboard-card {
@@ -1126,7 +1126,110 @@ i.p-icon {
 }
 /* TELA withdrawal  */
 
-/*  */
+/* bank-accounts ↓*/
+
+.bank-data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.bank-data .card {
+    background-color: white;
+    border-radius: max(5px, .5vw);
+    box-shadow: 0 0 max(2px, .2vw) rgba(0, 0, 0, 0.15);
+}
+
+.bank-data .add-bank-account {
+    width: 40%;
+}
+
+.bank-data .add-bank-account h4 {
+    font-size: max(15px, 1vw);
+    margin-bottom: max(10px, 1vw);
+    padding-top: max(10px, 1vw);
+    padding-left: max(10px, 1vw);
+}
+
+.add-bank-account form {
+    padding: 0 max(10px, 1vw);
+}
+
+form .form-row{
+    padding: max(3px, .3vw);
+    display: flex;
+    flex-direction: column;
+    font-size: max(12px, .8vw);
+}
+
+form .flex-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-row .wd-65 {
+    width: 65%;
+}
+
+.flex-row .wd-35 {
+    width: 35%;
+}
+
+form .form-row label {
+    margin: max(3px, .3vw) 0;
+}
+
+.add-bank-account input,
+.add-bank-account select {
+    font-size: max(14px, .9vw);
+    padding: max(5px, .5vw);
+    border-radius: max(3px, .3vw);
+    border: none;
+    border: max(1px, .1vw) solid var(--lighter-gray);
+}
+
+.add-bank-account input[type="submit"]{
+    background-color: var(--primary-pink);
+    color: white;
+    font-weight: lighter;
+    margin: max(10px, 1vw) 0;
+}
+
+.bank-data .bank-accounts {
+    width: 59%;
+}
+
+.bank-data .bank-accounts h4 {
+    font-size: max(14px, 1vw);
+    font-weight: normal;
+    padding: max(10px, 1vw);
+}
+
+.bank-accounts table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.bank-accounts table tr {
+    border-top: max(1px, .1vw) solid var(--lighter-gray);
+}
+
+.bank-accounts table td {
+    padding: max(8px, .8vw);
+    font-size: max(15px, .8vw);
+}
+
+.bank-accounts table tbody td {
+    border-right: max(1px, .1vw) solid var(--lighter-gray);
+}
+
+.bank-accounts table td i {
+    cursor: pointer;
+    margin-left: max(3px, .3vw);
+}
+
+/* bank-accounts ↑*/
 
 .sales-panel {
     overflow: auto;
@@ -2006,6 +2109,13 @@ i.p-icon {
     font-size: max(12px, .8vw);
 }
 
+.chat-partner-details .last-message p{
+    max-width: 70%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .chat-content .chat-box {
     width: 48%;
 }
@@ -2325,4 +2435,120 @@ i.p-icon {
     background-color: #42a7ff;
     color: white;
     text-decoration: none;
+}
+
+.chat-content .details .job-content {
+    height: auto;
+}
+
+.chat-content .details .job-bg {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: max(100px, 10vw);
+    border-radius: max(5px, .3vw) max(5px, .3vw) 0 0;
+}
+
+.chat-content .job-details {
+    padding: max(10px, 1vw);
+}
+
+.job-details .init h3 {
+    font-size: max(16px, 1.2vw);
+}
+
+.job-details .init p {
+    margin: max(10px, 1vw) 0;
+    font-size: max(12px, .8vw);
+    font-weight: lighter;
+}
+
+.job-details ul li {
+    font-size: max(12px, .8vw);
+    margin: max(5px, .3vw) 0;
+}
+
+.job-details ul li span {
+    color: var(--primary-pink);
+}
+
+.job-details .job-budget {
+    padding: max(10px, 1vw) 0;
+    margin: max(10px, 1vw) 0;
+    border-top: max(1px, .1vw) solid var(--lighter-gray);
+    border-bottom: max(1px, .1vw) solid var(--lighter-gray);
+}
+
+.job-details .job-budget p {
+    font-size: max(16px, 1.2vw);
+    margin-bottom: max(5px, .3vw);
+}
+
+.job-details .job-budget span {
+    font-size: max(12px, .8vw);
+}
+
+.job-details .job-budget span b {
+    font-size: max(16px, 1.2vw);
+    color: var(--normal-green);
+}
+
+.job-details h4 {
+    font-size: max(15px, 1.1vw);
+    margin: max(5px, 1vw) 0;
+}
+
+.job-details .see-page {
+    font-size: max(12px, .8vw);
+    margin: max(10px, 1vw) 0;
+    display: block;
+    background-color: var(--normal-green);
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: max(5px, .3vw);
+    border-radius: max(5px, .3vw);
+}
+
+.job-details .company-card {
+    box-shadow: 0 0 max(2px, .2vw) rgba(0, 0, 0, 0.2);
+    border-radius: max(5px, .3vw);
+    padding: max(5px, .6vw);
+    background-color: white;
+}
+
+.job-details .company-card h5 {
+    font-size: max(14px, 1vw);
+    margin-bottom: max(5px, .6vw);
+}
+
+.job-details .company-card .img-wrapper {
+    width: 20%;
+    position: relative;
+}
+
+.job-details .company-card .img-wrapper img {
+    border-radius: 50%;
+}
+
+.job-details .company-card .img-wrapper .company {
+    width: 100%;
+}
+
+.job-details .company-card .img-wrapper .verified {
+    width: max(14px, .8vw);
+    height: max(14px, .8vw);
+    position: absolute;
+    bottom: 10%;
+    right: 7%;
+}
+
+.job-details .company-card p {
+    font-size: max(14px, .8vw);
+}
+
+.job-details .company-card .campaign-history {
+    border-top: max(1px, .1vw) solid var(--lighter-gray);
+    padding: max(5px, .6vw) 0;
+    margin: max(5px, .6vw) 0;
 }

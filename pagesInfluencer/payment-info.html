@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eFLue</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section class="menu-content">
+        <div class="sidebar">
+            <nav>
+                <ul>
+                    <li class="logo-menu">
+                        <img src="../images/Logo.png" alt= "Logo">
+                    </li>
+                    <li>
+                        <a href="./dashboard.html">
+                            <i class="fa-solid fa-house-chimney"></i>
+                            <span>Dashbord</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./find-campaign.html">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <span>Explorar campanhas</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./proposals.html">
+                            <i class="fa-solid fa-file-pen"></i>
+                            <span>Propostas</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="./transactions.html" class="selected">
+                            <i class="fa-solid fa-wallet"></i>
+                            <span>Pagamentos</span>
+                        </a>
+                        <ul class="payments-menu">
+                            <li>
+                                <a href="./payment-info.html" class="selected"><span>Visão geral</span></a>
+                            </li>
+                            <li>
+                                <a href="./transactions.html"><span>Transações</span></a>
+                            </li>
+                            <li>
+                                <a href="./saque.html"><span>Retiradas</span></a>
+                            </li>
+                            <li>
+                                <a href="./bank-accounts.html"><span>Conta bancária</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./chat.html">
+                            <i class="fa-solid fa-message"></i>
+                            <span>Mensagens</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="">
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            <span>Reportes</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <div class="dashboard">
+                <div class="page-init">
+                    <p>Transações</p>
+                    <div class="user-card">
+                        <div class="card-content">
+                            <div class="user-info">
+                                <img src="../images/logo-profile.png" alt="">
+                                <div class="user-id">
+                                    <p>eFlue</p>
+                                    <span>Admin</span>
+                                </div>
+                            </div>
+                            <i class="fa-solid fa-caret-down"></i>       
+                        </div>
+                        <!-- <div class="toggle-itens">
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="dashboard-buttons">
+                    <p>Visão geral</p>
+                    <div class="btns">
+                        <button class="active">Hoje</button>
+                        <button>Ontem</button>
+                        <button>Últimos 7 dias</button>
+                        <button>Personalizar</button>
+                    </div>
+                </div>
+                <div class="dashboard-content">
+                    <div class="dashboard-left">
+                        <div class="chart-content" style="background-image: url('../images/chart-bg.svg');">
+                            <div class="revenue">
+                                <p>Receita gerada</p>
+                                <span>R$ 243.856,22</span>
+                            </div>
+                            <canvas id="myChart"></canvas>
+                        </div>
+
+                        <div class="campaigns dashboard-card">
+                            <h5>Campanhas</h5>
+                            <div class="table-chart">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <td class="status">Status</td>
+                                            <td class="text-right">Quantidade</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td> 
+                                                <div class="dflex">
+                                                    <span class="status-color approved"></span> Aprovada
+                                                </div> 
+                                            </td>
+                                            <td class="text-right">15</td>
+                                        </tr>
+                                        <tr>
+                                            <td> 
+                                                <div class="dflex">
+                                                    <span class="status-color rejected "></span> Rejeitadas
+                                                </div> 
+                                            </td>
+                                            <td class="text-right">12</td>
+                                        </tr>
+                                        <tr>
+                                            <td> 
+                                                <div class="dflex">
+                                                    <span class="status-color pending"></span> Pendente
+                                                </div> 
+                                            </td>
+                                            <td class="text-right">21</td>
+                                        </tr>
+                                        <tr>
+                                            <td> 
+                                                <div class="dflex">
+                                                    <span class="status-color in-progress"></span> Em andamento
+                                                </div> 
+                                            </td>
+                                            <td class="text-right">17</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="doughnutChartArea">
+                                    <canvas id="doughnutChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-right">
+                        <div class="right-cards">
+                            <div class="right-card">
+                                <div class="dashboard-card total-revenue" style="background-image: url('../images/Receita.svg');">
+                                    <div class="card-top">
+                                        <img src="../images/Money.svg" alt="ícone de nota">
+                                        <p><i class="fa-solid fa-caret-up metric-up"></i>9%</p>
+                                    </div>
+                                    <p>R$ 1.000,00</p>
+                                    <span>Receita</span>
+                                </div>
+                            </div>
+                            <div class="right-card">
+                                <div class="dashboard-card views" style="background-image: url('../images/Visitas.svg');">
+                                    <div class="card-top">
+                                        <img src="../images/i-proposta.svg" alt="ícone de olho">
+                                        <p><i class="fa-solid fa-caret-down metric-down"></i>18%</p>
+                                    </div>
+                                    <div class="visits">
+                                        <div class="visits-data">
+                                            <p>10</p>
+                                            <span>Concluídas</span>
+                                        </div>
+                                        <p class="live">ao vivo <span></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sales-panel">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td>#</td>
+                                        <td>Horário</td>
+                                        <td>Empresa</td>
+                                        <td>Status</td>
+                                        <td>Valor</td>
+                                        <td>Comissão</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <p>001</p>
+                                        </td>
+                                        <td>
+                                            <p>2022 9:35PM </p>
+                                        </td>
+                                        <td class="panel-img">
+                                            <img src="../images/image_google.png" alt="">
+                                            <p>New Slim</p>
+                                        </td>
+                                        <td>
+                                            <p>Aprovada <span class="approved"></span></p>
+                                        </td>
+                                        <td>
+                                            <p>R$500,00</p>
+                                        </td>
+                                        <td>
+                                            <p>R$450,00</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>001</p>
+                                        </td>
+                                        <td>
+                                            <p>2022 9:35PM </p>
+                                        </td>
+                                        <td class="panel-img">
+                                            <img src="../images/image_google.png" alt="">
+                                            <p>New Slim</p>
+                                        </td>
+                                        <td>
+                                            <p>Aprovada <span class="approved"></span></p>
+                                        </td>
+                                        <td>
+                                            <p>R$500,00</p>
+                                        </td>
+                                        <td>
+                                            <p>R$450,00</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>001</p>
+                                        </td>
+                                        <td>
+                                            <p>2022 9:35PM </p>
+                                        </td>
+                                        <td class="panel-img">
+                                            <img src="../images/image_google.png" alt="">
+                                            <p>New Slim</p>
+                                        </td>
+                                        <td>
+                                            <p>Aprovada <span class="approved"></span></p>
+                                        </td>
+                                        <td>
+                                            <p>R$500,00</p>
+                                        </td>
+                                        <td>
+                                            <p>R$450,00</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>001</p>
+                                        </td>
+                                        <td>
+                                            <p>2022 9:35PM </p>
+                                        </td>
+                                        <td class="panel-img">
+                                            <img src="../images/image_google.png" alt="">
+                                            <p>New Slim</p>
+                                        </td>
+                                        <td>
+                                            <p>Aprovada <span class="approved"></span></p>
+                                        </td>
+                                        <td>
+                                            <p>R$500,00</p>
+                                        </td>
+                                        <td>
+                                            <p>R$450,00</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>001</p>
+                                        </td>
+                                        <td>
+                                            <p>2022 9:35PM </p>
+                                        </td>
+                                        <td class="panel-img">
+                                            <img src="../images/image_google.png" alt="">
+                                            <p>New Slim</p>
+                                        </td>
+                                        <td>
+                                            <p>Aprovada <span class="approved"></span></p>
+                                        </td>
+                                        <td>
+                                            <p>R$500,00</p>
+                                        </td>
+                                        <td>
+                                            <p>R$450,00</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>001</p>
+                                        </td>
+                                        <td>
+                                            <p>2022 9:35PM </p>
+                                        </td>
+                                        <td class="panel-img">
+                                            <img src="../images/image_google.png" alt="">
+                                            <p>New Slim</p>
+                                        </td>
+                                        <td>
+                                            <p>Aprovada <span class="approved"></span></p>
+                                        </td>
+                                        <td>
+                                            <p>R$500,00</p>
+                                        </td>
+                                        <td>
+                                            <p>R$450,00</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>001</p>
+                                        </td>
+                                        <td>
+                                            <p>2022 9:35PM </p>
+                                        </td>
+                                        <td class="panel-img">
+                                            <img src="../images/image_google.png" alt="">
+                                            <p>New Slim</p>
+                                        </td>
+                                        <td>
+                                            <p>Aprovada <span class="approved"></span></p>
+                                        </td>
+                                        <td>
+                                            <p>R$500,00</p>
+                                        </td>
+                                        <td>
+                                            <p>R$450,00</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>001</p>
+                                        </td>
+                                        <td>
+                                            <p>2022 9:35PM </p>
+                                        </td>
+                                        <td class="panel-img">
+                                            <img src="../images/image_google.png" alt="">
+                                            <p>New Slim</p>
+                                        </td>
+                                        <td>
+                                            <p>Aprovada <span class="approved"></span></p>
+                                        </td>
+                                        <td>
+                                            <p>R$500,00</p>
+                                        </td>
+                                        <td>
+                                            <p>R$450,00</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>001</p>
+                                        </td>
+                                        <td>
+                                            <p>2022 9:35PM </p>
+                                        </td>
+                                        <td class="panel-img">
+                                            <img src="../images/image_google.png" alt="">
+                                            <p>New Slim</p>
+                                        </td>
+                                        <td>
+                                            <p>Aprovada <span class="approved"></span></p>
+                                        </td>
+                                        <td>
+                                            <p>R$500,00</p>
+                                        </td>
+                                        <td>
+                                            <p>R$450,00</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>001</p>
+                                        </td>
+                                        <td>
+                                            <p>2022 9:35PM </p>
+                                        </td>
+                                        <td class="panel-img">
+                                            <img src="../images/image_google.png" alt="">
+                                            <p>New Slim</p>
+                                        </td>
+                                        <td>
+                                            <p>Aprovada <span class="approved"></span></p>
+                                        </td>
+                                        <td>
+                                            <p>R$500,00</p>
+                                        </td>
+                                        <td>
+                                            <p>R$450,00</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../js/chart.js"></script>
+</body>
+
+</html>
