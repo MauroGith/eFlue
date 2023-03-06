@@ -2277,3 +2277,90 @@ i.p-icon {
     color: white;
     text-decoration: none;
 }
+
+/* TELA REPORT */
+.report {
+    background-color: white;
+    width: 70%;
+    margin: 0 auto;
+    padding: max(10px, 1.5vw);
+    border-radius: max(3px, .4vw);
+    margin-bottom: max(10px, 1vw);
+}
+.report form h2 {
+    font-size: max(14px, 2vw);
+    text-align: center;
+}
+.report form p{
+    font-size: max(10px, 1.2vw);
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: max(8px, .9vw) 0;
+}
+.report form input[type=text]{
+    width: 100%;
+    outline: none;
+    border: max(1px, .1vw) solid #ddd;
+    border-radius: max(3px, .4vw);
+    padding: max(5px, .9vw);
+}
+.report form label {
+    display: block;
+    font-size: max(10px, 1.2vw);
+    padding: max(2px, .3vw) 0;
+}
+
+.report form .d-100{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.report form .d-50{
+    width: 49%;
+    padding: max(2px, .3vw) 0;
+}
+.report form .p-form{
+    padding: max(2px, .3vw) 0;
+}
+.report form input::placeholder {
+    font-size: max(10px, .9vw);
+    color: #ccc;
+}
+.report form textarea{
+    width: 100%;
+    height: max(100px, 10vw);
+    font-size: max(14px, .9vw);
+    resize: none;
+    outline: none;
+    border: max(1px, .1vw) solid #ddd;
+    border-radius: max(5px, 0.5vw);
+    padding: max(5px, 0.6vw);
+}
+.report form textarea::placeholder{
+    color: #ccc;
+    font-size: max(9px, .9vw);
+    padding: max(2px, .2vw);
+}
+.report form input[type=submit]{
+    width: 100%;
+    padding: max(7px, 1vw);
+    font-size: max(14px, 1vw);
+    color: white;
+    background-color:var(--primary-pink);
+    border-radius: max(3px, .4vw);
+    border: 0;
+    cursor: pointer;
+    margin-bottom: max(10px, 4vw);
+}
+.report-content span{  
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    color: #aaa;
+    font-size: max(10px, 1vw);
+    font-weight: lighter;
+}
+
+/* TELA REPORT */
