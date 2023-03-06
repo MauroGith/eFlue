@@ -163,6 +163,53 @@ section.login .login-bg {
     text-decoration: none;
 }
 
+.mobile-menu .logo-icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: max(20px, 1vw);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.mobile-menu .logo-icon img {
+    width: 40px;
+}
+
+.mobile-menu .logo-icon i {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.mobile-menu {
+    display: none;
+    background-color: white;
+}
+
+.mobile-menu nav {
+    display: none;
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    text-align: center;
+}
+
+.mobile-menu nav ul li a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--deep-purple); 
+}
+
+.mobile-menu nav ul li .selected {
+    background-image: radial-gradient(rgba(255, 255, 255, 0) ,rgba(245, 0, 102, 0.3) 90%);
+}
+
+.mobile-menu .payments-menu .selected {
+    background-image: radial-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.3) 90%);
+}
+
 section.menu-content {
     display: flex;
     justify-content: space-between;
@@ -217,6 +264,10 @@ section.menu-content {
     font-size: max(12px, .9vw);
 }
 
+.payments-menu {
+    display: none;
+}
+
 .sidebar .payments-menu li .selected {
     background: linear-gradient(45deg, white, rgba(0, 0, 0, 0.2));
     border-right: max(2px, .2vw) solid black;
@@ -240,7 +291,7 @@ section.menu-content {
     text-align: center;
 }
 
-.small-menu ul li a img {
+.small-menu ul li img {
     width: max(25px, 2vw);
     margin-bottom: max(14px, 1vw);
 }
@@ -276,26 +327,28 @@ section.menu-content {
     font-weight: bold;
 }
 
-.content .user-card{
+.page-init .user-card{
+    position: relative;
     display: flex;
     flex-direction: column;
-    padding: max(10px, .5vw) max(14px, 1vw);
-    background: white;
-    border-radius: max(7px, .5vw);
 }
 
 .user-card .card-content {
+    box-shadow: 0 0 max(2px, .2vw) rgba(0, 0, 0, 0.1);
+    border-radius: max(7px, .5vw);
+    padding: max(10px, .5vw) max(14px, 1vw);
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.content .user-card img {
+.page-init .user-card img {
     width: max(50px, 2vw);
-    border-radius: max(7px, .8vw);
+    border-radius: max(7px, .3vw);
 }
 
-.content .user-info {
+.page-init .user-info {
     display: flex;
     align-items: center;
 }
@@ -305,18 +358,44 @@ section.menu-content {
     padding-left: max(10px, .5vw);
 }
 
-.content .user-info p {
+.page-init .user-info p {
     font-size: max(10px, .9vw);
 }
 
-.content .user-info span {
-    font-size: max(10px, .5vw);
+.page-init .user-info span {
+    font-size: max(10px, .7vw);
     font-weight: lighter;
 }
 
-.user-card i {
+.page-init .user-card i {
     font-size: max(14px, 1vw);
     cursor: pointer;
+}
+
+.user-card .toggle-items {
+    position: relative;
+}
+
+.user-card .toggle-items ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    border-radius: max(7px, .5vw);
+    background-color: white;
+    padding: max(10px, .5vw) max(14px, 1vw);
+    margin: max(5px, .3vw) 0;
+    text-align: right;
+    box-shadow: 0 0 max(2px, .2vw) rgba(0, 0, 0, 0.1);
+}
+
+.user-card .toggle-items li a{
+    display: block;
+    text-decoration: none;
+    color: var(--deep-purple);
+    font-size: max(14px, 1vw);
+    margin: max(3px, .3vw) 0;
 }
 
 .dashboard-buttons {
@@ -384,7 +463,7 @@ section.menu-content {
 
 .dashboard-content .dashboard-card {
     border-radius: max(5px, 0.5vw);
-    padding: max(14px, 2vw);
+    padding: max(14px, 1.5vw);
 }
 
 .dashboard-left .dashboard-card {
@@ -1041,6 +1120,79 @@ section.menu-content {
 }
 /* TELA CAMPANHAS */
 
+/* CAMPANHAS COMPANY */
+.campaigns-company .campaigns-card{
+    border-radius: max(3px, .4vw);
+}
+.campaigns-company h3{
+    font-size: max(12px, 1.2vw);
+    padding: max(8px, .8vw) 0;
+}
+.campaigns-company .campaigns .campaigns-card .status-info span{
+    color: white;
+    font-weight: normal;
+    padding: max(3px, .4vw) 0;
+}
+.campaigns-company .info-color-01{
+    background-color: #42a7ff;
+}
+.campaigns-company .info-color-02{
+    background-color: #00d72f;
+}
+.campaigns-company .info-color-03{
+    background-color: red;
+}
+.campaigns-company .info-color-04{
+    background-color: var(--deep-purple);
+}
+.campaigns-company .campaigns-card p{
+    font-size: max(11px, 1vw);
+    color: white;
+}
+.campaigns-company .title-guide{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding-top: max(10px, 1vw);
+}
+.campaigns-company .title-guide span{
+    font-size: max(11px, 1vw);
+    color: grey;
+    font-weight: lighter;
+}
+.campaigns-company .title-guide a{
+    color: var(--deep-purple);
+    font-size: max(10px, .9vw);
+}
+.campaigns-company .guide-wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: max(15px, 1.5vw) 0;
+}
+.campaigns-company .guide-wrapper .guide{
+    width: 32%;
+    padding: max(7px, .7vw);
+    border: max(1px, .1vw) solid #ccc;
+    margin-bottom: max(7px , .7vw);
+}
+.campaigns-company .guide-wrapper .guide h4{
+    font-size: max(13px, 1.1vw);
+    padding-bottom: max(7px, .7vw);
+}
+.campaigns-company .guide-wrapper .guide p {
+    color: grey;
+    font-size: max(11px, .9vw);
+    font-weight: normal;
+    padding-bottom: max(5px, .5vw);
+}
+.campaigns-company .guide-wrapper .guide a{
+    text-decoration: none;
+    color: var(--primary-pink);
+}
+/* CAMPANHAS COMPANY */
+
+
 /* TELA TRANSACOES */
 i.p-icon {
     padding-left: max(10px, 1vw);
@@ -1063,7 +1215,7 @@ i.p-icon {
 }
 /* TELA TRANSACOES */
 
-/* TELA WINTHDRAW  */
+/* TELA withdrawal  */
 .withdraw .withdraw-wrapper {
     display: flex;
     align-items: center;
@@ -1114,7 +1266,7 @@ i.p-icon {
     padding: max(5px, .5vw) 0;
 }
 .withdraw .table-wrapper {
-    width: 70%;
+    max-width: max(700px, 70%);
 }.withdraw .table-wrapper table{
     text-align: left;
 }
@@ -1124,7 +1276,116 @@ i.p-icon {
     border-radius: max(30px, 1vw);
     margin: 0;
 }
-/* TELA WINTHDRAW  */
+
+.profile-details .total-followers {
+    display: none;
+}
+/* TELA withdrawal  */
+
+/* bank-accounts ↓*/
+
+.bank-data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.bank-data .card {
+    background-color: white;
+    border-radius: max(5px, .5vw);
+    box-shadow: 0 0 max(2px, .2vw) rgba(0, 0, 0, 0.15);
+}
+
+.bank-data .add-bank-account {
+    width: 40%;
+}
+
+.bank-data .add-bank-account h4 {
+    font-size: max(15px, 1vw);
+    margin-bottom: max(10px, 1vw);
+    padding-top: max(10px, 1vw);
+    padding-left: max(10px, 1vw);
+}
+
+.add-bank-account form {
+    padding: 0 max(10px, 1vw);
+}
+
+form .form-row{
+    padding: max(3px, .3vw);
+    display: flex;
+    flex-direction: column;
+    font-size: max(12px, .8vw);
+}
+
+form .flex-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-row .wd-65 {
+    width: 65%;
+}
+
+.flex-row .wd-35 {
+    width: 35%;
+}
+
+form .form-row label {
+    margin: max(3px, .3vw) 0;
+}
+
+.add-bank-account input,
+.add-bank-account select {
+    font-size: max(14px, .9vw);
+    padding: max(5px, .5vw);
+    border-radius: max(3px, .3vw);
+    border: none;
+    border: max(1px, .1vw) solid var(--lighter-gray);
+}
+
+.add-bank-account input[type="submit"]{
+    background-color: var(--primary-pink);
+    color: white;
+    font-weight: lighter;
+    margin: max(10px, 1vw) 0;
+}
+
+.bank-data .bank-accounts {
+    width: 59%;
+}
+
+.bank-data .bank-accounts h4 {
+    font-size: max(14px, 1vw);
+    font-weight: normal;
+    padding: max(10px, 1vw);
+}
+
+.bank-accounts table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.bank-accounts table tr {
+    border-top: max(1px, .1vw) solid var(--lighter-gray);
+}
+
+.bank-accounts table td {
+    padding: max(8px, .8vw);
+    font-size: max(15px, .8vw);
+}
+
+.bank-accounts table tbody td {
+    border-right: max(1px, .1vw) solid var(--lighter-gray);
+}
+
+.bank-accounts table td i {
+    cursor: pointer;
+    margin-left: max(3px, .3vw);
+}
+
+/* bank-accounts ↑*/
 
 .sales-panel {
     overflow: auto;
@@ -1298,7 +1559,7 @@ i.p-icon {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    height: max(100px, 10vw);
+    height: max(150px, 10vw);
     border-radius: max(3px, .3vw) max(3px, .3vw) 0 0;
     background-position: center;
     background-repeat: no-repeat;
@@ -1366,6 +1627,8 @@ i.p-icon {
 
 .influencer-content {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .influencer-profile {
@@ -1469,14 +1732,14 @@ i.p-icon {
 }
 
 .influencer-media {
-    width: 80%;
-    margin-left: max(14px, 1vw);
+    width: 79.5%;
 }
 
 .influencer-media .media-wrapper {
     padding: 0 max(14px, 1vw);
     background-color: white;
     border-radius: max(5px, .5vw);
+    overflow-x: auto;
 }
 
 .influencer-media .media-wrapper table img {
@@ -1504,7 +1767,8 @@ i.p-icon {
 }
 
 .influencer-media .media-wrapper table a {
-    padding: max(6px, .6px) max(14px, 3vw);
+    display: block;
+    padding: max(6px, .6px) max(14px, 2.5vw);
     background-color: var(--deep-purple);
     color: white;
     border-radius: max(3px, .3vw);
@@ -1562,6 +1826,52 @@ i.p-icon {
     color: #ccc;
 }
 
+.wrapper-edit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.6) 20%, rgba(0, 0, 0, 0.0)) ;
+    z-index: 3;
+    display: none;
+}
+
+.wrapper-edit .influencer form h3 {
+    padding: max(14px, 1vw) 0;
+}
+
+.wrapper-edit .influencer form h5 {
+    margin-bottom: max(5px, .5vw);
+    font-size: max(14px, 1vw);
+    font-weight: normal;
+}
+
+.wrapper-edit .influencer form p{
+    margin: max(5px, .5vw) 0;
+    text-align: center;
+}
+
+.wrapper-edit .influencer form select {
+    width: 100%;
+    padding-bottom: max(5px, .5vw);
+    margin-bottom: max(7px, .7vw);
+    font-size: max(10px, .8vw);
+    border: 0;
+    border-bottom: max(1px, .1vw) solid var(--primary-pink);
+    background-color: transparent;
+}
+
+.wrapper-edit .influencer form input[type=submit] {
+    border-radius: max(14px, 1vw);
+    background-color: var(--deep-purple);
+    margin-top: max(7px, .7vw);
+}
+
+
 .type-of-post {
     margin-top: max(5px, .5vw);
 }
@@ -1589,7 +1899,7 @@ i.p-icon {
 }
 
 .discover-campaign .card-img {
-    height: max(100px, 10vw);
+    height: max(130px, 10vw);
     border-radius: max(3px, .3vw);
     background-position: center;
     background-repeat: no-repeat;
@@ -1955,6 +2265,13 @@ i.p-icon {
 {
     font-weight: lighter;
     font-size: max(12px, .8vw);
+}
+
+.chat-partner-details .last-message p{
+    max-width: 70%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .chat-content .chat-box {
@@ -2364,3 +2681,149 @@ i.p-icon {
 }
 
 /* TELA REPORT */
+.chat-content .details .job-content {
+    height: auto;
+}
+
+.chat-content .details .job-bg {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: max(100px, 10vw);
+    border-radius: max(5px, .3vw) max(5px, .3vw) 0 0;
+}
+
+.chat-content .job-details {
+    padding: max(10px, 1vw);
+}
+
+.job-details .init h3 {
+    font-size: max(16px, 1.2vw);
+}
+
+.job-details .init p {
+    margin: max(10px, 1vw) 0;
+    font-size: max(12px, .8vw);
+    font-weight: lighter;
+}
+
+.job-details ul li {
+    font-size: max(12px, .8vw);
+    margin: max(5px, .3vw) 0;
+}
+
+.job-details ul li span {
+    color: var(--primary-pink);
+}
+
+.job-details .job-budget {
+    padding: max(10px, 1vw) 0;
+    margin: max(10px, 1vw) 0;
+    border-top: max(1px, .1vw) solid var(--lighter-gray);
+    border-bottom: max(1px, .1vw) solid var(--lighter-gray);
+}
+
+.job-details .job-budget p {
+    font-size: max(16px, 1.2vw);
+    margin-bottom: max(5px, .3vw);
+}
+
+.job-details .job-budget span {
+    font-size: max(12px, .8vw);
+}
+
+.job-details .job-budget span b {
+    font-size: max(16px, 1.2vw);
+    color: var(--normal-green);
+}
+
+.job-details h4 {
+    font-size: max(15px, 1.1vw);
+    margin: max(5px, 1vw) 0;
+}
+
+.job-details .see-page {
+    font-size: max(12px, .8vw);
+    margin: max(10px, 1vw) 0;
+    display: block;
+    background-color: var(--normal-green);
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: max(5px, .3vw);
+    border-radius: max(5px, .3vw);
+}
+
+.job-details .company-card {
+    box-shadow: 0 0 max(2px, .2vw) rgba(0, 0, 0, 0.2);
+    border-radius: max(5px, .3vw);
+    padding: max(5px, .6vw);
+    background-color: white;
+}
+
+.job-details .company-card h5 {
+    font-size: max(14px, 1vw);
+    margin-bottom: max(5px, .6vw);
+}
+
+.job-details .company-card .img-wrapper {
+    width: 20%;
+    position: relative;
+}
+
+.job-details .company-card .img-wrapper img {
+    border-radius: 50%;
+}
+
+.job-details .company-card .img-wrapper .company {
+    width: 100%;
+}
+
+.job-details .company-card .img-wrapper .verified {
+    width: max(14px, .8vw);
+    height: max(14px, .8vw);
+    position: absolute;
+    bottom: 10%;
+    right: 7%;
+}
+
+.job-details .company-card p {
+    font-size: max(14px, .8vw);
+}
+
+.job-details .company-card .campaign-history {
+    border-top: max(1px, .1vw) solid var(--lighter-gray);
+    padding: max(5px, .6vw) 0;
+    margin: max(5px, .6vw) 0;
+}
+
+@media screen and (max-width: 1024px){
+    .dashboard-left {
+        width: 100%;
+    }
+
+    .dashboard-right {
+        width: 100%;
+    }
+
+    .find-influencer .info-influencer {
+        width: 33.3%;
+    }
+
+    .discover-campaign .info-campaign {
+        width: 33.3%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .mobile-menu {
+        display: block;
+    }
+
+    .sidebar{
+        display: none;
+    }
+    .content {
+        width: 100%;
+    }
+}
