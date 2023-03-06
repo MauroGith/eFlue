@@ -1121,72 +1121,72 @@ section.menu-content {
 /* TELA CAMPANHAS */
 
 /* CAMPANHAS COMPANY */
-.campaigns-company .campaigns-card{
+.user-dashboard .campaigns-card{
     border-radius: max(3px, .4vw);
 }
-.campaigns-company h3{
+.user-dashboard h3{
     font-size: max(12px, 1.2vw);
     padding: max(8px, .8vw) 0;
 }
-.campaigns-company .campaigns .campaigns-card .status-info span{
+.user-dashboard .campaigns .campaigns-card .status-info span{
     color: white;
     font-weight: normal;
     padding: max(3px, .4vw) 0;
 }
-.campaigns-company .info-color-01{
+.user-dashboard .info-color-01{
     background-color: #42a7ff;
 }
-.campaigns-company .info-color-02{
+.user-dashboard .info-color-02{
     background-color: #00d72f;
 }
-.campaigns-company .info-color-03{
+.user-dashboard .info-color-03{
     background-color: red;
 }
-.campaigns-company .info-color-04{
+.user-dashboard .info-color-04{
     background-color: var(--deep-purple);
 }
-.campaigns-company .campaigns-card p{
+.user-dashboard .campaigns-card p{
     font-size: max(11px, 1vw);
     color: white;
 }
-.campaigns-company .title-guide{
+.user-dashboard .title-guide{
     display: flex;
     justify-content: space-between;
     align-items: end;
     padding-top: max(10px, 1vw);
 }
-.campaigns-company .title-guide span{
+.user-dashboard .title-guide span{
     font-size: max(11px, 1vw);
     color: grey;
     font-weight: lighter;
 }
-.campaigns-company .title-guide a{
+.user-dashboard .title-guide a{
     color: var(--deep-purple);
     font-size: max(10px, .9vw);
 }
-.campaigns-company .guide-wrapper{
+.user-dashboard .guide-wrapper{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     padding: max(15px, 1.5vw) 0;
 }
-.campaigns-company .guide-wrapper .guide{
+.user-dashboard .guide-wrapper .guide{
     width: 32%;
     padding: max(7px, .7vw);
     border: max(1px, .1vw) solid #ccc;
     margin-bottom: max(7px , .7vw);
 }
-.campaigns-company .guide-wrapper .guide h4{
+.user-dashboard .guide-wrapper .guide h4{
     font-size: max(13px, 1.1vw);
     padding-bottom: max(7px, .7vw);
 }
-.campaigns-company .guide-wrapper .guide p {
+.user-dashboard .guide-wrapper .guide p {
     color: grey;
     font-size: max(11px, .9vw);
     font-weight: normal;
     padding-bottom: max(5px, .5vw);
 }
-.campaigns-company .guide-wrapper .guide a{
+.user-dashboard .guide-wrapper .guide a{
     text-decoration: none;
     color: var(--primary-pink);
 }
@@ -2598,7 +2598,7 @@ form .form-row label {
 /* TELA REPORT */
 .report {
     background-color: white;
-    width: 70%;
+    max-width: max(700px, 70%);
     margin: 0 auto;
     padding: max(10px, 1.5vw);
     border-radius: max(3px, .4vw);
