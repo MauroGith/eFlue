@@ -11,14 +11,77 @@
 </head>
 
 <body>
+    <div class="mobile-menu">
+        <div class="logo-icon">
+            <img src="../images/logo-pequeno.svg" alt="">
+            <i class="fa-solid fa-bars menu-button"></i>       
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="./dashboard.html">
+                        <i class="fa-solid fa-house-chimney"></i>
+                        <span>Dashbord</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./campaigns.html">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <span>Campanhas</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="selected" href="./proposals.html">
+                        <i class="fa-solid fa-file-pen"></i>
+                        <span>Propostas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./find-influencer.html">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <span>Explorar influenciadores</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="./transactions.html">
+                        <i class="fa-solid fa-wallet"></i>
+                        <span>Pagamentos</span>
+                        <i class="fa-solid fa-caret-down p-icon"></i>
+                    </a>
+                    <ul class="payments-menu">
+                        <li>
+                            <a href="./transactions.html"><span>Transações</span></a>
+                        </li>
+                        <li>
+                            <a href="./saque.html"><span>Retiradas</span></a>
+                        </li>
+                        <li>
+                            <a href="./bank-accounts.html"><span>Conta bancária</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./chat.html">
+                        <i class="fa-solid fa-message"></i>
+                        <span>Mensagens</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./report.html">
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        <span>Reportes</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
     <section class="menu-content">
         <div class="sidebar small-menu">
             <nav>
                 <ul>
                     <li>
-                        <a href="">
-                            <img src="../images/logo-pequeno.svg" alt= "">
-                        </a>
+                        <img src="../images/logo-pequeno.svg" alt= "Logo pequeno">
                     </li>
                     <li>
                         <a href="./dashboard.html">
@@ -26,23 +89,18 @@
                         </a>
                     </li>
                     <li>
-                        <a href="./usuario.html">
-                            <i class="fa-solid fa-user"></i>
-                        </a>
-                    </li>
-                    <li>
                         <a href="./campaigns.html">
                             <i class="fa-solid fa-briefcase"></i>
                         </a>
                     </li>
-                    <li class="selected">
-                        <a href="./find-influencer.html">
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                    <li>
+                        <a class="selected" href="./proposals.html">
+                            <i class="fa-solid fa-file-pen"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="./find-campaign.html">
-                            <i class="fa-solid fa-bullhorn"></i>
+                        <a href="./find-influencer.html">
+                            <i class="fa-solid fa-magnifying-glass"></i>
                         </a>
                     </li>
                     <li>
@@ -50,15 +108,15 @@
                             <i class="fa-solid fa-wallet"></i>
                         </a>
                     </li>
-                </ul>
-                <ul>
                     <li>
                         <a href="./chat.html">
                             <i class="fa-solid fa-message"></i>
                         </a>
                     </li>
+                </ul>
+                <ul>
                     <li>
-                        <a href="">
+                        <a href="./report.html">
                             <i class="fa-solid fa-circle-exclamation"></i>
                         </a>
                     </li>
@@ -71,19 +129,21 @@
                 <div class="user-card">
                     <div class="card-content">
                         <div class="user-info">
-                            <img src="../images/newslin.png" alt="">
+                            <img src="../images/newslim.png" alt="">
                             <div class="user-id">
                                 <p>eFlue</p>
                                 <span>Admin</span>
                             </div>
                         </div>
-                        <i class="fa-solid fa-caret-down"></i>       
+                        <i class="fa-solid fa-caret-down user-options"></i>       
                     </div>
-                    <!-- <div class="toggle-itens">
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </div> -->
+                    <div class="toggle-items">
+                        <ul>
+                            <li>
+                                <a href="">Sair <i class="fa-solid fa-power-off"></i></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="influencer-content">
@@ -315,8 +375,9 @@
                 </div>
             </div>
         </div>
-
     </section>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>

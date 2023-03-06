@@ -2339,8 +2339,7 @@ form .form-row label {
 }
 
 .campaign-summary {
-    margin-left: max(14px, 1vw);
-    width: 70%;
+    width: 68%;
 }
 
 .campaign-summary h5 {
