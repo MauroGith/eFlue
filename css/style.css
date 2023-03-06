@@ -327,26 +327,27 @@ section.menu-content {
     font-weight: bold;
 }
 
-.content .user-card{
+.page-init .user-card{
+    position: relative;
     display: flex;
     flex-direction: column;
-    padding: max(10px, .5vw) max(14px, 1vw);
-    background: white;
-    border-radius: max(7px, .5vw);
 }
 
 .user-card .card-content {
+    border-radius: max(7px, .5vw);
+    padding: max(10px, .5vw) max(14px, 1vw);
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.content .user-card img {
+.page-init .user-card img {
     width: max(50px, 2vw);
-    border-radius: max(7px, .8vw);
+    border-radius: max(7px, .3vw);
 }
 
-.content .user-info {
+.page-init .user-info {
     display: flex;
     align-items: center;
 }
@@ -356,18 +357,44 @@ section.menu-content {
     padding-left: max(10px, .5vw);
 }
 
-.content .user-info p {
+.page-init .user-info p {
     font-size: max(10px, .9vw);
 }
 
-.content .user-info span {
-    font-size: max(10px, .5vw);
+.page-init .user-info span {
+    font-size: max(10px, .7vw);
     font-weight: lighter;
 }
 
-.user-card i {
+.page-init .user-card i {
     font-size: max(14px, 1vw);
     cursor: pointer;
+}
+
+.user-card .toggle-items {
+    position: relative;
+}
+
+.user-card .toggle-items ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    border-radius: max(7px, .5vw);
+    background-color: white;
+    padding: max(10px, .5vw) max(14px, 1vw);
+    margin: max(5px, .3vw) 0;
+    text-align: right;
+    box-shadow: 0 0 max(2px, .2vw) rgba(0, 0, 0, 0.1);
+}
+
+.user-card .toggle-items li a{
+    display: block;
+    text-decoration: none;
+    color: var(--deep-purple);
+    font-size: max(14px, 1vw);
+    margin: max(3px, .3vw) 0;
 }
 
 .dashboard-buttons {
