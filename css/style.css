@@ -1373,7 +1373,8 @@ i.p-icon {
 }
 
 .influencer-profile .profile-wrapper {
-    padding: max(14px, 1.5vw);
+    padding: 0 max(14px, 1vw);
+    padding-top: max(14px, 1vw);
     background-color: white;
     border-radius: max(5px, .5vw);
 }
@@ -1385,8 +1386,8 @@ i.p-icon {
 }
 
 .influencer-profile .profile-img img {
-    height: max(50px, 8vw);
-    width: max(50px, 8vw);
+    height: max(30px, 8vw);
+    width: max(30px, 8vw);
     border-radius: 50%;
 }
 
@@ -1426,6 +1427,7 @@ i.p-icon {
     background-color: var(--deep-purple);
     border-radius: max(4px, .4vw);
     margin: max(5px, .5vw) 0;
+    cursor: pointer;
 }
 
 .influencer-profile .add-favorite {
@@ -1607,7 +1609,6 @@ i.p-icon {
     background-color: var(--deep-purple);
     margin-top: max(7px, .7vw);
 }
-
 
 .type-of-post {
     margin-top: max(5px, .5vw);
@@ -1891,6 +1892,521 @@ i.p-icon {
 
 .product-characteristics .about span {
     font-size: max(10px, .8vw);
+}
+
+.influencer-content .influencer-proposal {
+    width: 30%;
+}
+
+.influencer-content .influencer-proposal h5 {
+    font-size: max(14px, 1vw);
+    font-weight: normal;
+    margin-bottom: max(7px, .7vw);
+}
+
+.influencer-proposal .dflex-profile {
+    display: flex;
+}
+
+.influencer-proposal .dflex-profile .profile-img {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border-radius: max(3px, .3vw);
+    overflow: hidden;
+}
+
+.influencer-proposal .dflex-profile .profile-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+}
+
+.influencer-proposal .profile-img .followers {
+    text-align: center;
+    background-color: var(--deep-purple);
+}
+
+.influencer-proposal .profile-img .followers p {
+    font-size: max(7px, .7vw);
+    padding: max(3px, .3vw) max(5px, .5vw);
+    color: white;
+}
+
+.influencer-proposal .proposal {
+    width: 50%;
+    text-align: left;
+}
+
+.influencer-proposal .proposal .proposal-wrapper {
+    padding-left: max(14px, 1vw);
+}
+
+.influencer-proposal .proposal .proposal-status {
+    padding: max(3px, .3vw) max(10px, .8vw);
+    font-size: max(10px, .7vw);
+    color: white;
+    text-align: center;
+}
+
+.influencer-proposal .proposal .approved {
+    background-color: var(--normal-green);
+}
+
+.influencer-proposal .proposal .in-progress{
+    background-color: #ffc700;
+}
+
+.influencer-proposal .proposal h3 {
+    margin: max(5px, .5vw) 0;
+    font-size: max(14px, 1.5vw);
+    text-align: justify;
+}
+
+.influencer-proposal  .about-influencer{
+    border-bottom: max(1px, .1vw) solid var(--lighter-gray);
+    padding-bottom: max(14px, 1vw);
+}
+
+.influencer-proposal .about-influencer p {
+    font-size: max(12px, .7vw);
+    margin: max(3px, .3vw) 0;
+}
+
+.influencer-proposal .about-influencer span {
+    color: var(--primary-pink);
+}
+
+.pay-proposal {
+    display: flex;
+    justify-content: space-between;
+    padding: max(14px, 1vw) 0;
+}
+
+.pay-proposal .value h5 {
+    font-size: max(12px, .9vw);
+}
+
+.pay-proposal .value p {
+    font-size: max(12px, .9vw);
+}
+
+.pay-proposal .value span {
+    font-size: max(14px, 1.2vw);
+    font-weight: bold;
+    color: var(--normal-green);
+}
+
+.pay-proposal .media {
+    padding: 0 max(14px, 1.5vw);
+    border-left: max(1px, .1vw) solid var(--lighter-gray);
+    border-right: max(1px, .1vw) solid var(--lighter-gray);
+}
+
+.pay-proposal .media h5 {
+    font-size: max(12px, .9vw);
+}
+
+.pay-proposal .media img {
+    height: max(14px, 1vw);
+    width: max(14px, 1vw);
+    margin-left: max(3px, .3vw);
+}
+
+.pay-proposal .post h5 {
+    font-size: max(12px, .9vw);
+}
+
+.pay-proposal .post .post-media {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pay-proposal .post span {
+    display: block;
+    font-weight: lighter;
+    font-size: max(10px, .7vw);
+}
+
+.influencer-proposal .pay {
+    padding: max(5px, .5vw) 0;
+    background-color: var(--normal-green);
+    text-align: center;
+}
+
+.influencer-proposal .send-message {
+    padding: max(3px, .3vw) 0;
+    background-color: #42a7ff;
+    text-align: center;
+}
+
+.influencer-proposal .biography-influencer {
+    border-bottom: max(1px, .1vw) solid var(--lighter-gray);
+}
+
+.influencer-proposal .biography-influencer h4 {
+    margin: max(5px, .5vw) 0;
+    font-size: max(14px, 1vw);
+}
+
+.influencer-proposal .biography-influencer p {
+    font-size: max(10px, .8vw);
+    font-weight: lighter;
+    margin-bottom: max(14px, 1vw);
+}
+
+.influencer-proposal .categories {
+    padding-bottom: max(14px, 1vw);
+}
+
+.influencer-proposal .categories h4 {
+    margin-left: max(5px, .5vw);
+}
+
+.influencer-categories .category p{
+    font-size: max(10px, .8vw);
+    padding: max(2px, .2vw) max(14px, 2vw);
+    text-align: center;
+}
+
+.influencer-proposal .categories .view-profile {
+    padding: max(3px, .3vw) 0;
+    text-align: center;
+}
+
+.campaign-summary {
+    margin-left: max(14px, 1vw);
+    width: 70%;
+}
+
+.campaign-summary h5 {
+    font-size: max(14px, 1vw);
+    font-weight: normal;
+    margin-bottom: max(7px, .7vw);
+}
+
+.campaign-summary .campaign-box {
+    background-color: white;
+    border-radius: max(5px, .5vw);
+}
+
+.campaign-summary .campaign-img {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: max(20px, 10vw);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: max(5px, .5vw) max(5px, .5vw) 0 0;
+}
+
+.campaign-summary .payment-status {
+    padding: max(14px, 1vw);
+}
+
+.campaign-summary .payment-status span {
+    font-size: max(7px, .7vw);
+    padding: max(3px, .3vw);
+    color: white;
+}
+
+.campaign-summary .payment-status .waiting {
+    background-color: #42a7ff;
+}
+
+.campaign-summary .payment-status .approved {
+    background-color: var(--normal-green);
+}
+
+.campaign-summary .dflex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 max(14px, 1vw);
+}
+
+.campaign-summary .launch {
+    padding: max(14px, 1vw);
+}
+
+.campaign-summary .launch-campaign h4 {
+    font-size: max(14px, 1.1vw);
+}
+
+.campaign-summary .launch-campaign p {
+    font-size: max(10px, .7vw);
+    margin-top: max(3px, .3vw);
+    color: var(--deep-purple);
+}
+
+.campaign-summary .campaign-category {
+    font-size: max(10px, .8vw);
+}
+
+.campaign-summary .campaign-category .category {
+    margin-bottom: max(14px, 1vw);
+}
+
+.campaign-summary .campaign-category span {
+    padding: max(2px, .2vw) max(14px, 1.5vw);
+    margin-left: max(5px, .5vw);
+    border: max(1px, .1vw) solid #ccc;
+    border-radius: max(14px, 1vw);
+    font-weight: lighter;
+}
+
+.campaign-summary .details {
+    padding: 0 max(14px, 1vw);
+}
+
+.campaign-summary .details-content {
+    display: flex;
+    font-size: max(10px, .8vw);
+}
+
+.campaign-summary .details-content .media {
+    margin: 0 max(14px, 1.5vw);
+}
+
+.campaign-summary .details-content p {
+    margin: max(5px, .7vw) 0;
+}
+
+.campaign-summary .details-content span {
+    color: var(--primary-pink);
+}
+
+.campaign-summary .details a {
+    padding: max(5px, .5vw) 0;
+    background-color: var(--normal-green);
+    color: white;
+    font-size: max(10px, .9vw);
+    width: 30%;
+    text-align: center;
+    text-decoration: none;
+    border-radius: max(3px, .3vw);
+}
+
+.campaign-summary .description {
+    padding: max(14px, 1vw);
+}
+
+.campaign-summary .description h4 {
+    font-size: max(14px, 1.2vw);
+}
+
+.campaign-summary .description p {
+    font-size: max(10px, .9vw);
+    margin: max(14px, 1vw) 0;
+}
+
+.campaign-summary .description a {
+    display: block;
+    width: 100%;
+    padding: max(5px, .5vw) 0;
+    background-color: #42a7ff;
+    color: white;
+    font-size: max(10px, .9vw);
+    text-align: center;
+    text-decoration: none;
+    border-radius: max(3px, .3vw);
+    margin-bottom: max(14px, 1vw);
+}
+
+.shipping-info {
+    margin: max(14px, 1vw) 0;
+}
+
+.shipping-info h5 {
+    font-size: max(14px, 1vw);
+}
+
+.shipping-info .address {
+    background-color: white;
+    padding: max(14px, 1vw);
+    border-radius: max(5px, .5vw);
+}
+
+.shipping-info .address h4 {
+    font-size: max(14px, 1vw);
+    margin-bottom: max(14px, 1vw);
+}
+
+.shipping-info .address-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shipping-info .address-content span {
+    padding: max(5px, .5vw) max(10px, 1vw);
+    font-size: max(14px, .9vw);
+    font-weight: lighter;
+    border: max(1px, .1vw) solid #ccc;
+    border-radius: max(3px, .3vw);
+}
+
+.shipping-info .place {
+    border-bottom: max(1px, .1vw ) solid var(--lighter-gray);
+    padding-bottom: max(14px, 1vw);
+}
+
+.shipping-info .place p {
+    font-size: max(12px, .9vw);
+}
+
+.shipping-info .tracking {
+    margin: max(14px, 1vw) 0;
+}
+
+.shipping-info .tracking h4 {
+    margin-bottom: max(5px, .5vw);
+}
+
+.shipping-info .tracking form {
+    width: 100%;
+}
+
+.shipping-info .tracking form .d-flex{
+    display: flex;
+}
+
+.shipping-info .tracking form input[type=text] {
+    padding: max(4px, .4vw);
+    width: 25%;
+    border: max(1px, .1vw) solid #ccc;
+    border-radius: max(3px, .3vw) 0 0 max(3px, .3vw);
+    outline: none;
+}
+
+.shipping-info .tracking form input[type=submit] {
+    width: 8%;
+    background-color: var(--deep-purple);
+    color: white;
+    border: max(1px, .1vw) solid var(--deep-purple);
+    border-radius: 0 max(3px, .3vw) max(3px, .3vw) 0;
+    cursor: pointer;
+    font-size: max(10px, .8vw);
+}
+
+.shipping-info .tracking form p {
+    font-size: max(10px, .8vw);
+    margin-top: max(5px, .5vw);
+    width: 40%;
+}
+
+.shipping-info .add-file form p {
+    font-size: max(14px, 1vw);
+    margin-bottom: max(5px, .5vw);
+}
+
+.shipping-info .add-file label {
+    font-size: max(14px, 1vw);
+}
+
+.shipping-info .add-file form input[type=file] {
+    width: 100%;
+    padding: max(5px, .5vw);
+    border: max(1px, .1vw) solid #ccc;
+    font-size: max(10px, .8vw);
+}
+
+.shipping-info form {
+    width: 100%;
+}
+
+.shipping-info .combined-location {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shipping-info .combined-location input {
+    width: 100%;
+}
+
+.shipping-info form label {
+    font-size: max(10px, .8vw);
+    margin-bottom: max(3px, .3vw);
+    display: inline-block;
+}
+
+.shipping-info form input {
+    padding: max(4px, .4vw) max(5px, .5vw);
+    outline: none;
+    border-radius: max(3px, .3vw);
+    border: max(1px, .1vw) solid #ccc;
+}
+
+.shipping-info form input::placeholder {
+    font-size: max(7px, .7vw);
+    font-weight: lighter;
+}
+
+.shipping-info .form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.shipping-info form .cep {
+    margin-bottom: max(14px, 1vw);
+    width: 20%;
+}
+
+.shipping-info form .address-info {
+    width: 40%;
+}
+
+.shipping-info form .number {
+    width: 15%;
+}
+
+.shipping-info form .complement {
+    width: 20%;
+}
+
+.shipping-info form .state {
+    width: 5%;
+}
+
+.shipping-info form .city {
+    width: 15%;
+}
+
+.shipping-info .date-box {
+    display: flex;
+    margin: max(14px, 1vw) 0;
+}
+
+.shipping-info .date-box .time {
+    width: 6%;
+}
+
+.shipping-info .date-box .date {
+    width: 13%;
+    margin-left: max(10px, .7vw);
+}
+
+.shipping-info .arrival label {
+    font-size: max(10px, .9vw);
+    font-weight: bold;
+    margin-bottom: max(5px, .5vw);
+    display: block;
+}
+
+.shipping-info .arrival textarea {
+    height: max(50px, 8vw);
+    padding: max(7px, .5vw);
+    border: max(1px, .1vw) solid #ccc;
+    border-radius: max(3px, .3vw);
+    outline: none;
+    resize: none;
+}
+
+.shipping-info .arrival textarea::placeholder {
+    font-size: max(10px, .8vw);
+    font-weight: lighter;
 }
 
 .chat-content {
