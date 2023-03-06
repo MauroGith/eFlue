@@ -163,6 +163,53 @@ section.login .login-bg {
     text-decoration: none;
 }
 
+.mobile-menu .logo-icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: max(20px, 1vw);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.mobile-menu .logo-icon img {
+    width: 40px;
+}
+
+.mobile-menu .logo-icon i {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.mobile-menu {
+    display: none;
+    background-color: white;
+}
+
+.mobile-menu nav {
+    display: none;
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    text-align: center;
+}
+
+.mobile-menu nav ul li a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--deep-purple); 
+}
+
+.mobile-menu nav ul li .selected {
+    background-image: radial-gradient(rgba(255, 255, 255, 0) ,rgba(245, 0, 102, 0.3) 90%);
+}
+
+.mobile-menu .payments-menu .selected {
+    background-image: radial-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.3) 90%);
+}
+
 section.menu-content {
     display: flex;
     justify-content: space-between;
@@ -215,6 +262,10 @@ section.menu-content {
 
 .sidebar ul li a span{
     font-size: max(12px, .9vw);
+}
+
+.payments-menu {
+    display: none;
 }
 
 .sidebar .payments-menu li .selected {
@@ -1114,7 +1165,7 @@ i.p-icon {
     padding: max(5px, .5vw) 0;
 }
 .withdraw .table-wrapper {
-    width: 70%;
+    max-width: max(700px, 70%);
 }.withdraw .table-wrapper table{
     text-align: left;
 }
@@ -1123,6 +1174,10 @@ i.p-icon {
     text-align: center;
     border-radius: max(30px, 1vw);
     margin: 0;
+}
+
+.profile-details .total-followers {
+    display: none;
 }
 /* TELA withdrawal  */
 
@@ -1403,7 +1458,7 @@ form .form-row label {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    height: max(100px, 10vw);
+    height: max(150px, 10vw);
     border-radius: max(3px, .3vw) max(3px, .3vw) 0 0;
     background-position: center;
     background-repeat: no-repeat;
@@ -1471,6 +1526,8 @@ form .form-row label {
 
 .influencer-content {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .influencer-profile {
@@ -1574,14 +1631,14 @@ form .form-row label {
 }
 
 .influencer-media {
-    width: 80%;
-    margin-left: max(14px, 1vw);
+    width: 79.5%;
 }
 
 .influencer-media .media-wrapper {
     padding: 0 max(14px, 1vw);
     background-color: white;
     border-radius: max(5px, .5vw);
+    overflow-x: auto;
 }
 
 .influencer-media .media-wrapper table img {
@@ -1741,7 +1798,7 @@ form .form-row label {
 }
 
 .discover-campaign .card-img {
-    height: max(100px, 10vw);
+    height: max(130px, 10vw);
     border-radius: max(3px, .3vw);
     background-position: center;
     background-repeat: no-repeat;
@@ -2551,4 +2608,35 @@ form .form-row label {
     border-top: max(1px, .1vw) solid var(--lighter-gray);
     padding: max(5px, .6vw) 0;
     margin: max(5px, .6vw) 0;
+}
+
+@media screen and (max-width: 1024px){
+    .dashboard-left {
+        width: 100%;
+    }
+
+    .dashboard-right {
+        width: 100%;
+    }
+
+    .find-influencer .info-influencer {
+        width: 33.3%;
+    }
+
+    .discover-campaign .info-campaign {
+        width: 33.3%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .mobile-menu {
+        display: block;
+    }
+
+    .sidebar{
+        display: none;
+    }
+    .content {
+        width: 100%;
+    }
 }

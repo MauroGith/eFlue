@@ -11,6 +11,70 @@
 </head>
 
 <body>
+    <div class="mobile-menu">
+        <div class="logo-icon">
+            <img src="../images/logo-pequeno.svg" alt="">
+            <i class="fa-solid fa-bars menu-button"></i>       
+        </div>
+        <nav>
+            <ul>
+                <li class="logo-menu">
+                    <img src="../images/Logo.png" alt= "Logo">
+                </li>
+                <li>
+                    <a href="./dashboard.html">
+                        <i class="fa-solid fa-house-chimney"></i>
+                        <span>Dashbord</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./find-campaign.html">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <span>Explorar campanhas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./proposals.html">
+                        <i class="fa-solid fa-file-pen"></i>
+                        <span>Propostas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./transactions.html">
+                        <i class="fa-solid fa-wallet"></i>
+                        <span>Pagamentos</span>
+                        <i class="fa-solid fa-caret-down p-icon"></i>
+                    </a>
+                    <ul class="payments-menu">
+                        <li>
+                            <a href="./payment-info.html"><span>Visão geral</span></a>
+                        </li>
+                        <li>
+                            <a href="./transactions.html"><span>Transações</span></a>
+                        </li>
+                        <li>
+                            <a href="./saque.html"><span>Retiradas</span></a>
+                        </li>
+                        <li>
+                            <a href="./bank-accounts.html"><span>Conta bancária</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="selected" href="./chat.html">
+                        <i class="fa-solid fa-message"></i>
+                        <span>Mensagens</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        <span>Reportes</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
     <section class="menu-content">
         <div class="sidebar">
             <nav>
@@ -36,12 +100,26 @@
                             <span>Propostas</span>
                         </a>
                     </li>
-                    
                     <li>
                         <a href="./transactions.html">
                             <i class="fa-solid fa-wallet"></i>
                             <span>Pagamentos</span>
+                            <i class="fa-solid fa-caret-down p-icon"></i>
                         </a>
+                        <ul class="payments-menu">
+                            <li>
+                                <a href="./payment-info.html"><span>Visão geral</span></a>
+                            </li>
+                            <li>
+                                <a href="./transactions.html"><span>Transações</span></a>
+                            </li>
+                            <li>
+                                <a href="./saque.html"><span>Retiradas</span></a>
+                            </li>
+                            <li>
+                                <a href="./bank-accounts.html"><span>Conta bancária</span></a>
+                            </li>
+                        </ul>
                     </li>
                     <li>
                         <a href="./chat.html">
@@ -289,6 +367,8 @@
         </div>
  
     </section>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>

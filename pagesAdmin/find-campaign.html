@@ -11,6 +11,79 @@
 </head>
 
 <body>
+    <div class="mobile-menu">
+        <div class="logo-icon">
+            <img src="../images/logo-pequeno.svg" alt="">
+            <i class="fa-solid fa-bars menu-button"></i>       
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="./dashboard.html">
+                        <i class="fa-solid fa-house-chimney"></i>
+                        <span>Dashbord</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./usuario.html">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Usuarios</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./campaigns.html">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <span>Campanhas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./find-influencer.html">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <span>Explorar influenciadores</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./find-campaign.html" class="selected">
+                        <i class="fa-solid fa-bullhorn"></i>
+                        <span>Explorar campanhas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./transactions.html">
+                        <i class="fa-solid fa-wallet"></i>
+                        <span>Pagamentos</span>
+                        <i class="fa-solid fa-caret-down p-icon"></i>
+                    </a>
+                    <ul class="payments-menu">
+                        <li>
+                            <a href="./transactions.html"><span>Transações</span></a>
+                        </li>
+                        <li>
+                            <a href="./saque.html"><span>Solicitação de saque</span></a>
+                        </li>
+                        <li>
+                            <a href=""><span>Contestaões</span></a>
+                        </li>
+                        <li>
+                            <a href=""><span>Configurações</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./chat.html">
+                        <i class="fa-solid fa-message"></i>
+                        <span>Mensagens</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        <span>Reportes</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
     <section class="menu-content">
         <div class="sidebar small-menu">
             <nav>
@@ -308,6 +381,8 @@
         </div>
 
     </section>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>
