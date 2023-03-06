@@ -334,6 +334,7 @@ section.menu-content {
 }
 
 .user-card .card-content {
+    box-shadow: 0 0 max(2px, .2vw) rgba(0, 0, 0, 0.1);
     border-radius: max(7px, .5vw);
     padding: max(10px, .5vw) max(14px, 1vw);
     background-color: white;
