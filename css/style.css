@@ -665,7 +665,10 @@ section.menu-content {
     align-items: center;
 }
 
-.user-register a{
+.user-register button{
+    cursor: pointer;
+    font-size: max(14px, .8vw);
+    border: none;
     text-decoration: none;
     color: white;
     background-color: var(--primary-pink);
@@ -770,7 +773,7 @@ section.menu-content {
     overflow-x: auto;
 }
 .table-wrapper table{
-    width: 100%;
+    width: max(500px, 100%);
     margin: 0 auto;
     text-align: center;
     border-collapse: collapse;
@@ -783,15 +786,15 @@ section.menu-content {
 }
 
 .table-wrapper table tbody tr td img{
-    width: max(40px, 1vw);
-    height: max(40px, 1vw);
+    width: max(40px, 3vw);
+    height: max(40px, 3vw);
     border-radius: 50%;
 }
 .table-wrapper table tbody tr .table-button{
+    display: inline-block;
     color: white;
     padding: max(3px, .2vw) max(6px, 1vw);
     border-radius: max(2px, .4vw);
-    width: 70%;
 }
 .table-wrapper .type-color {
     background-color: var(--deep-purple);
@@ -815,22 +818,29 @@ section.menu-content {
     padding-right: max(2px, .2vw);
 }
 
-.wrapper-edit
-
 .creat-edit-user{
-    background-image: url(../images/smallCardbg.svg);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.creat-edit-user form{
+    position: relative;
+    background-image: url('../images/Visitas.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-position: center; */
-    width: 50%; 
-}
-.creat-edit-user form{
-    width: 70%;
-    margin: 0 auto;
+    background-position: center;
+    width: 40%;
+    padding: max(20px, 2vw) max(40px, 4vw);
+    border-radius: max(10px, 1vw);
 }
 .creat-edit-user form i{
-    display: block;
-    text-align: right;
+    cursor: pointer;
+    position: absolute;
+    top: 2%;
+    right: 5%;
+    font-size: max(16px, 1.2vw);
     padding-top: max(10px, 1.5vw);
 }
 .creat-edit-user form h3{
@@ -838,11 +848,13 @@ section.menu-content {
     padding: max(15px, 2vw) 0;
     text-align: center;
 }
-.creat-edit-user form p{
+.creat-edit-user form label{
+    display: block;
     font-size: max(14px, .9vw);
     padding: max(5px, 0.2vw) 0;
 }
-.creat-edit-user input[type=text] {
+.creat-edit-user input{
+    font-size: max(14px, 1vw);
     width: 100%;
     border: 0;
     border-bottom: max(1px, 0.1vw) solid var(--primary-pink);
@@ -852,7 +864,7 @@ section.menu-content {
     background-color: transparent;
 }
 .creat-edit-user input::placeholder{
-    font-size: max(9px, .9vw);
+    font-size: max(12px, .9vw);
 }
 .creat-edit-user input[type=submit] {
     width: 100%;
@@ -903,8 +915,8 @@ section.menu-content {
 }
 
 .campaigns .table-wrapper table tbody tr td img{
-    width: max(40px, 1vw);
-    height: max(40px, 1vw);
+    width: max(40px, 3vw);
+    height: max(40px, 3vw);
     border-radius: 50%;
 }
 .campaigns .table-wrapper table tbody tr .table-button{
@@ -1829,9 +1841,6 @@ form .form-row label {
 }
 
 .wrapper-edit {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     min-height: 100vh;
     position: fixed;
