@@ -1133,6 +1133,22 @@ section.menu-content {
 /* TELA CAMPANHAS */
 
 /* CAMPANHAS COMPANY */
+.create-campaign-user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.create-campaign-user .btn-create{
+    background-color: var(--primary-pink); 
+    margin-right: max(9px, 1.3vw);
+}
+.create-campaign-user .btn-create a{
+    text-decoration: none;
+    color: white;
+    background-color: var(--primary-pink);
+    padding: max(4px, 0.4vw) max(14px, 1.2vw);
+    border-radius: max(3px, 0.2vw);
+}
 .user-dashboard .campaigns-card{
     border-radius: max(3px, .4vw);
 }
@@ -1183,7 +1199,7 @@ section.menu-content {
     padding: max(15px, 1.5vw) 0;
 }
 .user-dashboard .guide-wrapper .guide{
-    width: 32%;
+    width: 32.5%;
     padding: max(7px, .7vw);
     border: max(1px, .1vw) solid #ccc;
     margin-bottom: max(7px , .7vw);
@@ -1200,6 +1216,33 @@ section.menu-content {
 }
 .user-dashboard .guide-wrapper .guide a{
     text-decoration: none;
+    color: var(--primary-pink);
+}
+
+.user-dashboard .guide-cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: max(10px, 1.4vw) 0;
+}
+.user-dashboard .guide-cards .g-card {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 24%;
+    min-height: max(143px, 10vw);
+    border-radius: max(5px, .5vw);
+    padding: max(5px, 1vw);
+    display: flex;
+    align-items: flex-end;
+}
+.user-dashboard .guide-cards .g-card a {
+    font-size: max(9px, 1.1vw);
+    color: white;
+}
+.user-dashboard .guide-wrapper a{
+    font-size: max(11px, 1vw);
     color: var(--primary-pink);
 }
 /* CAMPANHAS COMPANY */
@@ -1713,7 +1756,6 @@ form .form-row label {
     color: white;
     font-size: max(10px, .7vw);
     text-decoration: none;
-    font-size: max(10px, .8vw);
 }
 
 .influencer-profile .biography-info {
