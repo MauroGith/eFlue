@@ -665,7 +665,10 @@ section.menu-content {
     align-items: center;
 }
 
-.user-register a{
+.user-register button{
+    cursor: pointer;
+    font-size: max(14px, .8vw);
+    border: none;
     text-decoration: none;
     color: white;
     background-color: var(--primary-pink);
@@ -770,7 +773,7 @@ section.menu-content {
     overflow-x: auto;
 }
 .table-wrapper table{
-    width: 100%;
+    width: max(500px, 100%);
     margin: 0 auto;
     text-align: center;
     border-collapse: collapse;
@@ -783,15 +786,15 @@ section.menu-content {
 }
 
 .table-wrapper table tbody tr td img{
-    width: max(40px, 1vw);
-    height: max(40px, 1vw);
+    width: max(40px, 3vw);
+    height: max(40px, 3vw);
     border-radius: 50%;
 }
 .table-wrapper table tbody tr .table-button{
+    display: inline-block;
     color: white;
     padding: max(3px, .2vw) max(6px, 1vw);
     border-radius: max(2px, .4vw);
-    width: 70%;
 }
 .table-wrapper .type-color {
     background-color: var(--deep-purple);
@@ -815,22 +818,29 @@ section.menu-content {
     padding-right: max(2px, .2vw);
 }
 
-.wrapper-edit
-
 .creat-edit-user{
-    background-image: url(../images/smallCardbg.svg);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.creat-edit-user form{
+    position: relative;
+    background-image: url('../images/Visitas.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-position: center; */
-    width: 50%; 
-}
-.creat-edit-user form{
-    width: 70%;
-    margin: 0 auto;
+    background-position: center;
+    width: 40%;
+    padding: max(20px, 2vw) max(40px, 4vw);
+    border-radius: max(10px, 1vw);
 }
 .creat-edit-user form i{
-    display: block;
-    text-align: right;
+    cursor: pointer;
+    position: absolute;
+    top: 2%;
+    right: 5%;
+    font-size: max(16px, 1.2vw);
     padding-top: max(10px, 1.5vw);
 }
 .creat-edit-user form h3{
@@ -838,11 +848,13 @@ section.menu-content {
     padding: max(15px, 2vw) 0;
     text-align: center;
 }
-.creat-edit-user form p{
+.creat-edit-user form label{
+    display: block;
     font-size: max(14px, .9vw);
     padding: max(5px, 0.2vw) 0;
 }
-.creat-edit-user input[type=text] {
+.creat-edit-user input{
+    font-size: max(14px, 1vw);
     width: 100%;
     border: 0;
     border-bottom: max(1px, 0.1vw) solid var(--primary-pink);
@@ -852,7 +864,7 @@ section.menu-content {
     background-color: transparent;
 }
 .creat-edit-user input::placeholder{
-    font-size: max(9px, .9vw);
+    font-size: max(12px, .9vw);
 }
 .creat-edit-user input[type=submit] {
     width: 100%;
@@ -903,8 +915,8 @@ section.menu-content {
 }
 
 .campaigns .table-wrapper table tbody tr td img{
-    width: max(40px, 1vw);
-    height: max(40px, 1vw);
+    width: max(40px, 3vw);
+    height: max(40px, 3vw);
     border-radius: 50%;
 }
 .campaigns .table-wrapper table tbody tr .table-button{
@@ -1121,6 +1133,22 @@ section.menu-content {
 /* TELA CAMPANHAS */
 
 /* CAMPANHAS COMPANY */
+.create-campaign-user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.create-campaign-user .btn-create{
+    background-color: var(--primary-pink); 
+    margin-right: max(9px, 1.3vw);
+}
+.create-campaign-user .btn-create a{
+    text-decoration: none;
+    color: white;
+    background-color: var(--primary-pink);
+    padding: max(4px, 0.4vw) max(14px, 1.2vw);
+    border-radius: max(3px, 0.2vw);
+}
 .user-dashboard .campaigns-card{
     border-radius: max(3px, .4vw);
 }
@@ -1171,7 +1199,7 @@ section.menu-content {
     padding: max(15px, 1.5vw) 0;
 }
 .user-dashboard .guide-wrapper .guide{
-    width: 32%;
+    width: 32.5%;
     padding: max(7px, .7vw);
     border: max(1px, .1vw) solid #ccc;
     margin-bottom: max(7px , .7vw);
@@ -1188,6 +1216,33 @@ section.menu-content {
 }
 .user-dashboard .guide-wrapper .guide a{
     text-decoration: none;
+    color: var(--primary-pink);
+}
+
+.user-dashboard .guide-cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: max(10px, 1.4vw) 0;
+}
+.user-dashboard .guide-cards .g-card {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 24%;
+    min-height: max(143px, 10vw);
+    border-radius: max(5px, .5vw);
+    padding: max(5px, 1vw);
+    display: flex;
+    align-items: flex-end;
+}
+.user-dashboard .guide-cards .g-card a {
+    font-size: max(9px, 1.1vw);
+    color: white;
+}
+.user-dashboard .guide-wrapper a{
+    font-size: max(11px, 1vw);
     color: var(--primary-pink);
 }
 /* CAMPANHAS COMPANY */
@@ -1701,7 +1756,6 @@ form .form-row label {
     color: white;
     font-size: max(10px, .7vw);
     text-decoration: none;
-    font-size: max(10px, .8vw);
 }
 
 .influencer-profile .biography-info {
@@ -1829,9 +1883,6 @@ form .form-row label {
 }
 
 .wrapper-edit {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     min-height: 100vh;
     position: fixed;

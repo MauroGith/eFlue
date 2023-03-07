@@ -12,3 +12,11 @@ $('.p-icon').click((event) => {
     event.preventDefault()
     $('.payments-menu').slideToggle()
 })
+
+$('.register-button').click(() => {
+    $('.wrapper-edit').fadeIn()
+})
+
+$('.close-modal').click(() => {
+    $('.wrapper-edit').fadeOut()
+})
