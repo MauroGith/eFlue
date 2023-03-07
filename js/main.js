@@ -20,3 +20,7 @@ $('.register-button').click(() => {
 $('.close-modal').click(() => {
     $('.wrapper-edit').fadeOut()
 })
+
+$('.open-modal').click(() => {
+    $('.wrapper-edit').fadeIn()
+})
