@@ -34,6 +34,7 @@ section.login .login-bg {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    width: 30%;
 }
 
 .wrapper-padding {
@@ -56,10 +57,14 @@ section.login .login-bg {
     text-align: center;
 }
 
-.login-or-register form p {
+.login-or-register form label {
     font-size: max(14px, .9vw);
-    padding: max(5px, .2vw) 0;
-    margin: 0;
+    margin-top: max(7px, .7vw) ;
+    display: block;
+}
+
+.login-or-register input {
+    font-size: max(10px, 1vw);
 }
 
 .login-or-register input[type=text] {
@@ -74,6 +79,15 @@ section.login .login-bg {
     font-size: max(10px, .7vw);
 }
 
+.login-or-register .check-box {
+    display: flex;
+    align-items: center;
+}
+
+.login-or-register .check-box span {
+    margin-left: max(3px, .3vw);
+}
+
 .keep-or-forgot {
     display: flex;
     justify-content: space-between;
@@ -82,7 +96,7 @@ section.login .login-bg {
 
 .login-or-register .keep-or-forgot {
     padding: max(14px, .5vw) 0;
-    font-size: max(12px, .4vw);
+    font-size: max(12px, .9vw);
 }
 
 .login-or-register .keep-or-forgot a {
@@ -127,7 +141,7 @@ section.login .login-bg {
 }
 
 .google-or-face .google-login img {
-    margin-right: max(7px, .1vw);
+    margin-right: max(7px, .5vw);
     width: max(14px, 1.3vw);
 }
 
@@ -154,13 +168,106 @@ section.login .login-bg {
 }
 
 .register-now span {
-    font-size: max(12px, .5vw);
+    font-size: max(12px, .9vw);
 }
 
 .register-now span a{
     padding-left: max(3px, .1vw);
     color: var(--primary-pink);
     text-decoration: none;
+}
+
+.sign-up {
+    display: none;
+}
+
+.sign-up form {
+    margin-top: max(14px, 1vw);
+}
+
+.sign-up .google-or-face {
+    border: 0;
+}
+
+.sign-up .influencer-or-company {
+    margin: max(14px, 1vw) 0;
+}
+
+.sign-up .influencer-or-company .radio {
+    display: flex;
+    align-items: center;
+    padding-bottom: max(3px, .3vw);
+}
+
+.sign-up .influencer-or-company span {
+    font-size: max(10px, .8vw);
+    padding-left: max(3px, .3vw);
+}
+
+.sign-up .terms {
+    padding: max(14px, 1vw) 0;
+    border-bottom: max(1px, .1vw) solid #ccc;
+}
+
+.sign-up .terms .check-box {
+    display: flex;
+    align-items: center;
+}
+
+.sign-up .terms .check-box p {
+    font-size: max(10px, .5vw);
+    margin-left: max(3px, .3vw);
+}
+
+.sign-up .terms .check-box span {
+    color: var(--primary-pink);
+}
+
+.confirm-account {
+    width: 50%;
+}
+
+.confirm-account .account-wrapper {
+    background-color: wheat;
+    padding: max(14px, 2vw);
+}
+
+.confirm-account .img-account img{
+    height: max(20px, 3vw);
+    width: 20%;
+}
+
+.confirm-account .info-link h4 {
+    font-size: max(14px, 1.4vw);
+    margin: max(14px, 1vw) 0;
+}
+
+.confirm-account .info-link h5 {
+    font-weight: normal;
+    font-size: max(14px, 1.2vw);
+    width: 80%;
+}
+
+.confirm-account .info-link .confirm {
+    margin: max(14px, 1vw) 0;
+}
+
+.confirm-account .info-link a {
+    color: var(--primary-pink);
+    font-size: max(14px, 1vw);
+}
+
+.confirm-account .info-link p {
+    font-size: max(10px, 1vw);
+    margin-bottom: max(14px, 1.5vw);
+}
+
+.confirm-account .info-link .doubts-or-problems {
+    font-size: max(10px, .6vw);
+}
+
+.confirm-account .info-link .doubts-or-problems span {
+    color: var(--primary-pink);
 }
 
 .mobile-menu .logo-icon{
@@ -1873,7 +1980,7 @@ form .form-row label {
 
 .influencer-categories .categories-wrapper {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .influencer-categories p {
@@ -2371,10 +2478,6 @@ form .form-row label {
     font-size: max(10px, .8vw);
     font-weight: lighter;
     margin-bottom: max(14px, 1vw);
-}
-
-.influencer-proposal .categories {
-    padding-bottom: max(14px, 1vw);
 }
 
 .influencer-proposal .categories h4 {
