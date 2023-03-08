@@ -2860,6 +2860,7 @@ form .form-row label {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: flex-end;
     margin: max(14px, 1.2vw) 0;
 }
 
@@ -2869,7 +2870,6 @@ form .form-row label {
 
 .post-approval .posts .post-single img {
     width: 100%;
-    height: max(100px, 15vw);
     border-radius: max(4px, .4vw);
 }
 
