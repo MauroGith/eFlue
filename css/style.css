@@ -807,8 +807,14 @@ section.menu-content {
 .table-wrapper .rejected{
     background-color: #df0000;
 }
-.table-wrapper .pending{
+.table-wrapper .in-progress{
     background-color: #42a7ff;
+}
+.table-wrapper .pending{
+    background-color: #ffc700;
+}
+.table-wrapper .concluded{
+    background-color: rgb(209, 136, 1);
 }
 
 .table-wrapper .edit-button{
@@ -923,6 +929,7 @@ section.menu-content {
     border-radius: 50%;
 }
 .campaigns .table-wrapper table tbody tr .table-button{
+    font-size: max(10px, .8vw);
     color: white;
     padding: max(3px, .2vw) max(6px, 1vw);
     border-radius: max(2px, .4vw);
@@ -1270,6 +1277,112 @@ i.p-icon {
     cursor: pointer;
 }
 /* TELA TRANSACOES */
+
+/* TELA proposals */
+.table-overflow table {
+    width: max(850px, 100%);
+}
+.proposals-company .influe-followers{
+    display: flex;
+    text-align: left;
+}
+.proposals-company .influe-followers img {
+    margin-right: max(7px, 1vw);
+}
+.proposals-company .influe-followers p{
+    font-size: max(13px, 1vw);
+    font-weight: bold;
+}
+.proposals-company .influe-followers span {
+    display: block;
+    font-size: max(10px, .8vw);
+    font-weight: bold;
+    background-color: #ccc;
+    color: var(--deep-purple);
+    margin-top: max(2px, .2vw) !important;
+    padding: max(2px, .2vw) max(5px, 1vw);
+}  
+.proposals-company .d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.proposals-company .d-flex .green-ball{
+    background-color: #00d72f;
+    height: max(10px, 1vw);
+    width: max(10px, 1vw);
+    border-radius: 50%;
+    margin-right: max(9px, .9vw);
+}
+.proposals-company .view-profile-btn {
+    font-size: max(10px, .8vw);
+    background-color: var(--primary-pink);
+    color: white;
+    border: 0;
+    padding: max(2px, .4vw) max(2px, 1.2vw);
+    margin:0 max(2px, .2vw) max(2px, .2vw) 0;
+    cursor: pointer;
+}
+.proposals-company .view-profile-btn i{
+    font-size: max(11px, .9vw);
+    padding: 0 max(5px, .5vw) 0 0;
+}
+.proposals-company .more-info {
+    font-size: max(10px, .8vw);
+    background-color: var(--deep-purple);
+    color: white;
+    border: 0;
+    padding: max(2px, .4vw) max(2px, 1.2vw);
+    margin:0 max(2px, .2vw) max(2px, .2vw) 0;
+    cursor: pointer;
+}
+.proposals-company .more-info i{
+    font-size: max(11px, .9vw);
+    padding: 0 max(5px, .5vw) 0 0;
+}
+.proposals-company .proposals-aprove {
+    font-size: max(10px, .8vw);
+    background-color: #00d72f;
+    color: white;
+    border: 0;
+    padding: max(2px, .4vw) max(2px, 1.2vw);
+    margin:0 max(2px, .2vw) max(2px, .2vw) 0;
+    cursor: pointer;
+}
+.proposals-company .proposals-aprove i{
+    font-size: max(11px, .9vw);
+    padding: 0 max(5px, .5vw) 0 0;
+}
+.proposals-company .reprove-proposals {
+    font-size: max(10px, .8vw);
+    background-color: red;
+    color: white;
+    border: 0;
+    padding: max(2px, .4vw) max(2px, 1.2vw);
+    margin:0 max(2px, .2vw) max(2px, .2vw) 0;
+    cursor: pointer;
+}
+.proposals-company .reprove-proposals i{
+    font-size: max(11px, .9vw);
+    padding: 0 max(5px, .5vw) 0 0;
+}
+.proposals-company .btns{
+    width: 32%;
+    text-align: right;
+}
+.proposals-company a{
+    display: inline-block;
+    text-decoration: none;
+}
+.proposals-company .pendent{
+    display: inline-block;
+    width: max(4px, .4vw);
+    height: max(4px, .4vw);
+    background-color: yellow;
+    border-radius: 50%;
+    margin-left: max(2px, .2vw);
+}
+/* TELA proposals */
 
 /* TELA withdrawal  */
 .withdraw .withdraw-wrapper {
