@@ -2085,7 +2085,7 @@ form .form-row label {
 
 .influencer-categories .categories-wrapper{
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
 }
 
 .influencer-categories p {
