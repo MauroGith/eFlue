@@ -413,7 +413,7 @@ section.menu-content {
 
 .content {
     width: 80%;
-    padding: max(14px, 2vw);
+    padding: max(10px, 2vw);
 }
 
 .larger-content {
@@ -430,7 +430,7 @@ section.menu-content {
 }
 
 .content .page-init p {
-    font-size: max(14px, 1.2vw);
+    font-size: max(18px, 1.2vw);
     font-weight: bold;
 }
 
@@ -769,6 +769,7 @@ section.menu-content {
 /* TELA USUARIO */
 .user-register{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -782,6 +783,11 @@ section.menu-content {
     margin-left: max(10px, 1vw);
     padding: max(4px, 0.4vw) max(14px, 1.2vw);
     border-radius: max(3px, 0.2vw);
+}
+
+.user-register button a {
+    text-decoration: none;
+    color: white;
 }
 
 .status-wrapper {
@@ -914,8 +920,14 @@ section.menu-content {
 .table-wrapper .rejected{
     background-color: #df0000;
 }
-.table-wrapper .pending{
+.table-wrapper .in-progress{
     background-color: #42a7ff;
+}
+.table-wrapper .pending{
+    background-color: #ffc700;
+}
+.table-wrapper .concluded{
+    background-color: rgb(209, 136, 1);
 }
 
 .table-wrapper .edit-button{
@@ -1030,6 +1042,7 @@ section.menu-content {
     border-radius: 50%;
 }
 .campaigns .table-wrapper table tbody tr .table-button{
+    font-size: max(10px, .8vw);
     color: white;
     padding: max(3px, .2vw) max(6px, 1vw);
     border-radius: max(2px, .4vw);
@@ -1241,22 +1254,7 @@ section.menu-content {
 /* TELA CAMPANHAS */
 
 /* CAMPANHAS COMPANY */
-.create-campaign-user {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.create-campaign-user .btn-create{
-    background-color: var(--primary-pink); 
-    margin-right: max(9px, 1.3vw);
-}
-.create-campaign-user .btn-create a{
-    text-decoration: none;
-    color: white;
-    background-color: var(--primary-pink);
-    padding: max(4px, 0.4vw) max(14px, 1.2vw);
-    border-radius: max(3px, 0.2vw);
-}
+
 .user-dashboard .campaigns-card{
     border-radius: max(3px, .4vw);
 }
@@ -1329,6 +1327,7 @@ section.menu-content {
 
 .user-dashboard .guide-cards{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -1377,6 +1376,112 @@ i.p-icon {
     cursor: pointer;
 }
 /* TELA TRANSACOES */
+
+/* TELA proposals */
+.table-overflow table {
+    width: max(850px, 100%);
+}
+.proposals-company .influe-followers{
+    display: flex;
+    text-align: left;
+}
+.proposals-company .influe-followers img {
+    margin-right: max(7px, 1vw);
+}
+.proposals-company .influe-followers p{
+    font-size: max(13px, 1vw);
+    font-weight: bold;
+}
+.proposals-company .influe-followers span {
+    display: block;
+    font-size: max(10px, .8vw);
+    font-weight: bold;
+    background-color: #ccc;
+    color: var(--deep-purple);
+    margin-top: max(2px, .2vw) !important;
+    padding: max(2px, .2vw) max(5px, 1vw);
+}  
+.proposals-company .d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.proposals-company .d-flex .green-ball{
+    background-color: #00d72f;
+    height: max(10px, 1vw);
+    width: max(10px, 1vw);
+    border-radius: 50%;
+    margin-right: max(9px, .9vw);
+}
+.proposals-company .view-profile-btn {
+    font-size: max(10px, .8vw);
+    background-color: var(--primary-pink);
+    color: white;
+    border: 0;
+    padding: max(2px, .4vw) max(2px, 1.2vw);
+    margin:0 max(2px, .2vw) max(2px, .2vw) 0;
+    cursor: pointer;
+}
+.proposals-company .view-profile-btn i{
+    font-size: max(11px, .9vw);
+    padding: 0 max(5px, .5vw) 0 0;
+}
+.proposals-company .more-info {
+    font-size: max(10px, .8vw);
+    background-color: var(--deep-purple);
+    color: white;
+    border: 0;
+    padding: max(2px, .4vw) max(2px, 1.2vw);
+    margin:0 max(2px, .2vw) max(2px, .2vw) 0;
+    cursor: pointer;
+}
+.proposals-company .more-info i{
+    font-size: max(11px, .9vw);
+    padding: 0 max(5px, .5vw) 0 0;
+}
+.proposals-company .proposals-aprove {
+    font-size: max(10px, .8vw);
+    background-color: #00d72f;
+    color: white;
+    border: 0;
+    padding: max(2px, .4vw) max(2px, 1.2vw);
+    margin:0 max(2px, .2vw) max(2px, .2vw) 0;
+    cursor: pointer;
+}
+.proposals-company .proposals-aprove i{
+    font-size: max(11px, .9vw);
+    padding: 0 max(5px, .5vw) 0 0;
+}
+.proposals-company .reprove-proposals {
+    font-size: max(10px, .8vw);
+    background-color: red;
+    color: white;
+    border: 0;
+    padding: max(2px, .4vw) max(2px, 1.2vw);
+    margin:0 max(2px, .2vw) max(2px, .2vw) 0;
+    cursor: pointer;
+}
+.proposals-company .reprove-proposals i{
+    font-size: max(11px, .9vw);
+    padding: 0 max(5px, .5vw) 0 0;
+}
+.proposals-company .btns{
+    width: 32%;
+    text-align: right;
+}
+.proposals-company a{
+    display: inline-block;
+    text-decoration: none;
+}
+.proposals-company .pendent{
+    display: inline-block;
+    width: max(4px, .4vw);
+    height: max(4px, .4vw);
+    background-color: yellow;
+    border-radius: 50%;
+    margin-left: max(2px, .2vw);
+}
+/* TELA proposals */
 
 /* TELA withdrawal  */
 .withdraw .withdraw-wrapper {
@@ -1978,14 +2083,14 @@ form .form-row label {
     margin-bottom: max(10px, .8vw);
 }
 
-.influencer-categories .categories-wrapper {
+.influencer-categories .categories-wrapper{
     display: flex;
     /* flex-wrap: wrap; */
 }
 
 .influencer-categories p {
-    padding: max(2px, .2vw) max(14px, 1.5vw);
-    margin: max(6px, .6vw) max(5px, .5vw);
+    padding: max(2px, .2vw) max(10px, .5vw);
+    margin: max(6px, .4vw);
     font-size: max(14px, 1vw);
     border: max(1px, .1vw) solid #ccc;
     border-radius: max(14px, 2vw);
@@ -2124,12 +2229,13 @@ form .form-row label {
 
 .content-campaign .campaign-wrapper {
     display: flex;
+    flex-wrap: wrap;
     background-color: white;
 }
 
 .content-campaign .img-campaign {
-    width: 60%;
-    min-height: max(100px, 16vw);
+    width: 40%;
+    padding-top: 20%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2138,7 +2244,7 @@ form .form-row label {
 
 .content-campaign .proposal-campaign {
     padding: max(14px, 1vw);
-    width: 100%;
+    width: 60%;
 }
 
 .content-campaign .proposal-campaign h3{
@@ -2147,7 +2253,7 @@ form .form-row label {
 }
 
 .content-campaign .proposal-campaign span {
-    font-size: max(7px, .6vw);
+    font-size: max(10px, .6vw);
 }
 
 .content-campaign .b-bottom {
@@ -2164,13 +2270,13 @@ form .form-row label {
 }
 
 .content-campaign .media-type p {
-    font-size: max(10px, .8vw);
+    font-size: max(11px, .8vw);
     margin: max(5px, .5vw) 0;
 }
 
 .content-campaign .media-type span {
     color: var(--primary-pink);
-    font-size: max(7px, .7vw);
+    font-size: max(10px, .7vw);
 }
 
 .content-campaign .budget h5 {
@@ -2213,6 +2319,7 @@ form .form-row label {
 
 .product-desc-charac {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .product-description {
@@ -2352,7 +2459,7 @@ form .form-row label {
 }
 
 .influencer-proposal .profile-img .followers p {
-    font-size: max(7px, .7vw);
+    font-size: max(10px, .7vw);
     padding: max(3px, .3vw) max(5px, .5vw);
     color: white;
 }
@@ -2475,7 +2582,7 @@ form .form-row label {
 }
 
 .influencer-proposal .biography-influencer p {
-    font-size: max(10px, .8vw);
+    font-size: max(12px, .8vw);
     font-weight: lighter;
     margin-bottom: max(14px, 1vw);
 }
@@ -2484,10 +2591,20 @@ form .form-row label {
     margin-left: max(5px, .5vw);
 }
 
-.influencer-categories .category p{
-    font-size: max(10px, .8vw);
-    padding: max(2px, .2vw) max(14px, 2vw);
-    text-align: center;
+.influencer-categories .category {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: max(20px, .5vw);
+}
+
+.influencer-categories .category span{
+    display: inline-block;
+    padding: max(2px, 0.2vw) max(14px, 1.5vw);
+    margin-top: max(10px, 0.5vw);
+    margin-left: max(5px, 0.5vw);
+    border: max(1px, 0.1vw) solid #ccc;
+    border-radius: max(14px, 1vw);
+    font-weight: lighter;
 }
 
 .influencer-proposal .categories .view-profile {
@@ -2541,6 +2658,7 @@ form .form-row label {
 
 .campaign-summary .dflex {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 0 max(14px, 1vw);
@@ -2562,14 +2680,18 @@ form .form-row label {
 
 .campaign-summary .campaign-category {
     font-size: max(10px, .8vw);
+    width: 40%;
 }
 
 .campaign-summary .campaign-category .category {
-    margin-bottom: max(14px, 1vw);
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .campaign-summary .campaign-category span {
+    display: inline-block;
     padding: max(2px, .2vw) max(14px, 1.5vw);
+    margin-top: max(10px, .5vw);
     margin-left: max(5px, .5vw);
     border: max(1px, .1vw) solid #ccc;
     border-radius: max(14px, 1vw);
@@ -2693,6 +2815,7 @@ form .form-row label {
 }
 
 .shipping-info .tracking form input[type=text] {
+    font-size: max(10px, .9vw);
     padding: max(4px, .4vw);
     width: 25%;
     border: max(1px, .1vw) solid #ccc;
@@ -2738,6 +2861,7 @@ form .form-row label {
 
 .shipping-info .combined-location {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -2752,6 +2876,7 @@ form .form-row label {
 }
 
 .shipping-info form input {
+    font-size: max(12px, .8vw);
     padding: max(4px, .4vw) max(5px, .5vw);
     outline: none;
     border-radius: max(3px, .3vw);
@@ -2759,7 +2884,7 @@ form .form-row label {
 }
 
 .shipping-info form input::placeholder {
-    font-size: max(7px, .7vw);
+    font-size: max(12px, .7vw);
     font-weight: lighter;
 }
 
@@ -2836,7 +2961,9 @@ form .form-row label {
 
 .post-approval .posts {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: flex-end;
     margin: max(14px, 1.2vw) 0;
 }
 
@@ -2846,7 +2973,6 @@ form .form-row label {
 
 .post-approval .posts .post-single img {
     width: 100%;
-    height: max(100px, 15vw);
     border-radius: max(4px, .4vw);
 }
 
@@ -2950,6 +3076,7 @@ form .form-row label {
 .chat-history .chat-list {
     height: 80vh;
     overflow-y: auto;
+    padding-right: max(5px, .3vw);
 }
 
 .chat-history .chat-list::-webkit-scrollbar {
@@ -2957,8 +3084,6 @@ form .form-row label {
 }
 
 .chat-list .selected {
-    position: relative;
-    right: 1.5%;
     background: linear-gradient(45deg, white, rgba(255, 20, 145, 0.151));
     border-right: max(1px, .1vw) solid var(--primary-pink) ;
     border-bottom: none;
@@ -3453,7 +3578,7 @@ form .form-row label {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: max(100px, 10vw);
+    padding-top: 50%;
     border-radius: max(5px, .3vw) max(5px, .3vw) 0 0;
 }
 
@@ -3577,6 +3702,58 @@ form .form-row label {
     .discover-campaign .info-campaign {
         width: 33.3%;
     }
+
+    .influencer-proposal .dflex-profile {
+        flex-direction: column;
+    }
+
+    .influencer-proposal .dflex-profile .profile-img {
+        width: 100%;
+    }
+
+    .influencer-proposal .proposal {
+        width: 100%;
+    }
+
+    .influencer-proposal .proposal .proposal-wrapper {
+        padding: 0;
+    }
+
+    .campaign-summary .campaign-category {
+        width: 100%;
+    }
+
+    .shipping-info .tracking form input[type=text] {
+        width: 50%;
+    }
+
+    .shipping-info .tracking form input[type=submit] {
+        width: 20%;
+    }
+
+    .shipping-info form .address-info {
+        width: 69.5%;
+    }
+
+    .shipping-info form .number {
+        width: 29.5%;
+    }
+
+    .shipping-info form .complement {
+        width: 40%;
+    }
+
+    .shipping-info form .state {
+        width: 15%;
+    }
+
+    .shipping-info form .city {
+        width: 44%;
+    }
+
+    .post-approval .posts .post-single {
+        width: 33%;
+    }
 }
 
 @media screen and (max-width: 768px){
@@ -3630,6 +3807,65 @@ form .form-row label {
 
     .discover-campaign .info-campaign {
         width: 50%;
+    }
+
+    .influencer-content .influencer-proposal {
+        width: 100%;
+    }
+
+    .campaign-summary {
+        width: 100%;
+    }
+
+    .shipping-info .tracking form input[type=text] {
+        width: 70%;
+    }
+
+    .shipping-info .tracking form input[type=submit] {
+        width: 30%;
+    }
+
+    .shipping-info .tracking form p {
+        width: 100%;
+    }
+
+    .content-campaign .img-campaign {
+        width: 100%;
+        padding-top: 50%;
+    }
+
+    .content-campaign .proposal-campaign {
+        width: 100%;
+    }
+
+    .product-description {
+        width: 100%;
+    }
+
+    .product-characteristics {
+        width: 100%;
+    }
+
+    .user-dashboard .title-guide {
+        flex-wrap: wrap;
+    }
+
+    .user-dashboard .guide-wrapper .guide {
+        width: 48.5%;
+    }
+
+    .user-dashboard .guide-cards .g-card {
+        width: 49.5%;
+        margin-top: 10px;
+    }
+
+    .bank-data .add-bank-account {
+        width: 100%;
+    }
+
+    .bank-data .bank-accounts {
+        margin-top: 15px;
+        width: 100%;
     }
 
     .chat-history {
