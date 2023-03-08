@@ -1976,16 +1976,14 @@ form .form-row label {
     margin-bottom: max(10px, .8vw);
 }
 
-.influencer-categories .categories-wrapper .category{
+.influencer-categories .categories-wrapper{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 .influencer-categories p {
-    width: 32%;
-    padding: max(2px, .2vw);
-    margin: max(6px, .6vw) 0;
+    padding: max(2px, .2vw) max(10px, .5vw);
+    margin: max(6px, .4vw);
     font-size: max(14px, 1vw);
     border: max(1px, .1vw) solid #ccc;
     border-radius: max(14px, 2vw);
@@ -3622,6 +3620,14 @@ form .form-row label {
         width: 100%;
     }
 
+    .shipping-info .tracking form input[type=text] {
+        width: 50%;
+    }
+
+    .shipping-info .tracking form input[type=submit] {
+        width: 20%;
+    }
+
     .shipping-info form .address-info {
         width: 69.5%;
     }
@@ -3705,6 +3711,18 @@ form .form-row label {
     }
 
     .campaign-summary {
+        width: 100%;
+    }
+
+    .shipping-info .tracking form input[type=text] {
+        width: 70%;
+    }
+
+    .shipping-info .tracking form input[type=submit] {
+        width: 30%;
+    }
+
+    .shipping-info .tracking form p {
         width: 100%;
     }
 
