@@ -168,9 +168,24 @@
                     </div>
                 </div>
             </div>
-            <div class="info-register">
-                
-                <div class="info-personal">
+            <div class="form-box info-register">
+                <div class="form-steps">
+                    <div class="steps-img">
+                        <div class="img-box current-step">
+                            <img src="../images/i-info.svg" alt="">
+                        </div>
+                        <div class="img-box">
+                            <img src="../images/i-address.svg" alt="">
+                        </div>
+                        <div class="img-box">
+                            <img src="../images/i-bank.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="step-bar">
+                        <div class="progress" style="width: 30%;"></div>
+                    </div>
+                </div>
+                <div class="box-info">
                     <h3>Informações pessoais</h3>
                     <p>Adicione suas informações pessoas para completa seu perfil.</p>
                 </div>
@@ -219,50 +234,129 @@
 
                 </form>
             </div>
-            <div class="register-address">
-                <div class="address">
+            <div class="form-box register-address">
+                <div class="form-steps">
+                    <div class="steps-img">
+                        <div class="img-box current-step">
+                            <img src="../images/i-info.svg" alt="">
+                        </div>
+                        <div class="img-box current-step">
+                            <img src="../images/i-address.svg" alt="">
+                        </div>
+                        <div class="img-box">
+                            <img src="../images/i-bank.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="step-bar">
+                        <div class="progress" style="width: 70%;"></div>
+                    </div>
+                </div>
+                <div class="box-info">
                     <h3>Endereço</h3>
                     <p>Esse endereço vai ser usado para faturamento</p>
                 </div>
                 <form action="">
-                    <div>
+                    <div class="cep w-35">
                         <label for="">CEP</label>
                         <div>
-                            <input type="text" name="" id="">
+                            <input type="text" name="" id="" placeholder="Digite seu cep">
                         </div>
                         <a href="">Não sabe seu cep?</a>
                     </div>
                     <div class="address-box">
-                        <div>
-                            <label for="">Endereço</label>
-                            <input type="text" name="" id="" placeholder="Digite o seu endereço">
+                        <div class="form-flex">
+                            <div class="form-field w-55">
+                                <label for="">Endereço</label>
+                                <input type="text" name="" id="" placeholder="Digite o seu endereço">
+                            </div>
+                            <div class="form-field w-21">
+                                <label for="">Numero</label>
+                                <input type="text" name="" id="" placeholder="Digite o numero">
+                            </div>
+                            <div class="form-field w-21">
+                                <label for="">Bairro</label>
+                                <input type="text" name="" id="" placeholder="Digite o seu bairro">
+                            </div>
                         </div>
-                        <div>
-                            <label for="">Numero</label>
-                            <input type="text" name="" id="" placeholder="Digite o numero">
-                        </div>
-                        <div>
-                            <label for="">Bairro</label>
-                            <input type="text" name="" id="" placeholder="Digite o seu bairro">
-                        </div>
-                        <div>
-                            <label for="">Complemento</label>
-                            <input type="text" name="" id="" placeholder="Informe o complemento">
-                        </div>
-                        <div>
-                            <label for="">Estado</label>
-                            <input type="text" name="" id="" placeholder="UF">
-                        </div>
-                        <div>
-                            <label for="">Cidade</label>
-                            <input type="text" name="" id="" placeholder="Informe sua cidade">
-                        </div>
+                        <div class="form-flex">
+                            <div class="form-field w-47">
+                                <label for="">Complemento</label>
+                                <input type="text" name="" id="" placeholder="Informe o complemento">
+                            </div>
+                            <div class="form-field w-10">
+                                <label for="">Estado</label>
+                                <input type="text" name="" id="" placeholder="UF">
+                            </div>
+                            <div class="form-field w-41">
+                                <label for="">Cidade</label>
+                                <input type="text" name="" id="" placeholder="Informe sua cidade">
+                            </div>
+                         </div>
                     </div>
                     <div class="continue-btn">
                         <input type="submit" value="Salvar e continuar">
                     </div>
                 </form>
             </div>
+            <div class="form-box register-bank">
+                <div class="form-steps">
+                    <div class="steps-img">
+                        <div class="img-box current-step">
+                            <img src="../images/i-info.svg" alt="">
+                        </div>
+                        <div class="img-box current-step">
+                            <img src="../images/i-address.svg" alt="">
+                        </div>
+                        <div class="img-box current-step">
+                            <img src="../images/i-bank.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="step-bar">
+                        <div class="progress" style="width: 100%;"></div>
+                    </div>
+                </div>
+                <div class="box-info">
+                    <h3>Endereço</h3>
+                    <p>Esse endereço vai ser usado para faturamento</p>
+                </div>
+                <form action="">
+                    <div class="address-box">
+                        <div class="form-field">
+                            <label for="">Banco</label>
+                            <select name="" id="">
+                                <option value="">246 - Banco ABC Brasil S.A</option>
+                            </select>
+                        </div>
+                        <div class="form-flex">
+                            <div class="form-field w-49">
+                                <label for="">Agência</label>
+                            <input type="text" name="" id="" placeholder="Digite...">
+                            </div>
+                            <div class="form-field w-49">
+                                <label for="">Numero da conta</label>
+                            <input type="text" name="" id="" placeholder="Digite...">
+                            </div>
+                        </div>
+                        <div class="form-flex">
+                            <div class="form-field w-27">
+                                <label for="">Digito da conta</label>
+                                <input type="text" name="" id="" placeholder="Digite...">
+                            </div>
+                            <div class="form-field w-71">
+                                <label for="">Tipo de conta</label>
+                                <select name="" id="">
+                                    <option value="">Conta corrente</option>
+                                    <option value="">Conta poupança</option>
+                                </select>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="continue-btn">
+                        <input type="submit" value="Salvar e finalizar">
+                    </div>
+                </form>
+            </div>
+            
         </div>
     </section>
     <script src="../js/jquery.js"></script>

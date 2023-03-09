@@ -269,36 +269,138 @@ section.login .login-bg {
     color: var(--primary-pink);
 }
 
-.info-register .info-personal {
+.form-box .form-steps {
+    position: relative;
+    width: 100%;
+    max-width: max(400px, 50%);
+    margin: 0 auto;
+}
+
+.form-box .steps-img {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-box .steps-img .img-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max(50px, 5vw);
+    height: max(50px, 5vw);
+    background-color: var(--lighter-gray);
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+}
+
+.form-box .steps-img .current-step {
+    background-color: #42a7ff;
+}
+
+.form-box .steps-img .img-box img {
+    width: 80%;
+    border: max(1px, .2vw) solid white;
+    padding: max(6px, .5vw);
+    border-radius: 50%;
+}
+
+.form-box .step-bar {
+    width: 98%;
+    height: max(5px, .5vw);
+    background-color: var(--lighter-gray);
+    position: absolute;
+    top: 50%;
+    left: 1%;
+}
+
+.form-box .step-bar .progress {
+    background-color: #42a7ff;
+    height: 100%;
+}
+
+.form-box .box-info{
     text-align: center;
 }
 
-.info-register .info-personal h3 {
+.form-box h3 {
     font-size: max(14px, 1.5vw);
+    margin-top: max(14px, 1vw);
 }
 
-.info-register .info-personal p {
+.form-box p {
     font-size: max(14px, 1vw);
     margin: max(14px, 1vw) 0;
 }
 
-.info-register form {
-    width: 60%;
+.form-box  {
+    width: 100%;
+    max-width: max(600px, 60%);
     margin: 0 auto;
 }
 
-.info-register form label {
+.form-box .form-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-box .cep {
+    margin: 0 auto;
+}
+
+.form-box .cep input {
+    margin: 0;
+}
+
+.form-box .w-71 {
+    width: 71%;
+}
+
+.form-box .w-55 {
+    width: 55%;
+}
+
+.form-box .w-49 {
+    width: 49%;
+}
+
+.form-box .w-47 {
+    width: 47%;
+}
+
+.form-box .w-41 {
+    width: 41%;
+}
+
+.form-box .w-35 {
+    width: 35%;
+}
+
+.form-box .w-27 {
+    width: 27%;
+}
+
+.form-box .w-21 {
+    width: 21%;
+}
+
+.form-box .w-10 {
+    width: 10%;
+}
+
+
+
+
+
+.form-box form label {
     display: block;
     font-size: max(14px, 1vw);
     margin-bottom: max(5px, .5vw);
 }
 
-.info-register form input {
+.form-box form input {
     font-size: max(14px, 1vw);
     margin-bottom: max(14px, 1vw);
-}
-
-.info-register form input[type=text]{
     width: 100%;
     padding: max(5px, .5vw);
     border: max(1px, .1vw) solid #ccc;
@@ -307,12 +409,12 @@ section.login .login-bg {
     outline: none;
 }
 
-.info-register input::placeholder{
+.form-box input::placeholder{
     font-size: max(12px, .9vw);
     font-weight: lighter;
 }
 
-.info-register form select {
+.form-box form select {
     width: 100%;
     padding: max(5px, .5vw);
     border: max(1px, .1vw) solid #ccc;
@@ -324,7 +426,7 @@ section.login .login-bg {
     margin-bottom: max(7px, .7vw);
 }
 
-.info-register form input[type=file] {
+.form-box form input[type=file] {
     width: 100%;
     padding: max(5px, .5vw);
     border: max(1px, .1vw) solid #ccc;
@@ -335,7 +437,7 @@ section.login .login-bg {
     font-size: max(14px, .9vw);
 }
 
-.info-register form input[type=submit] {
+.form-box form input[type=submit] {
     width: 80%;
     padding: max(8px, .8vw) 0;
     margin: max(14px, 1.5vw) auto;
@@ -348,38 +450,11 @@ section.login .login-bg {
     display: block;
 }
 
-.register-address .address {
-    text-align: center;
-}
 
-.register-address .address h3 {
-    font-size: max(14px, 1.5vw);
-}
-
-.register-address .address p {
-    font-size: max(14px, 1vw);
-    margin: max(14px, 1vw) 0;
-}
-
-.register-address form {
-    width: 60%;
-}
-
-.register-address form label {
-    display: block;
-    font-size: max(14px, 1vw);
-    margin-bottom: max(5px, .5vw);
-}
-
-.register-address form input {
-    font-size: max(14px, 1vw);
-}
-
-.register-address form a {
+.register-address a {
     color: var(--primary-pink);
     font-size: max(12px, .8vw);
 }
-
 
 
 
