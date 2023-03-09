@@ -233,8 +233,7 @@ section.login .login-bg {
 }
 
 .confirm-account .img-account img{
-    height: max(20px, 3vw);
-    width: 20%;
+    width: max(20px, 20%);
 }
 
 .confirm-account .info-link h4 {
@@ -263,12 +262,127 @@ section.login .login-bg {
 }
 
 .confirm-account .info-link .doubts-or-problems {
-    font-size: max(10px, .6vw);
+    font-size: max(10px, .7vw);
 }
 
 .confirm-account .info-link .doubts-or-problems span {
     color: var(--primary-pink);
 }
+
+.info-register .info-personal {
+    text-align: center;
+}
+
+.info-register .info-personal h3 {
+    font-size: max(14px, 1.5vw);
+}
+
+.info-register .info-personal p {
+    font-size: max(14px, 1vw);
+    margin: max(14px, 1vw) 0;
+}
+
+.info-register form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.info-register form label {
+    display: block;
+    font-size: max(14px, 1vw);
+    margin-bottom: max(5px, .5vw);
+}
+
+.info-register form input {
+    font-size: max(14px, 1vw);
+    margin-bottom: max(14px, 1vw);
+}
+
+.info-register form input[type=text]{
+    width: 100%;
+    padding: max(5px, .5vw);
+    border: max(1px, .1vw) solid #ccc;
+    border-radius: max(5px, .5vw);
+    background-color: #f8f8f8;
+    outline: none;
+}
+
+.info-register input::placeholder{
+    font-size: max(12px, .9vw);
+    font-weight: lighter;
+}
+
+.info-register form select {
+    width: 100%;
+    padding: max(5px, .5vw);
+    border: max(1px, .1vw) solid #ccc;
+    border-radius: max(5px, .5vw);
+    background-color: #f8f8f8;
+    outline: none;
+    font-weight: lighter;
+    font-size: max(14px, .9vw);
+    margin-bottom: max(7px, .7vw);
+}
+
+.info-register form input[type=file] {
+    width: 100%;
+    padding: max(5px, .5vw);
+    border: max(1px, .1vw) solid #ccc;
+    border-radius: max(5px, .5vw);
+    background-color: #f8f8f8;
+    outline: none;
+    font-weight: lighter;
+    font-size: max(14px, .9vw);
+}
+
+.info-register form input[type=submit] {
+    width: 80%;
+    padding: max(8px, .8vw) 0;
+    margin: max(14px, 1.5vw) auto;
+    background-color: #42a7ff;
+    color: white;
+    font-size: max(14px, .9vw);
+    border: 0;
+    border-radius: max(14px, 1.5vw);
+    cursor: pointer;
+    display: block;
+}
+
+.register-address .address {
+    text-align: center;
+}
+
+.register-address .address h3 {
+    font-size: max(14px, 1.5vw);
+}
+
+.register-address .address p {
+    font-size: max(14px, 1vw);
+    margin: max(14px, 1vw) 0;
+}
+
+.register-address form {
+    width: 60%;
+}
+
+.register-address form label {
+    display: block;
+    font-size: max(14px, 1vw);
+    margin-bottom: max(5px, .5vw);
+}
+
+.register-address form input {
+    font-size: max(14px, 1vw);
+}
+
+.register-address form a {
+    color: var(--primary-pink);
+    font-size: max(12px, .8vw);
+}
+
+
+
+
 
 .mobile-menu .logo-icon{
     display: flex;
@@ -433,6 +547,21 @@ section.menu-content {
     font-size: max(18px, 1.2vw);
     font-weight: bold;
 }
+
+.page-init .unlock {
+    width: 82%;
+    padding: max(10px, .8vw) 0;
+    background-color: red;
+    border-radius: max(3px, .3vw);
+}
+
+.page-init .unlock p {
+    margin-left: max(14px, 1vw);
+    font-size: max(10px, .8vw);
+    font-weight: lighter;
+    color: white;
+}
+
 
 .page-init .user-card{
     position: relative;
