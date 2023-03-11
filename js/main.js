@@ -17,10 +17,14 @@ $('.register-button').click(() => {
     $('.wrapper-edit').fadeIn()
 })
 
-$('.close-modal').click(() => {
-    $('.wrapper-edit').fadeOut()
-})
-
 $('.open-modal').click(() => {
     $('.wrapper-edit').fadeIn()
+})
+
+$('.send-proposal').click(() => {
+    $('.wrapper-edit').fadeIn()
+})
+
+$('.close-modal').click(() => {
+    $('.wrapper-edit').fadeOut()
 })

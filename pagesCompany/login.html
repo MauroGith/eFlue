@@ -16,41 +16,43 @@
             </div>
             <div class="login-or-register">
                 <div class="wrapper-padding">
-                    <div class="logo-login">
-                        <img src="../images/logo-login.png" alt="">
-                    </div>
-                    <p class="continue-login">Faça seu login para continuar</p>
-                    <form action="">
-                        <div>
-                            <label>E-mail</label>
-                            <input class="placeholder-text" type="text" placeholder="Digite seu e-mail">
+                    <div class="sign-in">
+                        <div class="logo-login">
+                            <img src="../images/logo-login.png" alt="">
                         </div>
-                        <div>
-                            <label>Senha</label>
-                            <input class="placeholder-text" type="text" placeholder="Digite sua senha">
-                        </div>
-                        <div class="keep-or-forgot">
-                            <div class="check-box">
-                                <input type="checkbox" name="" id="">
-                                <span>Mantenha conectado</span>
+                        <p class="continue-login">Faça seu login para continuar</p>
+                        <form action="">
+                            <div>
+                                <label>E-mail</label>
+                                <input  type="text" placeholder="Digite seu e-mail">
                             </div>
-                            <a href="">Esqueceu a senha?</a>
+                            <div>
+                                <label>Senha</label>
+                                <input  type="text" placeholder="Digite sua senha">
+                            </div>
+                            <div class="keep-or-forgot">
+                                <div class="check-box">
+                                    <input type="checkbox" name="" id="keepConected">
+                                    <label for="keepConected">Mantenha conectado</label>
+                                </div>
+                                <a href="">Esqueceu a senha?</a>
+                            </div>
+                            <input type="submit" value="Iniciar sessão">
+                        </form>
+                        <div class="google-or-face">
+                            <div class="google-login">
+                                <button>
+                                    <img src="../images/image_google.png" alt="">
+                                    <p>Continuar com Google</p>
+                                </button>
+                            </div>
+                            <div class="face-login">
+                                <button><i class="fa-brands fa-facebook-f"></i>Continue com Facebook</button>
+                            </div>
                         </div>
-                        <input type="submit" value="Iniciar sessão">
-                    </form>
-                    <div class="google-or-face">
-                        <div class="google-login">
-                            <button>
-                                <img src="../images/image_google.png" alt="">
-                                <p>Continuar com Google</p>
-                            </button>
+                        <div class="register-now">
+                            <span>Ainda nao criou sua conta na eFlue?<a href="">Cadastre-se</a></span>
                         </div>
-                        <div class="face-login">
-                            <button><i class="fa-brands fa-facebook-f"></i>Continue com Facebook</button>
-                        </div>
-                    </div>
-                    <div class="register-now">
-                        <span>Ainda nao criou sua conta na eFlue?<a href="">Cadastre-se</a></span>
                     </div>
                     <div class="sign-up">
                         <div class="google-or-face">
@@ -67,27 +69,27 @@
                         <form action="">
                             <div>
                                 <label>Nome</label>
-                                <input class="placeholder-text" type="text" placeholder="Digite seu nome">
+                                <input  type="text" placeholder="Digite seu nome">
                             </div>
                             <div>
                                 <label>E-mail</label>
-                                <input class="placeholder-text" type="text" placeholder="Digite seu e-mail">
+                                <input  type="text" placeholder="Digite seu e-mail">
                             </div>
                             <div>
                                 <label>Senha</label>
-                                <input class="placeholder-text" type="text" placeholder="Digite sua senha">
+                                <input  type="text" placeholder="Digite sua senha">
                             </div>
                             <div>
                                 <label>Confirme a sua senha</label>
-                                <input class="placeholder-text" type="text" placeholder="Confirme sua senha">
+                                <input  type="text" placeholder="Confirme sua senha">
                             </div>
                             <div class="influencer-or-company">
                                 <div class="radio">
-                                    <input type="radio" name="" id="">
+                                    <input type="radio" name="selectType" id="iRadio">
                                     <span>Sou influenciador</span>
                                 </div>
                                 <div class="radio">
-                                    <input type="radio" name="" id="">
+                                    <input type="radio" name="selectType" id="cRadio">
                                     <span>Sou empresa</span>
                                 </div>
                             </div>
@@ -95,31 +97,33 @@
                         </form>
                         <div class="terms">
                             <div class="check-box">
-                                <input type="checkbox" name="" id="">
+                                <input type="checkbox" name="" id="agreeTerms">
+                                <label for="agreeTerms"></label>
                                 <p>Ao criar sua conta, você esta aceitando os <span>Termos de Serviços</span> e a <span>Politica de Privacidade</span> da eFlue</p>
                             </div>
                         </div>
                         <div class="register-now">
-                            <span>Ainda não criou sua conta na eFlue?<a href="">Login</a></span>
+                            <span>Você já registrou na eFlue?<a href="">Login</a></span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="confirm-account">
-            <div class="account-wrapper">
-                <div class="img-account">
-                    <img src="../images/logo-login.png" alt="">
-                </div>
-                <div class="info-link">
-                    <h4>Olá! Estamos felizes por você se junta a nós</h4>
-                    <h5>Mais um passo e pronto. Basta clicar no link abaixo para se cadastrar na eFlue.</h5>
-                    <div class="confirm">
-                        <a href="">Confirmar Conta</a>
+        <div class="hidden-box">
+            <div class="confirm-account">
+                <div class="account-wrapper">
+                    <div class="img-account">
+                        <img src="../images/logo-login.png" alt="">
                     </div>
-                    <p>Após clicar nesse link, você vai ser redirecionado para concluir sua inscrição.</p>
-                    <p class="doubts-or-problems">Casos de duvidas ou problemas, não hesite em nos contatar<span>:contato@eflue.com</span></p>
+                    <div class="info-link">
+                        <h4>Olá! Estamos felizes por você se junta a nós</h4>
+                        <h5>Mais um passo e pronto. Basta clicar no link abaixo para se cadastrar na eFlue.</h5>
+                        <div class="confirm">
+                            <a href="">Confirmar Conta</a>
+                        </div>
+                        <p>Após clicar nesse link, você vai ser redirecionado para concluir sua inscrição.</p>
+                        <p class="doubts-or-problems">Casos de duvidas ou problemas, não hesite em nos contatar: <span>contato@eflue.com</span></p>
+                    </div>
                 </div>
             </div>
         </div>

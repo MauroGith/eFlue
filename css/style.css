@@ -19,6 +19,7 @@
 
 section.login .login-wrapper {
     display: flex;
+    position: relative;
 }
 
 section.login .login-bg {
@@ -64,7 +65,7 @@ section.login .login-bg {
 }
 
 .login-or-register input {
-    font-size: max(10px, 1vw);
+    font-size: max(14px, 1vw);
 }
 
 .login-or-register input[type=text] {
@@ -75,17 +76,30 @@ section.login .login-bg {
     padding-bottom: max(2px, .3vw);
 }
 
-.placeholder-text::placeholder {
-    font-size: max(10px, .7vw);
+.login-or-register input::placeholder {
+    font-size: max(12px, .9vw);
 }
 
 .login-or-register .check-box {
     display: flex;
-    align-items: center;
 }
 
-.login-or-register .check-box span {
-    margin-left: max(3px, .3vw);
+.login-or-register .check-box input{
+    appearance: none;
+    width: max(10px, 1vw);
+    height: max(10px, 1vw);
+    border-radius: 50%;
+    background-color: var(--lighter-gray);
+    border: max(1px, .1vw) solid black;
+    margin-right: max(3px, .3vw);
+}
+
+.login-or-register .check-box input:checked {
+    background-image: radial-gradient(var(--primary-pink) 50%, white 50%);
+}
+
+.login-or-register .check-box label {
+    margin: 0;
 }
 
 .keep-or-forgot {
@@ -163,7 +177,7 @@ section.login .login-bg {
 }
 
 .register-now {
-    width: 100%;
+    text-align: center;
     margin: max(10px, .8vw) 0;
 }
 
@@ -199,6 +213,19 @@ section.login .login-bg {
     padding-bottom: max(3px, .3vw);
 }
 
+.sign-up .influencer-or-company .radio input {
+    appearance: none;
+    width: max(10px, 1vw);
+    height: max(10px, 1vw);
+    border-radius: 50%;
+    background-color: white;
+    border: max(1px, .1vw) solid black;
+}
+
+.sign-up .influencer-or-company .radio input:checked {
+    background-image: radial-gradient(var(--primary-pink) 50%, white 50%);
+}
+
 .sign-up .influencer-or-company span {
     font-size: max(10px, .8vw);
     padding-left: max(3px, .3vw);
@@ -215,20 +242,31 @@ section.login .login-bg {
 }
 
 .sign-up .terms .check-box p {
-    font-size: max(10px, .5vw);
-    margin-left: max(3px, .3vw);
+    font-size: max(11px, .6vw);
 }
 
 .sign-up .terms .check-box span {
     color: var(--primary-pink);
 }
 
+.hidden-box {
+    display: none;
+}
+
 .confirm-account {
-    width: 50%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--lighter-gray);
 }
 
 .confirm-account .account-wrapper {
-    background-color: wheat;
+    background-color: white;
     padding: max(14px, 2vw);
 }
 
@@ -1562,22 +1600,22 @@ section.menu-content {
     padding-right: max(7px, 2vw);
 }
 
-.campaigns .form-create-campaign form .radio {
+.campaigns .form-create-campaign form .check-radio {
     display: flex;
     align-items: center;
     padding-bottom: max(2px, .2vw);
 }
 
-.campaigns .form-create-campaign form  input[type="radio"]{
+.campaigns .form-create-campaign form .check-radio input{
     appearance: none;
     border: max(1px, .1vw) solid black;
     padding: max(5px, .5vw);
     border-radius: 50%;
 }
-.campaigns .form-create-campaign form input[type="radio"]:checked{
-    background-color: black;
+.campaigns .form-create-campaign form .check-radio input:checked{
+    background-image: radial-gradient(var(--primary-pink) 60%, white 50%);
 }
-.campaigns .form-create-campaign form .radio label {
+.campaigns .form-create-campaign form .check-radio label {
     padding-left: max(5px, .5vw);
     font-size: max(11px, 1vw);
     color: black;
@@ -2322,21 +2360,26 @@ form .form-row label {
 }
 
 .influencer-profile .proposal-btn{
-    padding: max(3px, .3px) 0;
-    background-color: var(--deep-purple);
+    padding: max(3px, .3vw) 0;
     border-radius: max(4px, .4vw);
     margin: max(5px, .5vw) 0;
     cursor: pointer;
+}
+
+.influencer-profile .send-proposal{
+    background-color: var(--deep-purple);
 }
 
 .influencer-profile .add-favorite {
     background-color: #42a7ff;
 }
 
-.influencer-profile .proposal-btn a {
+.influencer-profile .proposal-btn button {
     color: white;
     font-size: max(10px, .7vw);
-    text-decoration: none;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
 }
 
 .influencer-profile .biography-info {
@@ -2487,7 +2530,10 @@ form .form-row label {
 }
 
 .wrapper-edit .influencer form p{
-    margin: max(5px, .5vw) 0;
+    font-size: max(14px, 1vw);
+    font-weight: lighter;
+    max-width: max(300px, 70%);
+    margin: max(5px, .5vw) auto;
     text-align: center;
 }
 
@@ -4058,6 +4104,27 @@ form .form-row label {
 }
 
 @media screen and (max-width: 1024px){
+    section.login .login-bg {
+        width: 100%;
+    }
+
+    .login-or-register {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    .login-or-register input[type=text] {
+        background-color: transparent;
+    }
+
+    .wrapper-padding {
+        margin: 0 10px;
+        max-width: max(400px, 50%);
+        background-color: rgba(255, 255, 255, 0.801);
+        border-radius: max(10px, .5vw);
+    }
+
     .dashboard-left {
         width: 100%;
     }
