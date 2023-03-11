@@ -398,8 +398,8 @@ section.login .login-bg {
     margin: 0;
 }
 
-.form-box .w-71 {
-    width: 71%;
+.form-box .w-66 {
+    width: 66%;
 }
 
 .form-box .w-55 {
@@ -422,8 +422,8 @@ section.login .login-bg {
     width: 35%;
 }
 
-.form-box .w-27 {
-    width: 27%;
+.form-box .w-33 {
+    width: 33%;
 }
 
 .form-box .w-24 {
@@ -564,6 +564,7 @@ section.login .login-bg {
 
 .socials .social-networks .networks-wrapper {
     width: 24.5%;
+    margin: max(15px, 1vw) auto;
     padding: max(14px, 1vw) max(14px, 1.5vw);
     border-radius: max(5px, .5vw);
     background-color: white;
@@ -4124,6 +4125,10 @@ form .form-row label {
         border-radius: max(10px, .5vw);
     }
 
+    .socials .social-networks .networks-wrapper {
+        width: 49%;
+    }
+
     .dashboard-left {
         width: 100%;
     }
@@ -4194,6 +4199,38 @@ form .form-row label {
 }
 
 @media screen and (max-width: 768px){
+    .form-box .w-55 {
+        width: 59%;
+    }
+
+    .form-box .w-47 {
+        width: 100%;
+    }
+
+    .form-box .w-41 {
+        width: 69%;
+    }
+
+    .form-box .w-35 {
+        width: 50%;
+    }
+
+    .form-box .w-24 {
+        width: 49%;
+    }
+
+    .form-box .w-21 {
+        width: 40%;
+    }
+
+    .form-box .w-10 {
+        width: 30%;
+    }
+
+    .socials .social-networks .networks-wrapper {
+        width: max(400px, 60%);
+    }
+
     .mobile-menu {
         display: block;
     }
