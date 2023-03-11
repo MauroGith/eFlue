@@ -3654,8 +3654,7 @@ form .form-row label {
 }
 
 .chat-messages .message-box .chat-image {
-    width: max(30px, 3vw);
-    height: max(30px, 3vw);
+    width: 15%;
 }
 
 .chat-messages .message-box .chat-image img {
