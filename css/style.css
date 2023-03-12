@@ -2980,6 +2980,12 @@ form .form-row label {
     text-align: center;
 }
 
+.influencer-proposal a {
+    color: white;
+    text-decoration: none;
+    font-size: max(12px, 1vw);
+}
+
 .influencer-proposal .send-message {
     padding: max(3px, .3vw) 0;
     background-color: #42a7ff;
@@ -3012,6 +3018,7 @@ form .form-row label {
 }
 
 .influencer-categories .category span{
+    font-size: max(12px, .8vw);
     display: inline-block;
     padding: max(2px, 0.2vw) max(14px, 1.5vw);
     margin-top: max(10px, 0.5vw);
@@ -3022,6 +3029,7 @@ form .form-row label {
 }
 
 .influencer-proposal .categories .view-profile {
+    background-color: var(--deep-purple);
     padding: max(3px, .3vw) 0;
     text-align: center;
 }
@@ -3170,32 +3178,53 @@ form .form-row label {
     margin-bottom: max(14px, 1vw);
 }
 
-.shipping-info {
+.blocked-content {
+    display: none;
+    padding: max(20px, 2vw) 0;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.blocked-content img {
+    width: max(70px, 6vw);
+}
+
+.blocked-content p {
+    font-weight: bolder;
+    font-size: max(16px, 1vw);
+}
+
+.contact-info {
+    position: relative;
     margin: max(14px, 1vw) 0;
 }
 
-.shipping-info h5 {
+.contact-info h5 {
     font-size: max(14px, 1vw);
 }
 
-.shipping-info .address {
+.contact-info .address {
     background-color: white;
     padding: max(14px, 1vw);
     border-radius: max(5px, .5vw);
 }
 
-.shipping-info .address h4 {
+.contact-info .address h4 {
     font-size: max(14px, 1vw);
     margin-bottom: max(14px, 1vw);
 }
 
-.shipping-info .address-content {
+.contact-info .address-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.shipping-info .address-content span {
+.contact-info .address-content span {
     padding: max(5px, .5vw) max(10px, 1vw);
     font-size: max(14px, .9vw);
     font-weight: lighter;
@@ -3203,32 +3232,32 @@ form .form-row label {
     border-radius: max(3px, .3vw);
 }
 
-.shipping-info .place {
+.contact-info .place {
     border-bottom: max(1px, .1vw ) solid var(--lighter-gray);
     padding-bottom: max(14px, 1vw);
 }
 
-.shipping-info .place p {
+.contact-info .place p {
     font-size: max(12px, .9vw);
 }
 
-.shipping-info .tracking {
+.contact-info .tracking {
     margin: max(14px, 1vw) 0;
 }
 
-.shipping-info .tracking h4 {
+.contact-info .tracking h4 {
     margin-bottom: max(5px, .5vw);
 }
 
-.shipping-info .tracking form {
+.contact-info .tracking form {
     width: 100%;
 }
 
-.shipping-info .tracking form .d-flex{
+.contact-info .tracking form .d-flex{
     display: flex;
 }
 
-.shipping-info .tracking form input[type=text] {
+.contact-info .tracking form input[type=text] {
     font-size: max(10px, .9vw);
     padding: max(4px, .4vw);
     width: 25%;
@@ -3237,7 +3266,7 @@ form .form-row label {
     outline: none;
 }
 
-.shipping-info .tracking form input[type=submit] {
+.contact-info .tracking form input[type=submit] {
     width: 8%;
     background-color: var(--deep-purple);
     color: white;
@@ -3247,49 +3276,49 @@ form .form-row label {
     font-size: max(10px, .8vw);
 }
 
-.shipping-info .tracking form p {
+.contact-info .tracking form p {
     font-size: max(10px, .8vw);
     margin-top: max(5px, .5vw);
     width: 40%;
 }
 
-.shipping-info .add-file form p {
+.contact-info .add-file form p {
     font-size: max(14px, 1vw);
     margin-bottom: max(5px, .5vw);
 }
 
-.shipping-info .add-file label {
+.contact-info .add-file label {
     font-size: max(14px, 1vw);
 }
 
-.shipping-info .add-file form input[type=file] {
+.contact-info .add-file form input[type=file] {
     width: 100%;
     padding: max(5px, .5vw);
     border: max(1px, .1vw) solid #ccc;
     font-size: max(10px, .8vw);
 }
 
-.shipping-info form {
+.contact-info form {
     width: 100%;
 }
 
-.shipping-info .combined-location {
+.contact-info .combined-location {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.shipping-info .combined-location input {
+.contact-info .combined-location input {
     width: 100%;
 }
 
-.shipping-info form label {
+.contact-info form label {
     font-size: max(10px, .8vw);
     margin-bottom: max(3px, .3vw);
     display: inline-block;
 }
 
-.shipping-info form input {
+.contact-info form input {
     font-size: max(12px, .8vw);
     padding: max(4px, .4vw) max(5px, .5vw);
     outline: none;
@@ -3297,63 +3326,63 @@ form .form-row label {
     border: max(1px, .1vw) solid #ccc;
 }
 
-.shipping-info form input::placeholder {
+.contact-info form input::placeholder {
     font-size: max(12px, .7vw);
     font-weight: lighter;
 }
 
-.shipping-info .form-field {
+.contact-info .form-field {
     display: flex;
     flex-direction: column;
 }
 
-.shipping-info form .cep {
+.contact-info form .cep {
     margin-bottom: max(14px, 1vw);
     width: 20%;
 }
 
-.shipping-info form .address-info {
+.contact-info form .address-info {
     width: 40%;
 }
 
-.shipping-info form .number {
+.contact-info form .number {
     width: 15%;
 }
 
-.shipping-info form .complement {
+.contact-info form .complement {
     width: 20%;
 }
 
-.shipping-info form .state {
+.contact-info form .state {
     width: 5%;
 }
 
-.shipping-info form .city {
+.contact-info form .city {
     width: 15%;
 }
 
-.shipping-info .date-box {
+.contact-info .date-box {
     display: flex;
     margin: max(14px, 1vw) 0;
 }
 
-.shipping-info .date-box .time {
+.contact-info .date-box .time {
     width: 6%;
 }
 
-.shipping-info .date-box .date {
+.contact-info .date-box .date {
     width: 13%;
     margin-left: max(10px, .7vw);
 }
 
-.shipping-info .arrival label {
+.contact-info .arrival label {
     font-size: max(10px, .9vw);
     font-weight: bold;
     margin-bottom: max(5px, .5vw);
     display: block;
 }
 
-.shipping-info .arrival textarea {
+.contact-info .arrival textarea {
     height: max(50px, 8vw);
     padding: max(7px, .5vw);
     border: max(1px, .1vw) solid #ccc;
@@ -3362,7 +3391,7 @@ form .form-row label {
     resize: none;
 }
 
-.shipping-info .arrival textarea::placeholder {
+.contact-info .arrival textarea::placeholder {
     font-size: max(10px, .8vw);
     font-weight: lighter;
 }
@@ -4165,31 +4194,31 @@ form .form-row label {
         width: 100%;
     }
 
-    .shipping-info .tracking form input[type=text] {
+    .contact-info .tracking form input[type=text] {
         width: 50%;
     }
 
-    .shipping-info .tracking form input[type=submit] {
+    .contact-info .tracking form input[type=submit] {
         width: 20%;
     }
 
-    .shipping-info form .address-info {
+    .contact-info form .address-info {
         width: 69.5%;
     }
 
-    .shipping-info form .number {
+    .contact-info form .number {
         width: 29.5%;
     }
 
-    .shipping-info form .complement {
+    .contact-info form .complement {
         width: 40%;
     }
 
-    .shipping-info form .state {
+    .contact-info form .state {
         width: 15%;
     }
 
-    .shipping-info form .city {
+    .contact-info form .city {
         width: 44%;
     }
 
@@ -4291,15 +4320,15 @@ form .form-row label {
         width: 100%;
     }
 
-    .shipping-info .tracking form input[type=text] {
+    .contact-info .tracking form input[type=text] {
         width: 70%;
     }
 
-    .shipping-info .tracking form input[type=submit] {
+    .contact-info .tracking form input[type=submit] {
         width: 30%;
     }
 
-    .shipping-info .tracking form p {
+    .contact-info .tracking form p {
         width: 100%;
     }
 
