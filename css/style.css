@@ -1220,6 +1220,10 @@ section.menu-content {
     justify-content: space-between;
 }
 
+.status-wrapper p {
+    font-size: max(15px, .9vw);
+}
+
 .status-wrapper .status-card{
     width: 32%;
     background-position: center;
