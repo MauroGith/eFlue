@@ -3499,16 +3499,143 @@ form .form-row label {
     color: var(--primary-pink);
 }
 
-.post-approval .timeline {
+.timeline {
     border-top: max(1px, .1vw) solid var(--lighter-gray);
     margin-top: max(14px, 1.2vw);
 }
 
-.post-approval .timeline h4 {
+.timeline h4 {
     font-size: max(10px, .9vw);
     margin: max(14px, 1vw) 0;
 }
 
+.timeline-info {
+    font-size: max(12px, .9vw);
+}
+
+.job-card {
+    background-color: white;
+    padding: max(14px, 1.5vw);
+    border-radius: max(5px, .5vw);
+    box-shadow: 0 0 max(2px, .2vw) rgba(0, 0, 0, 0.24);
+}
+
+.digital-product p {
+    font-size: max(12px, .9vw);
+}
+
+.arrival-info .partnership-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrival-info .partnership-info h3 {
+    font-size: max(14px, 1.2vw);
+    font-weight: bold;
+}
+
+.arrival-info .partnership-info span {
+    padding: max(5px, 0.5vw) max(10px, 1.5vw);
+    font-size: max(14px, .9vw);
+    font-weight: lighter;
+    border: max(1px, 0.1vw) solid #ccc;
+    border-radius: max(3px, 0.3vw);
+}
+
+.arrival-info p {
+    font-size: max(14px, 1vw);
+}
+
+.arrival-info ul {
+    margin: max(14px, 1vw) 0;
+}
+
+.arrival-info ul li {
+    font-size: max(12px, 1vw);
+}
+
+.posts-approval h3 {
+    font-size: max(14px, 1.2vw);
+    font-weight: bold;
+}
+
+.posts-approval p {
+    font-size: max(12px, .9vw);
+}
+
+
+.send-post {
+    margin: max(14px, 1vw) 0;
+}
+
+.send-post .picture  {
+    max-width: max(150px, 30%);
+    min-height: max(200px, 25vw);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--lighter-gray);
+    color: #a5a5a5;
+    border-radius: max(7px, 0.7vw);
+    cursor: pointer;
+    font-size: max(12px, .9vw);
+    outline: none;
+    padding: max(2px, 0.3vw);
+    text-align: center;
+}
+
+.send-post img {
+    width: max(40px, 4vw);
+}
+
+.send-post input[type=file] {
+    display: none;
+}
+
+.posts-approval .approval-info {
+    padding: max(14px, 1vw) 0;
+    border-top: max(1px, .1vw) solid var(--lighter-gray);
+    border-bottom: max(1px, .1vw) solid var(--lighter-gray);
+}
+
+.posts-approval .approval-info h4 {
+    font-size: max(12px, 1vw);
+    font-weight: normal;
+}
+
+.posts-approval .approval-info p {
+    font-size: max(12px, .8vw);
+    font-weight: lighter;
+}
+
+.posts-approval .form-post {
+    margin: max(14px, 1vw) 0;
+}
+
+.posts-approval .form-post h3 {
+    font-size: max(14px, 1.2vw);
+    font-weight: bold;
+}
+
+.posts-approval .form-post p {
+    font-size: max(12px, .8vw);
+    font-weight: lighter;
+    margin: max(5px, .5vw) 0;
+}
+
+.posts-approval .form-post .d-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.posts-approval .form-post label {
+    font-size: max(12px, .9vw);
+    padding-top: max(3px, .3vw);
+}
+
+.posts-approval .form-post input[type=text] {
+    max-width: max(200px, 35%);
+}
 
 .chat-content {
     display: flex;
