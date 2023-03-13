@@ -3711,7 +3711,7 @@ form .form-row label {
 .chat-history .chat-list {
     height: 80vh;
     overflow-y: auto;
-    padding-right: max(5px, .3vw);
+    padding-right: max(8px, .3vw);
 }
 
 .chat-history .chat-list::-webkit-scrollbar {
@@ -4559,8 +4559,25 @@ form .form-row label {
         width: 100%;
     }
 
+    .chat-content {
+        flex-direction: column;
+    }
+
+    .chat-content .content-wrapper {
+        margin-bottom: 20px;
+    }
+
     .chat-history {
         width: 100%;
+    }
+
+    .chat-history .mobile-chat {
+        height: 33%;
+        margin-bottom: 20px;
+    }
+
+    .chat-history .chat-list {
+        height: 20vh;
     }
 
     .chat-content .chat-box {
