@@ -3509,6 +3509,46 @@ form .form-row label {
     margin: max(14px, 1vw) 0;
 }
 
+.timeline-content .comment-box,
+.timeline-content .new-post {
+    padding: max(10px, 1vw) 0;
+    border-bottom: max(1px, .1vw) solid var(--lighter-gray);
+}
+
+.timeline-content .new-post p{
+    font-size: max(14px, .8vw);
+    text-align: center;
+}
+
+.comment-box .box-top {
+    display: flex;
+    align-items: center;
+    margin-bottom: max(15px, 1vw);
+}
+
+.comment-box .box-top img {
+    width: max(50px, 3vw);
+    height: max(50px, 3vw);
+    border-radius: 50%;
+}
+
+.comment-box .box-data {
+    margin-left: max(10px, .5vw);
+}
+
+.comment-box .box-top h6 {
+    font-size: max(15px, 1vw);
+}
+
+.comment-box .box-top .user {
+    font-size: max(15px, 1vw);
+}
+
+.comment-box .box-top .time {
+    font-size: max(12px, .8vw);
+    color: gray;
+    font-weight: lighter;
+}
 
 .chat-content {
     display: flex;
