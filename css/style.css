@@ -659,7 +659,24 @@ section.login .login-bg {
     width: 20%;
 }
 
+.end-form {
+    text-align: center;
+}
 
+.end-form img {
+    width: max(300px, 28vw);
+}
+
+.end-form p {
+    font-size: max(16px, 1vw);
+    margin: max(20px, 2vw) auto;
+    max-width: max(300px, 35%);
+}
+
+.end-form span {
+    font-size: max(16px, 1vw);
+    font-weight: lighter;
+}
 
 .mobile-menu .logo-icon{
     display: flex;
