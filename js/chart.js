@@ -30,9 +30,9 @@ const ctx = document.getElementById('myChart');
     }
   });
 
-const doughnutChart= document.getElementById('doughnutChart');
+const campaignsChart= document.getElementById('campaignsChart');
 
-  new Chart(doughnutChart, {
+  new Chart(campaignsChart, {
     type: 'doughnut',
     data: {
       datasets: [{
@@ -44,6 +44,30 @@ const doughnutChart= document.getElementById('doughnutChart');
           '#4e243d',
           '#a3009d',
           '#f4abd0',
+        ],
+      }]
+    },
+    options: {
+      plugins: {
+        legend: {
+            display: false
+        }
+      }, 
+    }
+  });
+const proposalsChart= document.getElementById('proposalsChart');
+
+  new Chart(proposalsChart, {
+    type: 'doughnut',
+    data: {
+      datasets: [{
+        data: [15, 12, 21],
+        cutout: '80%',
+        borderWidth: 0,
+        backgroundColor: [
+          '#f50066',
+          '#4e243d',
+          '#a3009d',
         ],
       }]
     },

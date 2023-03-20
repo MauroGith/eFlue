@@ -1081,6 +1081,39 @@ section.menu-content {
     width: 30%;
 }
 
+.ranking h5 {
+    font-size: max(16px, 1.2vw);
+    padding-bottom: max(20px, 1vw);
+    margin-bottom: max(20px, 1vw);
+    border-bottom: max(1px, .1vw) solid var(--lighter-gray);
+}
+
+.ranking table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.ranking table thead {
+    background-color: var(--lighter-gray);
+}
+
+.ranking table td {
+    padding: max(5px, .5vw);
+    font-size: max(12px, .8vw);
+}
+
+.ranking table .text-right {
+    text-align: right;
+}
+
+.ranking table .color-pink{
+    color: var(--primary-pink);
+}
+
+.ranking table .color-green {
+    color: var(--normal-green);
+}
+
 .dashboard-right {
     width: 50%;
     padding-left: 1.5vw;
@@ -1189,7 +1222,6 @@ section.menu-content {
     margin-left: max(2px, .2vw);
 }
 
-/* TELA USUARIO */
 .user-register{
     display: flex;
     flex-wrap: wrap;
@@ -1427,9 +1459,6 @@ section.menu-content {
     margin: max(7px, 1vw) 0 max(14px, 5vw);
 }
 
-/* TELA USUARIO */
-
-/* TELA CAMPANHAS */
 .campaigns .campaigns-card{
     width: 24%;
     background-position: center;
@@ -1678,9 +1707,6 @@ section.menu-content {
     margin: max(8px, .8vw) 0;
     cursor: pointer;
 }
-/* TELA CAMPANHAS */
-
-/* CAMPANHAS COMPANY */
 
 .user-dashboard .campaigns-card{
     border-radius: max(3px, .4vw);
@@ -1779,10 +1805,7 @@ section.menu-content {
     font-size: max(11px, 1vw);
     color: var(--primary-pink);
 }
-/* CAMPANHAS COMPANY */
 
-
-/* TELA TRANSACOES */
 i.p-icon {
     padding-left: max(10px, 1vw);
 }
@@ -1802,9 +1825,7 @@ i.p-icon {
     font-size: max(10px, 1.1vw);
     cursor: pointer;
 }
-/* TELA TRANSACOES */
 
-/* TELA proposals */
 .table-overflow table {
     width: max(850px, 100%);
 }
@@ -1908,9 +1929,7 @@ i.p-icon {
     border-radius: 50%;
     margin-left: max(2px, .2vw);
 }
-/* TELA proposals */
 
-/* TELA withdrawal  */
 .withdraw .withdraw-wrapper {
     display: flex;
     align-items: center;
@@ -1975,9 +1994,6 @@ i.p-icon {
 .profile-details .total-followers {
     display: none;
 }
-/* TELA withdrawal  */
-
-/* bank-accounts ↓*/
 
 .bank-data {
     display: flex;
@@ -2079,8 +2095,6 @@ form .form-row label {
     cursor: pointer;
     margin-left: max(3px, .3vw);
 }
-
-/* bank-accounts ↑*/
 
 .sales-panel {
     overflow: auto;
@@ -4118,7 +4132,6 @@ form .form-row label {
     text-decoration: none;
 }
 
-/* TELA REPORT */
 .report {
     background-color: white;
     max-width: max(700px, 70%);
@@ -4203,7 +4216,6 @@ form .form-row label {
     font-weight: lighter;
 }
 
-/* TELA REPORT */
 .chat-content .details .job-content {
     height: auto;
 }
